@@ -133,11 +133,92 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='IPv4 與 IPv6 地址.html'>Next</a> >> IPv4 與 IPv6 地址<br /><h1>首頁</h1>
-<p>內容</p>
-<p><span>PCH 13: IPv4 and IPv6 Addresses IPv4 與 IPv6 地址</span><br/><span>PCH 14: TCP and UDP Protocols  TCP 與 UDP 協議</span></p>
-<p><span></span></p>
-<br /> <a href='IPv4 與 IPv6 地址.html'>Next</a> >> IPv4 與 IPv6 地址</div>
+    <div id="tipue_search_content">Converting from Decimal to Binary << <a href='Converting from Decimal to Binary.html'>Previous</a> <br /><h1>Network and Host Addresses</h1>
+<p id="N106CB" lang="">An IPv4 network address is further divided into two portions based upon the subnet mask: the network portion and the host portion. A subnet mask is a series of numbers used for routing traffic within a subnetwork. When a subnet mask is used to define the network portion, anywhere there is a binary “11111111” (or 255 in decimal) used, this area is considered part of the network portion. When a binary “00000000” (0 in decimal) is used, this represents the host portion of the address. The host represents a single device on the network, such as your computer or phone.</p>
+<p lang=""><span>IPv4網絡地址根據子網掩碼進一步分為兩部分：網絡部分和主機部分。子網掩碼是用於在子網內路由流量的一系列數字。當使用子網掩碼定義網絡部分時，在任何使用二進制“ 11111111”（或十進制255）的地方，該區域均被視為網絡部分的一部分。當使用二進制“ 00000000”（十進制為0）時，它表示地址的主機部分。主機代表網絡上的單個設備，例如您的計算機或電話。</span></p>
+<p id="N106CE" lang="">The following two tables show the network and host portions of IP addresses.</p>
+<p lang=""><span>以下兩個表顯示了IP地址的網絡部分和主機部分。</span></p>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<thead>
+<tr>
+<th lang="">IP address (in decimal)</th>
+<th lang="">10</th>
+<th lang="">1</th>
+<th lang="">2</th>
+<th lang="">3</th>
+</tr>
+<tr>
+<th lang="">IP address (in binary)</th>
+<th lang="">00001010</th>
+<th lang="">00000001</th>
+<th lang="">00000010</th>
+<th lang="">00000011</th>
+</tr>
+<tr>
+<th lang="">Subnet mask (in decimal)</th>
+<th lang="">255</th>
+<th lang="">0</th>
+<th lang="">0</th>
+<th lang="">0</th>
+</tr>
+<tr>
+<th lang="">Subnet mask (in binary)</th>
+<th lang="">11111111</th>
+<th lang="">00000000</th>
+<th lang="">00000000</th>
+<th lang="">00000000</th>
+</tr>
+<tr>
+<th lang=""></th>
+<th lang="">Network bits</th>
+<th lang="">Host bits</th>
+<th lang="">Host bits</th>
+<th lang="">Host bits</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+<p id="N1072D" lang="">In the example above, we see that our IP address is 10.1.2.3, and it has a class A subnet mask of 255.0.0.0. (We will discuss subnet classes in more detail later in this module). If this subnet mask is converted to binary, we see is written as eight 1s, followed by 24 0s, giving us 255.0.0.0 in decimal notation. Therefore, wherever we see a 255 in a subnet mask, we know we are seeing the network portion defined. So, for this example, our specific host is 10.1.2.3 and our network address would be 10.0.0.0.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">在上面的示例中，我們看到我們的IP地址為10.1.2.3，它的A類子網掩碼為255.0.0.0。 （在本模塊的後面，我們將<br/>更詳細地討論子網類）。如果將此子網掩碼轉換為二進制，我們將看到它寫成八個1，然後是24 0，十進製表示為255<br/>.0.0.0。因此，無論何時在子網掩碼中看到255，我們都知道看到了定義的網絡部分。因此，對於此示例，我們的特<br/>定主機為10.1.2.3，我們的網絡地址為10.0.0.0。</span></pre>
+<div class="examplewrap">
+<div class="exHead"><span class="scnReader"><span class="scnReader">E</span></span>XAMPLE </div>
+<div class="exHead"><span>例子</span></div>
+<div class="example clearfix">
+<div>
+<p id="N10734" lang="">If a network has an IP address of 192.168.1.2, and the subnet mask of 255.255.255.0, we can identify the network and host portions of both addresses. To determine the network portion of the IP address, examine the subnet mask for which octets hold the value 255. In this case, the subnet mask has 255 in the first, second, and third octet. This means that the network portion of the IP address is the first, second, and third octet, as shown in the chart below. The remaining octet (the fourth octet) is the host portion of the address.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">如果網絡的IP地址為192.168.1.2，子網掩碼為255.255.255.0，我們可以識別這兩個地址的網絡和主機部分。<br/>要確定IP地址的網絡部分，請檢查其八位位組的子網掩碼為255的子網掩碼。在這種情況下，該子網掩碼在第一個，<br/>第二個和第三個八位位組中具有255。這意味著IP地址的網絡部分是第一個，第二個和第三個八位位組，如下圖所示<br/>。剩餘的八位位組（第四個八位位組）是地址的主機部分。</span></pre>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<tbody>
+<tr class="e">
+<td lang=""></td>
+<td lang="">Network Portion</td>
+<td lang="">Host Portion</td>
+</tr>
+<tr>
+<td lang="">IP Address: 192.168.1.2</td>
+<td lang="">192.168.1</td>
+<td lang="">2</td>
+</tr>
+<tr class="e">
+<td lang="">Subnet Mask: 255.255.255.0</td>
+<td lang="">255.255.255</td>
+<td lang="">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
+<p lang=""><span></span></p>
+<p><span title="Quick scroll up"></span></p>
+<div class="section" id="tcpip">
+<div class="sectionContain">
+<div class="section" id="N106B8">
+<div class="sectionContain"></div>
+</div>
+</div>
+</div></div></div></div></div></div></div><br />Converting from Decimal to Binary << <a href='Converting from Decimal to Binary.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
