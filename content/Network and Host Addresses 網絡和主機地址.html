@@ -122,7 +122,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='首頁.html'>首頁</a><li class='has-children'><a href='IPv4 與 IPv6 地址.html'>IPv4 與 IPv6 地址</a><ul class='dropdown'><li><a href='Overview 總覽.html'>Overview 總覽</a><li><a href='TCP and IP TCP與IP.html'>TCP and IP TCP與IP</a><li><a href='IPv4 and IPv6 Addresses IPv4 與 IPv6 位址.html'>IPv4 and IPv6 Addresses IPv4 與 IPv6 位址</a><li class='has-children'><a href='Addressing Notation.html'>Addressing Notation</a><ul class='dropdown'><li><a href='Converting from Decimal to Binary.html'>Converting from Decimal to Binary</a></li></ul><li><a href='Network and Host Addresses.html'>Network and Host Addresses</a></li>
+                     <li><a href='首頁.html'>首頁</a><li class='has-children'><a href='IPv4 與 IPv6 地址.html'>IPv4 與 IPv6 地址</a><ul class='dropdown'><li><a href='Overview 總覽.html'>Overview 總覽</a><li><a href='TCP and IP TCP與IP.html'>TCP and IP TCP與IP</a><li><a href='IPv4 and IPv6 Addresses IPv4 與 IPv6 位址.html'>IPv4 and IPv6 Addresses IPv4 與 IPv6 位址</a><li><a href='Addressing Notation 尋址符號.html'>Addressing Notation 尋址符號</a><li><a href='Network and Host Addresses 網絡和主機地址.html'>Network and Host Addresses 網絡和主機地址</a></li>
                       </ul>
                 </nav>
               </div>
@@ -133,79 +133,98 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">IPv4 and IPv6 Addresses IPv4 與 IPv6 位址 << <a href='IPv4 and IPv6 Addresses IPv4 與 IPv6 位址.html'>Previous</a> <a href='Converting from Decimal to Binary.html'>Next</a> >> Converting from Decimal to Binary<br /><h1>Addressing Notation</h1>
-<p lang="">Internet protocol (IP) networking relies on both an IP address and subnet mask using a 32-bit dotted decimal notation. The Internet Engineering Task Force (IETF) and the Internet Corporation for Assigned Names and Numbers (ICANN) developed and maintains the standards for IP allocation and protocols.</p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">Internet協議（IP）網絡使用32位點分十進製表示法同時依賴IP地址和子網掩碼。互聯網工程任務組（IETF）和互<br/>聯網名稱與數字地址分配機構（ICANN）制定並維護了IP分配和協議的標準。</span></pre>
-<p id="N1069E" lang="">While the following IP address and subnet mask looks like a regular decimal number separated by periods:</p>
-<p lang=""><span>以下IP地址和子網掩碼看起來像是一個普通的十進制數字，中間用句點分隔：</span></p>
+    <div id="tipue_search_content">Addressing Notation 尋址符號 << <a href='Addressing Notation 尋址符號.html'>Previous</a> <br /><h1>Network and Host Addresses 網絡和主機地址</h1>
+<p id="N106CB" lang="">An IPv4 network address is further divided into two portions based upon the subnet mask: the network portion and the host portion. A subnet mask is a series of numbers used for routing traffic within a subnetwork. When a subnet mask is used to define the network portion, anywhere there is a binary “11111111” (or 255 in decimal) used, this area is considered part of the network portion. When a binary “00000000” (0 in decimal) is used, this represents the host portion of the address. The host represents a single device on the network, such as your computer or phone.</p>
+<p lang=""><span>IPv4網絡地址根據子網掩碼進一步分為兩部分：網絡部分和主機部分。子網掩碼是用於在子網內路由流量的一系列數字。當使用子網掩碼定義網絡部分時，在任何使用二進制“ 11111111”（或十進制255）的地方，該區域均被視為網絡部分的一部分。當使用二進制“ 00000000”（十進制為0）時，它表示地址的主機部分。主機代表網絡上的單個設備，例如您的計算機或電話。</span></p>
+<p id="N106CE" lang="">The following two tables show the network and host portions of IP addresses.</p>
+<p lang=""><span>以下兩個表顯示了IP地址的網絡部分和主機部分。</span></p>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<thead>
+<tr>
+<th lang="">IP address (in decimal)</th>
+<th lang="">10</th>
+<th lang="">1</th>
+<th lang="">2</th>
+<th lang="">3</th>
+</tr>
+<tr>
+<th lang="">IP address (in binary)</th>
+<th lang="">00001010</th>
+<th lang="">00000001</th>
+<th lang="">00000010</th>
+<th lang="">00000011</th>
+</tr>
+<tr>
+<th lang="">Subnet mask (in decimal)</th>
+<th lang="">255</th>
+<th lang="">0</th>
+<th lang="">0</th>
+<th lang="">0</th>
+</tr>
+<tr>
+<th lang="">Subnet mask (in binary)</th>
+<th lang="">11111111</th>
+<th lang="">00000000</th>
+<th lang="">00000000</th>
+<th lang="">00000000</th>
+</tr>
+<tr>
+<th lang=""></th>
+<th lang="">Network bits</th>
+<th lang="">Host bits</th>
+<th lang="">Host bits</th>
+<th lang="">Host bits</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+<p id="N1072D" lang="">In the example above, we see that our IP address is 10.1.2.3, and it has a class A subnet mask of 255.0.0.0. (We will discuss subnet classes in more detail later in this module). If this subnet mask is converted to binary, we see is written as eight 1s, followed by 24 0s, giving us 255.0.0.0 in decimal notation. Therefore, wherever we see a 255 in a subnet mask, we know we are seeing the network portion defined. So, for this example, our specific host is 10.1.2.3 and our network address would be 10.0.0.0.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">在上面的示例中，我們看到我們的IP地址為10.1.2.3，它的A類子網掩碼為255.0.0.0。 （在本模塊的後面，我們將<br/>更詳細地討論子網類）。如果將此子網掩碼轉換為二進制，我們將看到它寫成八個1，然後是24 0，十進製表示為255<br/>.0.0.0。因此，無論何時在子網掩碼中看到255，我們都知道看到了定義的網絡部分。因此，對於此示例，我們的特<br/>定主機為10.1.2.3，我們的網絡地址為10.0.0.0。</span></pre>
+<div class="examplewrap">
+<div class="exHead"><span class="scnReader"><span class="scnReader">E</span></span>XAMPLE </div>
+<div class="exHead"><span>例子</span></div>
+<div class="example clearfix">
 <div>
-<div class="syntaxhighlighter" id="highlighter_128080">
-<div class="lines">
-<div class="line alt1">
-<table>
+<p id="N10734" lang="">If a network has an IP address of 192.168.1.2, and the subnet mask of 255.255.255.0, we can identify the network and host portions of both addresses. To determine the network portion of the IP address, examine the subnet mask for which octets hold the value 255. In this case, the subnet mask has 255 in the first, second, and third octet. This means that the network portion of the IP address is the first, second, and third octet, as shown in the chart below. The remaining octet (the fourth octet) is the host portion of the address.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">如果網絡的IP地址為192.168.1.2，子網掩碼為255.255.255.0，我們可以識別這兩個地址的網絡和主機部分。<br/>要確定IP地址的網絡部分，請檢查其八位位組的子網掩碼為255的子網掩碼。在這種情況下，該子網掩碼在第一個，<br/>第二個和第三個八位位組中具有255。這意味著IP地址的網絡部分是第一個，第二個和第三個八位位組，如下圖所示<br/>。剩餘的八位位組（第四個八位位組）是地址的主機部分。</span></pre>
+<table align="center" cellspacing="0" class="wbtable" lang="">
 <tbody>
-<tr>
-<td class="number"><code>1</code></td>
-<td class="content"><code class="plain">168.1.1</code></td>
+<tr class="e">
+<td lang=""></td>
+<td lang="">Network Portion</td>
+<td lang="">Host Portion</td>
 </tr>
-</tbody>
-</table>
-</div>
-<div class="line alt2">
-<table>
-<tbody>
 <tr>
-<td class="number"><code>2</code></td>
-<td class="content"><code class="plain">255.255.255.0</code></td>
+<td lang="">IP Address: 192.168.1.2</td>
+<td lang="">192.168.1</td>
+<td lang="">2</td>
 </tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-<p id="N106A6" lang="">The computer sees the binary:</p>
-<p lang=""><span>計算機看到二進製文件：</span></p>
-<div>
-<div class="syntaxhighlighter" id="highlighter_300893">
-<div class="lines">
-<div class="line alt1">
-<table>
-<tbody>
-<tr>
-<td class="number"><code>1</code></td>
-<td class="content"><code class="plain">11000000.10101000.00000001.00000001</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="line alt2">
-<table>
-<tbody>
-<tr>
-<td class="number"><code>2</code></td>
-<td class="content"><code class="plain">11111111.11111111.11111111.00000000</code></td>
+<tr class="e">
+<td lang="">Subnet Mask: 255.255.255.0</td>
+<td lang="">255.255.255</td>
+<td lang="">0</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 </div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
+<p lang=""><span></span></p>
+<p><span title="Quick scroll up"></span></p>
+<div class="section" id="tcpip">
+<div class="sectionContain">
+<div class="section" id="N106B8">
+<div class="sectionContain"></div>
 </div>
-<p id="N106AE" lang="">Each octet is made up of eight bits (one byte or two nibbles); multiplied by four octets, that equals 32 bits. The maximum value for any octet is 255 (2<sup lang="">8</sup>-1) so therefore the maximum number of IPv4 addresses available is 2<sup lang="">32</sup>, which equals 4,294,967,296 unique addresses.</p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">每個八位位組由八位組成（一個字節或兩個半字節）。乘以四個八位位組，等於32位。任何八位位組的最大值為255<br/>（28-1），因此，可用的IPv4地址的最大數量為232，等於4,294,967,296個唯一地址。</span></pre>
-<p id="N106B7" lang="">The presence of the subnet mask tells networking devices how much of the IP address belongs to the network and how much to the host. The 255.255.255.0 subnet represents that the first three octets are the network and the “0” represents the available number of hosts (nodes). So, the form is N.N.N.H. Think of the combination of IP and subnet as similar to regular postal addresses. You need a zip code (subnet) and street address (host).</p>
-<p lang=""><span>子網掩碼的存在告訴網絡設備多少IP地址屬於網絡，多少屬於主機。 255.255.255.0子網表示前三個八位位組是網絡，“ 0”表示可用的主機（節點）數。因此，表格為N.N.N.H.可以將IP和子網的組合視為類似於常規郵政地址。您需要一個郵政編碼（子網）和街道地址（主機）。</span></p>
-<p id="N106BA" lang="">There are five different classes in IPv4 labelled A through E, with classes A, B, and C used by computer networks and classes D and E reserved as experimental. As originally designed, the IP range is determined by the lead bits in the first octet and matched to one specific subnet mask. This is called "classful" addressing. When the IP class does not match the default subnet mask, it is called "classless."</p>
-<p lang=""><span>IPv4中有五種不同的類別，標記為A到E，計算機網絡使用的類別為A，B和C，D和E的類別保留為實驗用。按照最初的設計，IP範圍由第一個八位位組中的前導位確定，並與一個特定的子網掩碼匹配。這稱為“有類”尋址。如果IP類與默認子網掩碼不匹配，則稱為“無類”。</span></p>
 </div>
 </div>
-<div class="activitywrap purpose manystudentswonder wbactivity">
-<div class="activityhead"><a class="purposeType purposemanystudentswonder" href="https://oli.cmu.edu/jcourse/webui/resolver/link/resource.do?src=d87f2f200a0001dc1533ab3caf5a3308&amp;dst=PCH13_msw2" id="PCH13_msw2" target="_blank" title=""><span class="scnReader">MANY STUDENTS WONDER...</span></a>
-<div class="activityinfo"></div>
 </div>
-<div class="actContain">
-<br />IPv4 and IPv6 Addresses IPv4 與 IPv6 位址 << <a href='IPv4 and IPv6 Addresses IPv4 與 IPv6 位址.html'>Previous</a> <a href='Converting from Decimal to Binary.html'>Next</a> >> Converting from Decimal to Binary</div>
+</div>
+</div>
+</div>
+</div>
+</div><br />Addressing Notation 尋址符號 << <a href='Addressing Notation 尋址符號.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
