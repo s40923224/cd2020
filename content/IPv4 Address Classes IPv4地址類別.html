@@ -1,0 +1,488 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>s40923224 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">s40923224 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='首頁.html'>首頁</a><li class='has-children'><a href='IPv4 與 IPv6 地址.html'>IPv4 與 IPv6 地址</a><ul class='dropdown'><li><a href='Overview 總覽.html'>Overview 總覽</a><li><a href='TCP and IP TCP與IP.html'>TCP and IP TCP與IP</a><li><a href='IPv4 and IPv6 Addresses IPv4 與 IPv6 位址.html'>IPv4 and IPv6 Addresses IPv4 與 IPv6 位址</a><li><a href='IPv4 Addressing IPv4 位址.html'>IPv4 Addressing IPv4 位址</a><li><a href='Addressing Notation 尋址符號.html'>Addressing Notation 尋址符號</a><li><a href='Network and Host Addresses 網絡和主機地址.html'>Network and Host Addresses 網絡和主機地址</a><li><a href='IPv4 Address Classes IPv4地址類別.html'>IPv4 Address Classes IPv4地址類別</a><li><a href='IPv4 Data Flows.html'>IPv4 Data Flows</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">Network and Host Addresses 網絡和主機地址 << <a href='Network and Host Addresses 網絡和主機地址.html'>Previous</a> <a href='IPv4 Data Flows.html'>Next</a> >> IPv4 Data Flows<br /><h1>IPv4 Address Classes IPv4地址類別</h1>
+<p id="N10690" lang="">As you can see, when the subnet mask has a 255 in it, it is defining the network portion of the address. In class A addresses, the first octet defines the network, and the last three define the host. In class B addresses, the first two octets define the network, the last two define the host. In class C addresses, the first three octets define the network, the last one defines the host.</p>
+<p lang="">如您所見，當子網掩碼中包含255時，它定義了地址的網絡部分。 在A類地址中，第一個八位位組定義網絡，最後三個八位位組定義主機。 在B類地址中，前兩個八位位組定義網絡，後兩個定義主機。 在C類地址中，前三個八位位組定義網絡，最後一個八位位組定義主機。</p>
+<div class="imagewrap"><span class="image"><img class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image2.png"/></span></div>
+<p id="N1069F" lang="">Subnet masks are used to define the specific network we are referencing. A standard class A subnet mask of 255.0.0.0 is used for all networks where the first octet starts with a number between 1 and 126. Recall from the subnet table below, our network was 10.0.0.0.</p>
+<div class="tlid-input input">
+<div class="source-wrap">
+<div class="input-full-height-wrapper tlid-input-full-height-wrapper">
+<div class="source-input">
+<div class="source-footer-wrap source-or-target-footer">
+<div class="source-footer">
+<div class="speech-wrap source-or-target-footer-button left-positioned">
+<div aria-disabled="false" aria-label="開啟語音輸入功能" aria-pressed="false" class="speech-button goog-toolbar-button" data-tooltip="開啟語音輸入功能" data-tooltip-align="t,c" id="gt-speech" role="button" tabindex="0"><span class="jfk-button-img"></span></div>
+</div>
+<div aria-disabled="false" aria-hidden="false" aria-label="聆聽" aria-pressed="false" class="src-tts left-positioned ttsbutton jfk-button-flat source-or-target-footer-button jfk-button" data-tooltip="聆聽" data-tooltip-align="t,c" role="button" tabindex="0">
+<div class="jfk-button-img"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tlid-results-container results-container">
+<div class="tlid-result result-dict-wrapper">
+<div class="result tlid-copy-target">
+<div class="result-header">
+<div aria-label="收藏翻譯" class="starbutton jfk-button-flat jfk-button unstarred" data-tooltip="收藏翻譯" data-tooltip-align="t,c" role="button" tabindex="0">
+<div class="jfk-button-img"></div>
+</div>
+</div>
+<div class="text-wrap tlid-copy-target">
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"><span title="">子網掩碼用於定義我們要引用的特定網絡。</span> <span class="" title="">255.0.0.0的標準A類子網掩碼適用於所有第一個八位位組以1到126之間的數字開頭的網絡。從下面的子網表中回想一下，我們的網絡為10.0.0.0。</span></span></div>
+</div>
+</div>
+</div>
+</div>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<thead>
+<tr>
+<th lang="">IP address (in decimal)</th>
+<th lang="">10</th>
+<th lang="">1</th>
+<th lang="">2</th>
+<th lang="">3</th>
+</tr>
+<tr>
+<th lang="">IP address (in binary)</th>
+<th lang="">00001010</th>
+<th lang="">00000001</th>
+<th lang="">00000010</th>
+<th lang="">00000011</th>
+</tr>
+<tr>
+<th lang="">Subnet mask (in decimal)</th>
+<th lang="">255</th>
+<th lang="">0</th>
+<th lang="">0</th>
+<th lang="">0</th>
+</tr>
+<tr>
+<th lang="">Subnet mask (in binary)</th>
+<th lang="">11111111</th>
+<th lang="">00000000</th>
+<th lang="">00000000</th>
+<th lang="">00000000</th>
+</tr>
+<tr>
+<th lang=""></th>
+<th lang="">Network bits</th>
+<th lang="">Host bits</th>
+<th lang="">Host bits</th>
+<th lang="">Host bits</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+<p id="N106FE" lang="">Therefore, this address fits into the class A category. In this course, we only deal with “classful” subnet masks — the ones that only contain values of 255 and 0. In future courses, you may see other subnet masks used to further break apart the networks.</p>
+<p lang="">因此，該地址屬於A類類別。 在本課程中，我們僅處理“有類”子網掩碼-僅包含255和0的值。在以後的課程中，您可能會看到其他子網掩碼用於進一步拆分網絡。</p>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<thead>
+<tr>
+<th lang=""><em class="bold" lang="">Address Class</em></th>
+<th lang=""><em class="bold" lang="">Value in First Octet</em></th>
+<th lang=""><em class="bold" lang="">Classful Mask (Dotted Decimal)</em></th>
+<th lang=""><em class="bold" lang="">Classful Mask (Prefix Notation)</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td lang="">Class A</td>
+<td lang="">1 – 126</td>
+<td lang="">255.0.0.0</td>
+<td lang="">/8</td>
+</tr>
+<tr class="e">
+<td lang="">Class B</td>
+<td lang="">128 – 191</td>
+<td lang="">255.255.0.0</td>
+<td lang="">/16</td>
+</tr>
+<tr>
+<td lang="">Class C</td>
+<td lang="">192 – 223</td>
+<td lang="">255.255.255.0</td>
+<td lang="">/24</td>
+</tr>
+</tbody>
+</table>
+<p id="N10748" lang="">As you can see in the address classes table, class A references networks with the first octet having a value of 1-126, class B references 128-191, class C references 192-223. There is also a special address called the loopback address, which is 127.0.0.1. The entire range of 127.x.x.x is reserved to support this loopback address. A loopback address is an IP reserved to reference the computer on which you are currently working. Every computer knows to answer up for itself when a reference to 127.0.0.1 is given. This is also known as as the “localhost.”</p>
+<p lang="">如您在地址類別表中看到的，類別A引用第一個八位位組的值是1-126的網絡，類別B引用128-191，類別C引用192-223。 還有一個稱為回送地址的特殊地址，即127.0.0.1。 保留127.x.x.x的整個範圍以支持此環回地址。 回送地址是保留的IP，用於引用您當前正在使用的計算機。 當給出對127.0.0.1的引用時，每台計算機都知道會自己回答。 這也稱為“本地主機”。</p>
+<p id="N1074B" lang="">To route your traffic over the Internet, you are required to have a publically routable IP address. These addresses are globally managed by the Internet Corporation for Assigned Names and Numbers (ICANN). If you desire to have one of these addresses, you must purchase them for use to ensure no one else has that specific number. For most users, this is done for you by your Internet service provider (ISP), but if you have a need for numerous public IP addresses, you can buy a block of them from ICANN.</p>
+<p lang="">要通過Internet路由流量，您需要具有可公開路由的IP地址。 這些地址由互聯網名稱與數字地址分配機構（ICANN）全局管理。 如果您希望擁有這些地址之一，則必須購買它們以確保沒有其他人擁有該特定號碼。 對於大多數用戶而言，這是由Internet服務提供商（ISP）為您完成的，但是如果您需要大量的公共IP地址，則可以從ICANN購買其中的一部分。</p>
+<p id="N1074E" lang="">Private IP addresses, on the other hand, can be used by anyone without any prior coordination. This is because private IP addresses are not routable over the Internet and are only used inside your local area network. For example, at your home, you may have five computers hooked up to your switch and those machines are all using private IP addresses. When you make a request to go outside the network, like to visit a college’s website, your router performs a network address translation (NAT) that allows your private IP address to be converted into a public IP address and a port, which then makes the request on your behalf. There is a specific range of IP addresses that are reserved as private for internal use (by you and others).</p>
+<div class="tlid-input input">
+<div class="source-wrap">
+<div class="input-full-height-wrapper tlid-input-full-height-wrapper">
+<div class="source-input">
+<div class="source-footer-wrap source-or-target-footer">
+<div class="source-footer">
+<div class="speech-wrap source-or-target-footer-button left-positioned">
+<div aria-disabled="false" aria-label="開啟語音輸入功能" aria-pressed="false" class="speech-button goog-toolbar-button" data-tooltip="開啟語音輸入功能" data-tooltip-align="t,c" id="gt-speech" role="button" tabindex="0"><span class="jfk-button-img"></span></div>
+</div>
+<div aria-disabled="false" aria-hidden="false" aria-label="聆聽" aria-pressed="false" class="src-tts left-positioned ttsbutton jfk-button-flat source-or-target-footer-button jfk-button" data-tooltip="聆聽" data-tooltip-align="t,c" role="button" tabindex="0">
+<div class="jfk-button-img"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tlid-results-container results-container">
+<div class="tlid-result result-dict-wrapper">
+<div class="result tlid-copy-target">
+<div class="result-header">
+<div aria-label="收藏翻譯" class="starbutton jfk-button-flat jfk-button unstarred" data-tooltip="收藏翻譯" data-tooltip-align="t,c" role="button" tabindex="0">
+<div class="jfk-button-img"></div>
+</div>
+</div>
+<div class="text-wrap tlid-copy-target">
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"><span title="">另一方面，任何人都可以使用私有IP地址，而無需事先協調。</span> <span class="" title="">這是因為專用IP地址無法通過Internet路由，而只能在局域網內使用。</span> <span class="" title="">例如，在您的家裡，您可能有五台計算機連接到交換機，而這些計算機都使用專用IP地址。</span> <span class="" title="">當您發出訪問網絡的請求（例如訪問大學的網站）時，路由器會執行網絡地址轉換（NAT），該轉換可將您的私有IP地址轉換為公共IP地址和端口，從而使</span> <span title="">代表您提出要求。</span> <span class="" title="">有一個特定範圍的IP地址保留為私有（供您和他人使用）供內部使用。</span></span></div>
+</div>
+</div>
+</div>
+</div>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<thead>
+<tr>
+<th lang="">Address Class</th>
+<th lang="">Private Address Range</th>
+<th lang="">Default Subnet Mask</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td lang="">Class A</td>
+<td lang="">10.0.0.0 – 10.255.255.255</td>
+<td lang="">255.0.0.0</td>
+</tr>
+<tr class="e">
+<td lang="">Class B</td>
+<td lang="">172.16.0.0 – 172.31.255.255</td>
+<td lang="">255.255.0.0</td>
+</tr>
+<tr>
+<td lang="">Class C</td>
+<td lang="">192.168.0.0 – 192.168.255.255</td>
+<td lang="">255.255.255.0</td>
+</tr>
+</tbody>
+</table>
+<p id="N10784" lang="">For class A, the range of 10.0.0.0 to 10.255.255.255 are all private addresses. This provides 16.7 million addresses for use. Next, we have class B, which uses the range of 172.16.0.0 to 172.31.255.255. For class C, the range is 192.168.0.0 to 192.168.255.255. For class C, the most common of private IP scopes in use, the subnet mask is 255.255.255.0. This means if you choose 192.168.1.0 for your network, you would have 254 usable IP addresses. You would have this many usable IP addresses because the network is selected using the subnet mask, so only one octet is available for the host portion (there are 256 choices, but the first one (.0) is for the network address, and the last one (.255) is for the broadcast address).</p>
+<div actguid="d87f2f390a0001dc08448ffa3c09875d" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f390a0001dc08448ffa3c09875d&amp;userGUID=d1c2f9970a0001dc43499890ec9e3fd1&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch13_lbd04">
+<div class="activityhead">
+<div class="purposeType purposelearnbydoing" title=""><span class="scnReader">learn by doing</span></div>
+<div class="purposeType purposelearnbydoing" title=""><span class="scnReader">對於A類，範圍10.0.0.0到10.255.255.255都是私有地址。 這提供了1,670萬個地址供使用。 接下來，我們有B類，其使用範圍為172.16.0.0到172.31.255.255。 對於C類，範圍是192.168.0.0到192.168.255.255。 對於C類（最常用的專用IP範圍），子網掩碼為255.255.255.0。 這意味著，如果您為網絡選擇192.168.1.0，則將有254個可用IP地址。 您將擁有這麼多可用的IP地址，因為使用子網掩碼選擇了網絡，因此主機部分只能使用一個八位位組（有256個選擇，而第一個（.0）是網絡地址，並且 最後一個（.255）是廣播地址）。<br/><br/>通過實踐學習</span></div>
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch13_lbd04">
+<div class="page 482442" id="opch13_lbd04">
+<div class="question ddfb" id="482442">
+<div>For each IP address and subnet mask given below, identify the correct address class.</div>
+<div>
+<p>對於下面給出的每個IP地址和子網掩碼，請確定正確的地址類別。</p>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<tbody>
+<tr class="e">
+<td lang=""></td>
+<td lang="">Address class</td>
+</tr>
+<tr>
+<td lang="">
+<p id="N10074" lang="">IP address: 172.16.0.1</p>
+<p id="N10077" lang="">Subnet mask: 255.0.0.0</p>
+</td>
+<td lang=""><span class="i1"> <span class="component"><select id="i1">
+<option id="i1_EMPTY_CHOICE" value="">--</option>
+<option id="i1_opt_0" value="A">Class A</option>
+<option id="i1_opt_1" value="B">Class B</option>
+<option id="i1_opt_2" value="C">Class C</option>
+</select></span><a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/x-oli-workbook_page/javascript();" rel="556210" title="Click for hint"></a></span></td>
+</tr>
+<tr class="e">
+<td lang="">
+<p id="N10082" lang="">IP address: 192.168.1.1</p>
+<p id="N10085" lang="">Subnet mask: 255.255.0.0</p>
+</td>
+<td lang=""><span class="i2"> <span class="component"><select id="i2">
+<option id="i2_EMPTY_CHOICE" value="">--</option>
+<option id="i2_opt_0" value="A">Class A</option>
+<option id="i2_opt_1" value="B">Class B</option>
+<option id="i2_opt_2" value="C">Class C</option>
+</select></span><a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/x-oli-workbook_page/javascript();" rel="556211" title="Click for hint"></a></span></td>
+</tr>
+<tr>
+<td lang="">
+<p id="N10090" lang="">IP address: 10.0.1.1</p>
+<p id="N10093" lang="">Subnet mask: 255.255.255.0</p>
+</td>
+<td lang=""><span class="i3"> <span class="component"><select id="i3">
+<option id="i3_EMPTY_CHOICE" value="">--</option>
+<option id="i3_opt_0" value="A">Class A</option>
+<option id="i3_opt_1" value="B">Class B</option>
+<option id="i3_opt_2" value="C">Class C</option>
+</select></span><a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/x-oli-workbook_page/javascript();" rel="556212" title="Click for hint"></a></span></td>
+</tr>
+<tr class="e">
+<td lang="">
+<p id="N1009E" lang="">IP address: 10.3.2.1</p>
+<p id="N100A1" lang="">Subnet mask: 255.255.0.0</p>
+</td>
+<td lang=""><span class="i4"> <span class="component"><select id="i4">
+<option id="i4_EMPTY_CHOICE" value="">--</option>
+<option id="i4_opt_0" value="A">Class A</option>
+<option id="i4_opt_1" value="B">Class B</option>
+<option id="i4_opt_2" value="C">Class C</option>
+</select></span><a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/x-oli-workbook_page/javascript();" rel="556213" title="Click for hint"></a></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div actguid="d87f2f3a0a0001dc08c18c2ce9386c72" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f3a0a0001dc08c18c2ce9386c72&amp;userGUID=d1c2f9970a0001dc43499890ec9e3fd1&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose didigetthis flash" id="dpch13_digt03">
+<div class="activityhead">
+<div class="purposeType purposedidigetthis" title=""><span class="scnReader">did I get this</span></div>
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch13_digt03">
+<div class="page 483025 483026" id="opch13_digt03">
+<div class="question ddfb" id="483025">
+<div>A network IP address of 192.168.1.1 and a subnet mask of 255.255.255.0 is an example of a class<span> </span><span class="i1"> <span class="component"><select id="i1">
+<option id="i1_EMPTY_CHOICE" value="">--</option>
+<option id="i1_opt_0" value="A">A</option>
+<option id="i1_opt_1" value="B">B</option>
+<option id="i1_opt_2" value="C">C</option>
+</select></span></span><span> </span>address.</div>
+</div>
+<div class="question" id="483026">
+<div>The “localhost” for any computer uses the loopback address. The loopback IP address is<span> </span><span class="i1"> <span class="component"><input class="medium" id="i1" type="text"/></span></span>.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pageControls clearfix" id="pagecontrols-d87f2f3a0a0001dc08c18c2ce9386c72">
+<div class="tlid-input input">
+<div class="source-wrap">
+<div class="input-full-height-wrapper tlid-input-full-height-wrapper">
+<div class="source-input">
+<div class="source-footer-wrap source-or-target-footer">
+<div class="character-count tlid-character-count">
+<div class="cc-ctr normal"></div>
+</div>
+<div class="source-footer">
+<div class="speech-wrap source-or-target-footer-button left-positioned">
+<div aria-disabled="false" aria-label="開啟語音輸入功能" aria-pressed="false" class="speech-button goog-toolbar-button" data-tooltip="開啟語音輸入功能" data-tooltip-align="t,c" id="gt-speech" role="button" tabindex="0"><span class="jfk-button-img"></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pageControls clearfix"><br/>我得到這個了嗎<br/><br/>網絡IP地址192.168.1.1和子網掩碼255.255.255.0是一個類的示例<br/>-<br/> 地址。<br/>任何計算機的“ localhost”都使用回送地址。 環回IP地址是<br/>。<br/><br/></div>
+</div>
+</div>
+</div>
+<div class="section" id="ipv4_data_flows">
+<div class="sectionContain">
+<br />Network and Host Addresses 網絡和主機地址 << <a href='Network and Host Addresses 網絡和主機地址.html'>Previous</a> <a href='IPv4 Data Flows.html'>Next</a> >> IPv4 Data Flows</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

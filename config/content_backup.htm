@@ -2,7 +2,7 @@
 <p>內容</p>
 <p><span>PCH 13: IPv4 and IPv6 Addresses IPv4 與 IPv6 地址</span><br/><span>PCH 14: TCP and UDP Protocols  TCP 與 UDP 協議</span></p>
 <p><span></span></p>
-<h1>IPv4 與 IPv6 地址</h1>
+<h1 class="title">IPv4 與 IPv6 地址</h1>
 <div class="section" id="N1068A">
 <div class="sectionContain" style="text-align: left;">
 <h2>Overview 總覽</h2>
@@ -29,7 +29,28 @@
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">儘管當今我們的大多數網絡仍使用IPv4，但許多網絡正在遷移到更新的IPv6尋址標準。此外，在過渡期間<br/>，許多網絡都對IPv4和IPv6提供雙重支持。進行此轉換的原因是我們用盡了有效的IPv4地址。 IPv4使用<br/>32位尋址方案，僅提供42億個可用地址，而IPv6使用128位尋址方案。 IPv6允許2128個地址或340,282,<br/>366,920,938,000,000,000,000,000,000,000,000,000,000（3.4 x 1038）個唯一IP地址。 IPv6所<br/>允許的IP地址比人類所能利用的更多。至少這就是我們現在的想法。<br/><br/></span></pre>
 <div class="section" id="N10690">
 <div class="sectionContain">
-<h2>Addressing Notation</h2>
+<h2 class="title">IPv4 Addressing IPv4 位址</h2>
+<h2>Addressing Notation 尋址符號</h2>
+<div class="tlid-input input">
+<div class="source-wrap">
+<div class="input-full-height-wrapper tlid-input-full-height-wrapper">
+<div class="source-input">
+<div class="source-footer-wrap source-or-target-footer">
+<div class="character-count tlid-character-count">
+<div class="cc-ctr normal"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tlid-results-container results-container">
+<div class="tlid-result result-dict-wrapper">
+<div class="result tlid-copy-target">
+<div class="text-wrap tlid-copy-target"></div>
+</div>
+</div>
+</div>
 <p lang="">Internet protocol (IP) networking relies on both an IP address and subnet mask using a 32-bit dotted decimal notation. The Internet Engineering Task Force (IETF) and the Internet Corporation for Assigned Names and Numbers (ICANN) developed and maintains the standards for IP allocation and protocols.</p>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">Internet協議（IP）網絡使用32位點分十進製表示法同時依賴IP地址和子網掩碼。互聯網工程任務組（IETF）和互<br/>聯網名稱與數字地址分配機構（ICANN）制定並維護了IP分配和協議的標準。</span></pre>
 <p id="N1069E" lang="">While the following IP address and subnet mask looks like a regular decimal number separated by periods:</p>
@@ -97,16 +118,13 @@
 </div>
 </div>
 <div class="activitywrap purpose manystudentswonder wbactivity">
-<div class="activityhead"><a class="purposeType purposemanystudentswonder" href="https://oli.cmu.edu/jcourse/webui/resolver/link/resource.do?src=d87f2f200a0001dc1533ab3caf5a3308&amp;dst=PCH13_msw2" id="PCH13_msw2" target="_blank" title=""><span class="scnReader">MANY STUDENTS WONDER...</span></a>
+<div class="activityhead">
 <div class="activityinfo"></div>
-</div>
-<div class="actContain">
-<h3>Converting from Decimal to Binary</h3>
 </div>
 </div>
 <div class="section" id="network_and_host_addresses">
 <div class="sectionContain">
-<h2>Network and Host Addresses</h2>
+<h2>Network and Host Addresses 網絡和主機地址</h2>
 <p id="N106CB" lang="">An IPv4 network address is further divided into two portions based upon the subnet mask: the network portion and the host portion. A subnet mask is a series of numbers used for routing traffic within a subnetwork. When a subnet mask is used to define the network portion, anywhere there is a binary “11111111” (or 255 in decimal) used, this area is considered part of the network portion. When a binary “00000000” (0 in decimal) is used, this represents the host portion of the address. The host represents a single device on the network, such as your computer or phone.</p>
 <p lang=""><span>IPv4網絡地址根據子網掩碼進一步分為兩部分：網絡部分和主機部分。子網掩碼是用於在子網內路由流量的一系列數字。當使用子網掩碼定義網絡部分時，在任何使用二進制“ 11111111”（或十進制255）的地方，該區域均被視為網絡部分的一部分。當使用二進制“ 00000000”（十進制為0）時，它表示地址的主機部分。主機代表網絡上的單個設備，例如您的計算機或電話。</span></p>
 <p id="N106CE" lang="">The following two tables show the network and host portions of IP addresses.</p>
@@ -182,6 +200,378 @@
 </div>
 </div>
 </div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"> <br/><br/></span></pre>
+<h2>IPv4 Address Classes IPv4地址類別</h2>
+<p id="N10690" lang="">As you can see, when the subnet mask has a 255 in it, it is defining the network portion of the address. In class A addresses, the first octet defines the network, and the last three define the host. In class B addresses, the first two octets define the network, the last two define the host. In class C addresses, the first three octets define the network, the last one defines the host.</p>
+<p lang="">如您所見，當子網掩碼中包含255時，它定義了地址的網絡部分。 在A類地址中，第一個八位位組定義網絡，最後三個八位位組定義主機。 在B類地址中，前兩個八位位組定義網絡，後兩個定義主機。 在C類地址中，前三個八位位組定義網絡，最後一個八位位組定義主機。</p>
+<div class="imagewrap"><span class="image"><img class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image2.png"/></span></div>
+<p id="N1069F" lang="">Subnet masks are used to define the specific network we are referencing. A standard class A subnet mask of 255.0.0.0 is used for all networks where the first octet starts with a number between 1 and 126. Recall from the subnet table below, our network was 10.0.0.0.</p>
+<div class="tlid-input input">
+<div class="source-wrap">
+<div class="input-full-height-wrapper tlid-input-full-height-wrapper">
+<div class="source-input">
+<div class="source-footer-wrap source-or-target-footer">
+<div class="character-count tlid-character-count">
+<div class="cc-ctr normal">265/5000</div>
+</div>
+<div class="source-footer">
+<div class="speech-wrap source-or-target-footer-button left-positioned">
+<div aria-disabled="false" aria-label="開啟語音輸入功能" aria-pressed="false" class="speech-button goog-toolbar-button" data-tooltip="開啟語音輸入功能" data-tooltip-align="t,c" id="gt-speech" role="button" tabindex="0"><span class="jfk-button-img"></span></div>
+</div>
+<div aria-disabled="false" aria-hidden="false" aria-label="聆聽" aria-pressed="false" class="src-tts left-positioned ttsbutton jfk-button-flat source-or-target-footer-button jfk-button" data-tooltip="聆聽" data-tooltip-align="t,c" role="button" tabindex="0">
+<div class="jfk-button-img"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tlid-results-container results-container">
+<div class="tlid-result result-dict-wrapper">
+<div class="result tlid-copy-target">
+<div class="result-header">
+<div aria-label="收藏翻譯" class="starbutton jfk-button-flat jfk-button unstarred" data-tooltip="收藏翻譯" data-tooltip-align="t,c" role="button" tabindex="0">
+<div class="jfk-button-img"></div>
+</div>
+</div>
+<div class="text-wrap tlid-copy-target">
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"><span title="">子網掩碼用於定義我們要引用的特定網絡。</span> <span class="" title="">255.0.0.0的標準A類子網掩碼適用於所有第一個八位位組以1到126之間的數字開頭的網絡。從下面的子網表中回想一下，我們的網絡為10.0.0.0。</span></span></div>
+</div>
+</div>
+</div>
+</div>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<thead>
+<tr>
+<th lang="">IP address (in decimal)</th>
+<th lang="">10</th>
+<th lang="">1</th>
+<th lang="">2</th>
+<th lang="">3</th>
+</tr>
+<tr>
+<th lang="">IP address (in binary)</th>
+<th lang="">00001010</th>
+<th lang="">00000001</th>
+<th lang="">00000010</th>
+<th lang="">00000011</th>
+</tr>
+<tr>
+<th lang="">Subnet mask (in decimal)</th>
+<th lang="">255</th>
+<th lang="">0</th>
+<th lang="">0</th>
+<th lang="">0</th>
+</tr>
+<tr>
+<th lang="">Subnet mask (in binary)</th>
+<th lang="">11111111</th>
+<th lang="">00000000</th>
+<th lang="">00000000</th>
+<th lang="">00000000</th>
+</tr>
+<tr>
+<th lang=""></th>
+<th lang="">Network bits</th>
+<th lang="">Host bits</th>
+<th lang="">Host bits</th>
+<th lang="">Host bits</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+<p id="N106FE" lang="">Therefore, this address fits into the class A category. In this course, we only deal with “classful” subnet masks — the ones that only contain values of 255 and 0. In future courses, you may see other subnet masks used to further break apart the networks.</p>
+<p lang="">因此，該地址屬於A類類別。 在本課程中，我們僅處理“有類”子網掩碼-僅包含255和0的值。在以後的課程中，您可能會看到其他子網掩碼用於進一步拆分網絡。</p>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<thead>
+<tr>
+<th lang=""><em class="bold" lang="">Address Class</em></th>
+<th lang=""><em class="bold" lang="">Value in First Octet</em></th>
+<th lang=""><em class="bold" lang="">Classful Mask (Dotted Decimal)</em></th>
+<th lang=""><em class="bold" lang="">Classful Mask (Prefix Notation)</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td lang="">Class A</td>
+<td lang="">1 – 126</td>
+<td lang="">255.0.0.0</td>
+<td lang="">/8</td>
+</tr>
+<tr class="e">
+<td lang="">Class B</td>
+<td lang="">128 – 191</td>
+<td lang="">255.255.0.0</td>
+<td lang="">/16</td>
+</tr>
+<tr>
+<td lang="">Class C</td>
+<td lang="">192 – 223</td>
+<td lang="">255.255.255.0</td>
+<td lang="">/24</td>
+</tr>
+</tbody>
+</table>
+<p id="N10748" lang="">As you can see in the address classes table, class A references networks with the first octet having a value of 1-126, class B references 128-191, class C references 192-223. There is also a special address called the loopback address, which is 127.0.0.1. The entire range of 127.x.x.x is reserved to support this loopback address. A loopback address is an IP reserved to reference the computer on which you are currently working. Every computer knows to answer up for itself when a reference to 127.0.0.1 is given. This is also known as as the “localhost.”</p>
+<p lang="">如您在地址類別表中看到的，類別A引用第一個八位位組的值是1-126的網絡，類別B引用128-191，類別C引用192-223。 還有一個稱為回送地址的特殊地址，即127.0.0.1。 保留127.x.x.x的整個範圍以支持此環回地址。 回送地址是保留的IP，用於引用您當前正在使用的計算機。 當給出對127.0.0.1的引用時，每台計算機都知道會自己回答。 這也稱為“本地主機”。</p>
+<p id="N1074B" lang="">To route your traffic over the Internet, you are required to have a publically routable IP address. These addresses are globally managed by the Internet Corporation for Assigned Names and Numbers (ICANN). If you desire to have one of these addresses, you must purchase them for use to ensure no one else has that specific number. For most users, this is done for you by your Internet service provider (ISP), but if you have a need for numerous public IP addresses, you can buy a block of them from ICANN.</p>
+<p lang="">要通過Internet路由流量，您需要具有可公開路由的IP地址。 這些地址由互聯網名稱與數字地址分配機構（ICANN）全局管理。 如果您希望擁有這些地址之一，則必須購買它們以確保沒有其他人擁有該特定號碼。 對於大多數用戶而言，這是由Internet服務提供商（ISP）為您完成的，但是如果您需要大量的公共IP地址，則可以從ICANN購買其中的一部分。</p>
+<p id="N1074E" lang="">Private IP addresses, on the other hand, can be used by anyone without any prior coordination. This is because private IP addresses are not routable over the Internet and are only used inside your local area network. For example, at your home, you may have five computers hooked up to your switch and those machines are all using private IP addresses. When you make a request to go outside the network, like to visit a college’s website, your router performs a network address translation (NAT) that allows your private IP address to be converted into a public IP address and a port, which then makes the request on your behalf. There is a specific range of IP addresses that are reserved as private for internal use (by you and others).</p>
+<div class="tlid-input input">
+<div class="source-wrap">
+<div class="input-full-height-wrapper tlid-input-full-height-wrapper">
+<div class="source-input">
+<div class="source-footer-wrap source-or-target-footer">
+<div class="character-count tlid-character-count">
+<div class="cc-ctr normal">739/5000</div>
+</div>
+<div class="source-footer">
+<div class="speech-wrap source-or-target-footer-button left-positioned">
+<div aria-disabled="false" aria-label="開啟語音輸入功能" aria-pressed="false" class="speech-button goog-toolbar-button" data-tooltip="開啟語音輸入功能" data-tooltip-align="t,c" id="gt-speech" role="button" tabindex="0"><span class="jfk-button-img"></span></div>
+</div>
+<div aria-disabled="false" aria-hidden="false" aria-label="聆聽" aria-pressed="false" class="src-tts left-positioned ttsbutton jfk-button-flat source-or-target-footer-button jfk-button" data-tooltip="聆聽" data-tooltip-align="t,c" role="button" tabindex="0">
+<div class="jfk-button-img"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tlid-results-container results-container">
+<div class="tlid-result result-dict-wrapper">
+<div class="result tlid-copy-target">
+<div class="result-header">
+<div aria-label="收藏翻譯" class="starbutton jfk-button-flat jfk-button unstarred" data-tooltip="收藏翻譯" data-tooltip-align="t,c" role="button" tabindex="0">
+<div class="jfk-button-img"></div>
+</div>
+</div>
+<div class="text-wrap tlid-copy-target">
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"><span title="">另一方面，任何人都可以使用私有IP地址，而無需事先協調。</span> <span class="" title="">這是因為專用IP地址無法通過Internet路由，而只能在局域網內使用。</span> <span class="" title="">例如，在您的家裡，您可能有五台計算機連接到交換機，而這些計算機都使用專用IP地址。</span> <span class="" title="">當您發出訪問網絡的請求（例如訪問大學的網站）時，路由器會執行網絡地址轉換（NAT），該轉換可將您的私有IP地址轉換為公共IP地址和端口，從而使</span> <span title="">代表您提出要求。</span> <span class="" title="">有一個特定範圍的IP地址保留為私有（供您和他人使用）供內部使用。</span></span></div>
+</div>
+</div>
+</div>
+</div>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<thead>
+<tr>
+<th lang="">Address Class</th>
+<th lang="">Private Address Range</th>
+<th lang="">Default Subnet Mask</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td lang="">Class A</td>
+<td lang="">10.0.0.0 – 10.255.255.255</td>
+<td lang="">255.0.0.0</td>
+</tr>
+<tr class="e">
+<td lang="">Class B</td>
+<td lang="">172.16.0.0 – 172.31.255.255</td>
+<td lang="">255.255.0.0</td>
+</tr>
+<tr>
+<td lang="">Class C</td>
+<td lang="">192.168.0.0 – 192.168.255.255</td>
+<td lang="">255.255.255.0</td>
+</tr>
+</tbody>
+</table>
+<p id="N10784" lang="">For class A, the range of 10.0.0.0 to 10.255.255.255 are all private addresses. This provides 16.7 million addresses for use. Next, we have class B, which uses the range of 172.16.0.0 to 172.31.255.255. For class C, the range is 192.168.0.0 to 192.168.255.255. For class C, the most common of private IP scopes in use, the subnet mask is 255.255.255.0. This means if you choose 192.168.1.0 for your network, you would have 254 usable IP addresses. You would have this many usable IP addresses because the network is selected using the subnet mask, so only one octet is available for the host portion (there are 256 choices, but the first one (.0) is for the network address, and the last one (.255) is for the broadcast address).</p>
+<div actguid="d87f2f390a0001dc08448ffa3c09875d" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f390a0001dc08448ffa3c09875d&amp;userGUID=d1c2f9970a0001dc43499890ec9e3fd1&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch13_lbd04">
+<div class="activityhead">
+<div class="purposeType purposelearnbydoing" title=""><span class="scnReader">learn by doing</span></div>
+<div class="purposeType purposelearnbydoing" title=""><span class="scnReader">對於A類，範圍10.0.0.0到10.255.255.255都是私有地址。 這提供了1,670萬個地址供使用。 接下來，我們有B類，其使用範圍為172.16.0.0到172.31.255.255。 對於C類，範圍是192.168.0.0到192.168.255.255。 對於C類（最常用的專用IP範圍），子網掩碼為255.255.255.0。 這意味著，如果您為網絡選擇192.168.1.0，則將有254個可用IP地址。 您將擁有這麼多可用的IP地址，因為使用子網掩碼選擇了網絡，因此主機部分只能使用一個八位位組（有256個選擇，而第一個（.0）是網絡地址，並且 最後一個（.255）是廣播地址）。<br/><br/>通過實踐學習</span></div>
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch13_lbd04">
+<div class="page 482442" id="opch13_lbd04">
+<div class="question ddfb" id="482442">
+<div>For each IP address and subnet mask given below, identify the correct address class.</div>
+<div>
+<p>對於下面給出的每個IP地址和子網掩碼，請確定正確的地址類別。</p>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<tbody>
+<tr class="e">
+<td lang=""></td>
+<td lang="">Address class</td>
+</tr>
+<tr>
+<td lang="">
+<p id="N10074" lang="">IP address: 172.16.0.1</p>
+<p id="N10077" lang="">Subnet mask: 255.0.0.0</p>
+</td>
+<td lang=""><span class="i1"> <span class="component"><select id="i1">
+<option id="i1_EMPTY_CHOICE" value="">--</option>
+<option id="i1_opt_0" value="A">Class A</option>
+<option id="i1_opt_1" value="B">Class B</option>
+<option id="i1_opt_2" value="C">Class C</option>
+</select></span><a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/x-oli-workbook_page/javascript();" rel="556210" title="Click for hint"></a></span></td>
+</tr>
+<tr class="e">
+<td lang="">
+<p id="N10082" lang="">IP address: 192.168.1.1</p>
+<p id="N10085" lang="">Subnet mask: 255.255.0.0</p>
+</td>
+<td lang=""><span class="i2"> <span class="component"><select id="i2">
+<option id="i2_EMPTY_CHOICE" value="">--</option>
+<option id="i2_opt_0" value="A">Class A</option>
+<option id="i2_opt_1" value="B">Class B</option>
+<option id="i2_opt_2" value="C">Class C</option>
+</select></span><a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/x-oli-workbook_page/javascript();" rel="556211" title="Click for hint"></a></span></td>
+</tr>
+<tr>
+<td lang="">
+<p id="N10090" lang="">IP address: 10.0.1.1</p>
+<p id="N10093" lang="">Subnet mask: 255.255.255.0</p>
+</td>
+<td lang=""><span class="i3"> <span class="component"><select id="i3">
+<option id="i3_EMPTY_CHOICE" value="">--</option>
+<option id="i3_opt_0" value="A">Class A</option>
+<option id="i3_opt_1" value="B">Class B</option>
+<option id="i3_opt_2" value="C">Class C</option>
+</select></span><a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/x-oli-workbook_page/javascript();" rel="556212" title="Click for hint"></a></span></td>
+</tr>
+<tr class="e">
+<td lang="">
+<p id="N1009E" lang="">IP address: 10.3.2.1</p>
+<p id="N100A1" lang="">Subnet mask: 255.255.0.0</p>
+</td>
+<td lang=""><span class="i4"> <span class="component"><select id="i4">
+<option id="i4_EMPTY_CHOICE" value="">--</option>
+<option id="i4_opt_0" value="A">Class A</option>
+<option id="i4_opt_1" value="B">Class B</option>
+<option id="i4_opt_2" value="C">Class C</option>
+</select></span><a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/x-oli-workbook_page/javascript();" rel="556213" title="Click for hint"></a></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pageControls clearfix" id="pagecontrols-d87f2f390a0001dc08448ffa3c09875d"><a alt="Click to reset all Hints, Feedback, and answers for this activity." class="btnReset" contextguids="d87f2f390a0001dc08448ffa3c09875d" id="reset-d87f2f390a0001dc08448ffa3c09875d"></a>Reset this Activity</div>
+</div>
+</div>
+</div>
+<div actguid="d87f2f3a0a0001dc08c18c2ce9386c72" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f3a0a0001dc08c18c2ce9386c72&amp;userGUID=d1c2f9970a0001dc43499890ec9e3fd1&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose didigetthis flash" id="dpch13_digt03">
+<div class="activityhead">
+<div class="purposeType purposedidigetthis" title=""><span class="scnReader">did I get this</span></div>
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch13_digt03">
+<div class="page 483025 483026" id="opch13_digt03">
+<div class="question ddfb" id="483025">
+<div>A network IP address of 192.168.1.1 and a subnet mask of 255.255.255.0 is an example of a class<span> </span><span class="i1"> <span class="component"><select id="i1">
+<option id="i1_EMPTY_CHOICE" value="">--</option>
+<option id="i1_opt_0" value="A">A</option>
+<option id="i1_opt_1" value="B">B</option>
+<option id="i1_opt_2" value="C">C</option>
+</select></span></span><span> </span>address.</div>
+</div>
+<div class="question" id="483026">
+<div>The “localhost” for any computer uses the loopback address. The loopback IP address is<span> </span><span class="i1"> <span class="component"><input class="medium" id="i1" type="text"/></span></span>.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pageControls clearfix" id="pagecontrols-d87f2f3a0a0001dc08c18c2ce9386c72">
+<div class="tlid-input input">
+<div class="source-wrap">
+<div class="input-full-height-wrapper tlid-input-full-height-wrapper">
+<div class="source-input">
+<div class="source-footer-wrap source-or-target-footer">
+<div class="character-count tlid-character-count">
+<div class="cc-ctr normal"></div>
+</div>
+<div class="source-footer">
+<div class="speech-wrap source-or-target-footer-button left-positioned">
+<div aria-disabled="false" aria-label="開啟語音輸入功能" aria-pressed="false" class="speech-button goog-toolbar-button" data-tooltip="開啟語音輸入功能" data-tooltip-align="t,c" id="gt-speech" role="button" tabindex="0"><span class="jfk-button-img"></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pageControls clearfix">重置此活動<br/>我得到這個了嗎<br/><br/>網絡IP地址192.168.1.1和子網掩碼255.255.255.0是一個類的示例<br/>-<br/> 地址。<br/>任何計算機的“ localhost”都使用回送地址。 環回IP地址是<br/>。<br/>重置此活動</div>
+</div>
+</div>
+</div>
+<div class="section" id="ipv4_data_flows">
+<div class="sectionContain">
+<h2 contenteditable="true" lang=""><span title="Quick scroll up">IPv4 Data Flows</span></h2>
+<p id="N107CD" lang="">In Internet protocol version 4, there are three types of data flows that can occur: unicast, broadcast, and multicast.</p>
+<p lang="">在Internet協議版本4中，可以發生三種類型的數據流：單播，廣播和多播。</p>
+<p id="N107D0" lang="">The most common and most widely used is called unicast. In unicast communication, data travels from a single device to another single device on the network. For example, when you go to www.google.com in your web browser, your computer makes a request to one of Google’s web servers using unicast communication, and one of Google’s computers then sends the data back using unicast communication to just your computer.</p>
+<p lang="">最常見和最廣泛使用的方法稱為單播。 在單播通信中，數據從網絡上的單個設備傳輸到另一個單個設備。 例如，當您使用網絡瀏覽器訪問www.google.com時，您的計算機使用單播通信向一台Google的網絡服務器發出請求，然後其中一台Google的計算機通過單播通信將數據發送回您的計算機。</p>
+<div class="imagewrap"><span class="image"><img alt="One communication node is red, with an arrow pointing to one green communication node. Additional yellow nodes are adjacent to the green node." class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image3.png" title="One communication node is red, with an arrow pointing to one green communication node. Additional yellow nodes are adjacent to the green node."/></span></div>
+<p id="N107E0" lang="">When data is sent as a broadcast communication, it travels from a single device (such as your computer) to every other device on the network. This data will not travel outside the current subnet, though, when using broadcast. An example of broadcast communications would be if your system administrator was going to shut down a switch for maintenance. She may send out a broadcast message to everyone connected to that switch, warning them that their connectivity is going to be lost in the next ten minutes. You can think of this type of messaging like a teacher who is about to announce the next homework assignment. The teacher may say (or broadcast), “Class, here is your homework for tonight.” The message is directed at everyone in the class (or subnet) and they all should receive the message.</p>
+<p lang="">當數據作為廣播通信發送時，它從單個設備（例如您的計算機）傳輸到網絡上的所有其他設備。 但是，使用廣播時，該數據不會在當前子網之外傳播。 例如，如果您的系統管理員要關閉交換機進行維護，則為廣播通信。 她可能會向連接到該交換機的每個人發出廣播消息，警告他們在接下來的十分鐘內將失去連接。 您可以將這種消息傳遞想像為即將宣布下一個作業的老師。 老師可能會說（或廣播）“課，這是你今晚的作業”。 該消息針對班級（或子網）中的每個人，他們所有人都應該收到該消息。</p>
+<div class="imagewrap"><span class="image"><img alt="One communication node is red, and six nodes are green. There are arrows pointing from the one red node to all the green nodes." class="popimg" id="_i_4" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image4.png" title="One communication node is red, and six nodes are green. There are arrows pointing from the one red node to all the green nodes."/></span>
+<p id="N107E8" lang=""></p>
+</div>
+<p id="N107F0" lang="">The final method of data travel is called multicast. In multicast communication, data travels from a single device to multiple other devices on the network, but not necessarily to all of them, like it does when using broadcast communication. Also, this can expand outside of a single subnet. This works well when sharing a resource, such as streaming video. You can think of this type of communication as the Internet equivalent of watching satellite TV. For satellite TV, the signal is being sent out, but you have to “tune in” in order to receive (view) the data.</p>
+<p lang="">數據傳輸的最終方法稱為多播。 在多播通信中，數據從單個設備傳輸到網絡上的多個其他設備，但不一定要傳輸到所有其他設備，就像使用廣播通信時那樣。 而且，這可以擴展到單個子網之外。 在共享資源（例如流視頻）時，此方法效果很好。 您可以將這種類型的通信視為觀看衛星電視的互聯網。 對於衛星電視，正在發送信號，但是您必須“調入”才能接收（查看）數據。</p>
+<div class="imagewrap"><span class="image"><img alt="One communication node is red, three nodes are yellow, and and three nodes are green. There are arrows pointing from the one red node to all three green nodes." class="popimg" id="_i_6" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image5.png" title="One communication node is red, three nodes are yellow, and and three nodes are green. There are arrows pointing from the one red node to all three green nodes."/></span>
+<p id="N107F8" lang=""></p>
+</div>
+<div actguid="d87f2f3d0a0001dc636591baf3b305e2" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f3d0a0001dc636591baf3b305e2&amp;userGUID=d1c2f9970a0001dc43499890ec9e3fd1&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose didigetthis flash" id="dpch13_digt04">
+<div class="activityhead">
+<div class="purposeType purposedidigetthis" title=""><span class="scnReader"></span></div>
+</div>
+<div class="actContain">
+<div class="pageControls clearfix" id="pagecontrols-d87f2f3d0a0001dc636591baf3b305e2">
+<div class="tlid-input input">
+<div class="source-wrap">
+<div class="input-full-height-wrapper tlid-input-full-height-wrapper">
+<div class="source-input">
+<div class="source-footer-wrap source-or-target-footer">
+<div class="character-count tlid-character-count"></div>
+<div class="source-footer">
+<div class="speech-wrap source-or-target-footer-button left-positioned">
+<div aria-disabled="false" aria-label="開啟語音輸入功能" aria-pressed="false" class="speech-button goog-toolbar-button" data-tooltip="開啟語音輸入功能" data-tooltip-align="t,c" id="gt-speech" role="button" tabindex="0"><span class="jfk-button-img"></span></div>
+</div>
+<div aria-disabled="false" aria-hidden="false" aria-label="聆聽" aria-pressed="false" class="src-tts left-positioned ttsbutton jfk-button-flat source-or-target-footer-button jfk-button" data-tooltip="聆聽" data-tooltip-align="t,c" role="button" tabindex="0">
+<div class="jfk-button-img"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tlid-results-container results-container">
+<div class="tlid-result result-dict-wrapper">
+<div class="result tlid-copy-target">
+<div class="result-header">
+<div aria-label="收藏翻譯" class="starbutton jfk-button-flat jfk-button unstarred" data-tooltip="收藏翻譯" data-tooltip-align="t,c" role="button" tabindex="0">
+<div class="jfk-button-img"></div>
+</div>
+</div>
+<div class="text-wrap tlid-copy-target">
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
 <p lang=""><span></span></p>
 <p><span title="Quick scroll up"></span></p>
@@ -191,4 +581,10 @@
 <div class="sectionContain"></div>
 </div>
 </div>
-</div></div></div></div></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
