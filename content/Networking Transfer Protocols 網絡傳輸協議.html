@@ -1,0 +1,433 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>s40923224 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">s40923224 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='首頁.html'>首頁</a><li class='has-children'><a href='IPv4 與 IPv6 地址.html'>IPv4 與 IPv6 地址</a><ul class='dropdown'><li><a href='Overview 總覽-1.html'>Overview 總覽-1</a><li><a href='TCP and IP TCP與IP.html'>TCP and IP TCP與IP</a><li><a href='IPv4 and IPv6 Addresses IPv4 與 IPv6 位址.html'>IPv4 and IPv6 Addresses IPv4 與 IPv6 位址</a><li><a href='IPv4 Addressing IPv4 位址.html'>IPv4 Addressing IPv4 位址</a><li><a href='Addressing Notation 尋址符號.html'>Addressing Notation 尋址符號</a><li><a href='Network and Host Addresses 網絡和主機地址.html'>Network and Host Addresses 網絡和主機地址</a><li><a href='IPv4 Address Classes IPv4地址類別.html'>IPv4 Address Classes IPv4地址類別</a><li><a href='IPv4 Data Flows IPv4數據流.html'>IPv4 Data Flows IPv4數據流</a><li><a href='Assigning an IP Address 分配IP地址.html'>Assigning an IP Address 分配IP地址</a><li><a href='Benefits of IPv6 IPv6的好處.html'>Benefits of IPv6 IPv6的好處</a><li><a href='IPv6 Address Structure IPv6地址結構.html'>IPv6 Address Structure IPv6地址結構</a><li><a href='IPv6 Data Flows IPv6數據流.html'>IPv6 Data Flows IPv6數據流</a></li></ul><li class='has-children'><a href='TCP 與 UDP 協議.html'>TCP 與 UDP 協議</a><ul class='dropdown'><li><a href='Overview 總覽-2.html'>Overview 總覽-2</a><li><a href='TCP and UDP TCP與UDP.html'>TCP and UDP TCP與UDP</a><li><a href='TCP Vs. UDP.html'>TCP Vs. UDP</a><li><a href='TCP Windowing TCP窗口.html'>TCP Windowing TCP窗口</a><li><a href='Networking Transfer Protocols 網絡傳輸協議.html'>Networking Transfer Protocols 網絡傳輸協議</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">TCP Windowing TCP窗口 << <a href='TCP Windowing TCP窗口.html'>Previous</a> <br /><h1>Networking Transfer Protocols 網絡傳輸協議</h1>
+<p id="N10698" lang="">TCP and IP contains a suite of many different transfer protocols for routing information across networks. Each protocol uses a different well-known port to keep its traffic separate from the others. Web browsing occurs using either hypertext transfer protocol (HTTP) or hypertext transfer protocol secure (HTTPS). When it uses HTTP, it uses port 80. If, however, the client requests that the site be sent securely using encryption, then it uses the HTTPS protocol and port 443. When being sent securely, the client and server use either secure sockets layer (SSL) or transport layer security (TLS). These additional layers are put on top of the existing HTTP standard to encrypt the data connection between the client and the server.</p>
+<p lang="">TCP and  IP包含一組用於在網絡之間路由信息的許多不同的傳輸協議。 每種協議使用不同的眾所周知的端口，以使其流量彼此獨立。 使用超文本傳輸協議（HTTP）或安全超文本傳輸協議（HTTPS）進行Web瀏覽。 當使用HTTP時，它將使用端口80。但是，如果客戶端請求使用加密安全地發送站點，則它將使用HTTPS協議和端口443。在安全發送時，客戶端和服務器將使用安全套接字層 （SSL）或傳輸層安全性（TLS）。 這些額外的層放在現有HTTP標準之上，以加密客戶端和服務器之間的數據連接。</p>
+<p id="N1069B" lang="">In addition to browsing the web, there are many other things that can be done on the network and each uses its own dedicated port number to keep the traffic separate. File transfer protocol (FTP) uses port 21. FTP is a standard network protocol used to transfer computer files from one host to another host over a TCP-based network, such as the Internet. FTP is built on a client-server architecture and uses separate control and data connections between the client and the server.</p>
+<p lang="">除了瀏覽網絡之外，網絡上還有許多其他事情可以做，每件事都使用自己的專用端口號來保持流量分開。 文件傳輸協議（FTP）使用端口21。FTP是一種標準網絡協議，用於通過基於TCP的網絡（例如Internet）將計算機文件從一台主機傳輸到另一台主機。 FTP建立在客戶端-服務器體系結構上，並在客戶端和服務器之間使用單獨的控制和數據連接。</p>
+<p id="N1069E" lang="">Telnet is a text-based remote access program for computers that communicates over port 23. Telnet is a user command and an underlying TCP and IP protocol for accessing computers remotely. Through telnet, an administrator or another user can access someone else's computer remotely. Unfortunately, telnet is an unsecured protocol where all the information between the client and server is communicated in clear text, so anyone who can capture this data can read it easily. For this reason, secure shell (SSH), which uses port 22, was introduced to replace telnet. SSH is a cryptographic (encrypted) network protocol for initiating text-based shell sessions on remote machines, similar to telnet but with the added strength of encryption.</p>
+<p lang="">Telnet是用於通過端口23進行通信的計算機的基於文本的遠程訪問程序。Telnet是用戶命令和用於遠程訪問計算機的基礎TCP and IP協議。 通過telnet，管理員或其他用戶可以遠程訪問其他人的計算機。 不幸的是，telnet是一種不安全的協議，其中客戶端與服務器之間的所有信息均以明文形式進行通信，因此任何可以捕獲此數據的人都可以輕鬆地讀取它。 因此，引入了使用端口22的安全外殼（SSH）來代替telnet。 SSH是一種加密（加密）網絡協議，用於在遠程計算機上啟動基於文本的Shell會話，類似於telnet，但具有增強的加密強度。</p>
+<p id="N106A1" lang="">The domain name system (DNS) is a hierarchical distributed naming system for computers, services, or any resource connected to the Internet or to a private network. It allows for the translation of IP addresses to domain names, and from domain names to IP addresses. Remote desktop protocol (RDP) is a proprietary protocol developed by Microsoft, which provides users with a graphical interface to connect to other computers over a network connection using port 3389. The user employs RDP client software for this purpose, while the other computer must run RDP server software. RDP is a huge step up over telnet and SSH, because you receive a graphical environment to control the other user’s machine, just as if you were sitting in front of their Windows desktop.</p>
+<p lang="">域名系統（DNS）是用於計算機，服務或連接到Internet或專用網絡的任何資源的分層分佈式命名系統。 它允許將IP地址轉換為域名，也可以將域名轉換為IP地址。 遠程桌面協議（RDP）是Microsoft開發的專有協議，它為用戶提供圖形界面以使用端口3389通過網絡連接連接到其他計算機。用戶為此目的使用RDP客戶端軟件，而另一台計算機必須運行 RDP服務器軟件。 RDP是telnet和SSH的一大進步，因為您將獲得一個圖形化的環境來控制其他用戶的計算機，就像坐在他們的Windows桌面前一樣。</p>
+<p id="N106A4" lang="">Simple network management protocol (SNMP) is a popular protocol for network management. It is used for collecting information from and configuring network devices, such as servers, printers, hubs, switches, and routers, on an Internet protocol (IP) network. SNMP traffic is sent over port 161.</p>
+<p lang="">簡單網絡管理協議（SNMP）是用於網絡管理的流行協議。 它用於從Internet協議（IP）網絡上的服務器，打印機，集線器，交換機和路由器等網絡設備收集信息並對其進行配置。 SNMP通信通過端口161發送。</p>
+<p id="N106A7" lang="">Server message block (SMB) is a network protocol used for providing shared access to files, printers, and serial ports and miscellaneous communications between nodes on a network using port 139.</p>
+<p lang="">服務器消息塊（SMB）是一種網絡協議，用於提供對文件，打印機和串行端口的共享訪問以及使用端口139的網絡上節點之間的其他通信。</p>
+<p id="N106AA" lang="">The lightweight directory access protocol (LDAP) is a directory service protocol that runs over port 389. LDAP provides a mechanism used to connect to, search, and modify Internet directories. The LDAP directory service is based on a client-server model.輕型目錄訪問協議（LDAP）是在端口389上運行的目錄服務協議。LDAP提供了一種用於連接，搜索和修改Internet目錄的機制。 LDAP目錄服務基於客戶端-服務器模型。</p>
+<p lang=""><span title="Quick scroll up">Email 信箱</span></p>
+<div class="section" id="email">
+<div class="sectionContain">
+<p id="N106B5" lang="">Email has evolved a lot over the years, but still operates on three main protocols. Simple mail transfer protocol (SMTP) is an Internet standard for sending email and most outbound email is sent using SMTP. SMTP uses port 25 to send email from network devices.</p>
+<p lang="">多年來，電子郵件已經有了很大的發展，但仍在三種主要協議上運行。 簡單郵件傳輸協議（SMTP）是用於發送電子郵件的Internet標準，大多數出站電子郵件都是使用SMTP發送的。 SMTP使用端口25從網絡設備發送電子郵件。</p>
+<p id="N106B8" lang="">POP3 is the most common account type for personal email, but messages are typically deleted from the server when you check your email.</p>
+<p lang="">POP3是最常見的個人電子郵件帳戶類型，但是當您檢查電子郵件時，通常會將郵件從服務器中刪除。</p>
+<p id="N106BB" lang="">Internet message access protocol (IMAP) servers let you work with email messages without downloading them to your computer first. This allows for email to be synchronized (synced) across multiple devices, including your desktop, laptop, tablet, and smartphone. IMAP uses port 143 to receive and synchronize your email. The real benefit of using IMAP, especially in today’s multiple device access world, is that it can change the read and delete state of messages across the multiple devices. For example, if I read a message on my phone, when I log into my desktop, the message will also show as having been read already.</p>
+<p lang="">Internet郵件訪問協議（IMAP）服務器使您可以處理電子郵件，而無需先將其下載到計算機上。 這允許跨多個設備（包括台式機，筆記本電腦，平板電腦和智能手機）同步電子郵件。 IMAP使用端口143接收和同步您的電子郵件。 使用IMAP的真正好處（尤其是在當今的多設備訪問世界中）是，它可以更改跨多個設備的消息的讀取和刪除狀態。 例如，如果我在手機上閱讀了一條消息，則當我登錄到桌面時，該消息也將顯示為已被閱讀。</p>
+<div actguid="d87f2f740a0001dc7a56021680c68725" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f740a0001dc7a56021680c68725&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch14_lbd04">
+<div class="activityhead">
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch14_lbd04">
+<div class="page 482759" id="opch14_lbd04">
+<div class="question" id="482759">
+<div>Manny needs to set up an email service for his client that synchronizes email across devices such as laptops, smartphones and tablets. Which protocol should Manny select?</div>
+<div>Manny需要為其客戶設置電子郵件服務，以便跨筆記本電腦，智能手機和平板電腦等設備同步電子郵件。 Manny應該選擇哪種協議？</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582817_i1_rad_0" name="582817_i1_group" type="radio" value="A"/><label for="582817_i1_rad_0">POP3</label></span><span class="radioContainer clearfix"><input id="582817_i1_rad_1" name="582817_i1_group" type="radio" value="B"/><label for="582817_i1_rad_1">SMTP</label></span><span class="radioContainer clearfix"><input id="582817_i1_rad_2" name="582817_i1_group" type="radio" value="C"/><label for="582817_i1_rad_2">IMAP</label></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div actguid="d87f2f750a0001dc2657b0de4c418c67" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f750a0001dc2657b0de4c418c67&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose didigetthis flash" id="dpch14_digt03">
+<div class="activityhead">
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch14_digt03">
+<div class="page 482710" id="opch14_digt03">
+<div class="question ddfb" id="482710">
+<p id="N1006C" lang="">Drag and drop the items to align the activity and port with the protocol.</p>
+<p lang="">拖放項目以使活動和端口與協議對齊。</p>
+<div class="customActivityHolder" data-showinputs="false" height="477" id="custom-482710" layout="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/pch14_digt03_layout.xml" source="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/webcontent/DragDropWrapper.js" type="javascript" width="550">
+<div class="component">
+<table border="0" cellspacing="4" width="100%">
+<tbody>
+<tr>
+<td><em>Protocol</em></td>
+<td><em>Activity</em></td>
+<td><em>Port</em></td>
+</tr>
+<tr>
+<td>HTTP</td>
+<td>
+<div class="target" input_ref="target1"></div>
+</td>
+<td>
+<div class="target" input_ref="target11"></div>
+</td>
+</tr>
+<tr>
+<td>HTTPS</td>
+<td>
+<div class="target" input_ref="target2"></div>
+</td>
+<td>
+<div class="target" input_ref="target12"></div>
+</td>
+</tr>
+<tr>
+<td>FTP</td>
+<td>
+<div class="target" input_ref="target3"></div>
+</td>
+<td>
+<div class="target" input_ref="target13"></div>
+</td>
+</tr>
+<tr>
+<td>Telnet</td>
+<td>
+<div class="target" input_ref="target4"></div>
+</td>
+<td>
+<div class="target" input_ref="target14"></div>
+</td>
+</tr>
+<tr>
+<td>RDP</td>
+<td>
+<div class="target" input_ref="target5"></div>
+</td>
+<td>
+<div class="target" input_ref="target15"></div>
+</td>
+</tr>
+<tr>
+<td>SNMP</td>
+<td>
+<div class="target" input_ref="target6"></div>
+</td>
+<td>
+<div class="target" input_ref="target16"></div>
+</td>
+</tr>
+<tr>
+<td>SMB</td>
+<td>
+<div class="target" input_ref="target7"></div>
+</td>
+<td>
+<div class="target" input_ref="target17"></div>
+</td>
+</tr>
+<tr>
+<td>LDAP</td>
+<td>
+<div class="target" input_ref="target8"></div>
+</td>
+<td>
+<div class="target" input_ref="target18"></div>
+</td>
+</tr>
+<tr>
+<td>SMTP</td>
+<td>
+<div class="target" input_ref="target9"></div>
+</td>
+<td>
+<div class="target" input_ref="target19"></div>
+</td>
+</tr>
+<tr>
+<td>IMAP</td>
+<td>
+<div class="target" input_ref="target10"></div>
+</td>
+<td>
+<div class="target" input_ref="target20"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="input_source">
+<p></p>
+<div class="initiator" input_val="drag3">Transfer computer files from one host to another host over a TCP-based network.</div>
+<div class="initiator" input_val="drag3">通過基於TCP的網絡將計算機文件從一台主機傳輸到另一台主機。</div>
+<span> </span>
+<div class="initiator" input_val="drag20">143</div>
+<span> </span>
+<div class="initiator" input_val="drag19">25</div>
+<div class="initiator" input_val="drag10">Allows email to be synchronized (synced) across multiple devices, including your desktop, laptop, tablet, and smartphone.</div>
+<div class="initiator" input_val="drag10">允許在多個設備（包括台式機，筆記本電腦，平板電腦和智能手機）之間同步電子郵件。</div>
+<div class="initiator" input_val="drag11">80</div>
+<span> </span>
+<div class="initiator" input_val="drag14">23</div>
+<span> </span>
+<div class="initiator" input_val="drag2">Secure web browsing.</div>
+<div class="initiator" input_val="drag2">安全的網頁瀏覽。</div>
+<span> </span>
+<div class="initiator" input_val="drag7">Provides shared access to files.</div>
+<div class="initiator" input_val="drag7">提供對文件的共享訪問。</div>
+<span> </span>
+<div class="initiator" input_val="drag15">3389</div>
+<div class="initiator" input_val="drag8">Provides a mechanism used to connect to, search, and modify Internet directories.</div>
+<div class="initiator" input_val="drag8">提供一種用於連接，搜索和修改Internet目錄的機制。</div>
+<span> </span>
+<div class="initiator" input_val="drag12">443</div>
+<span> </span>
+<div class="initiator" input_val="drag16">161</div>
+<div class="initiator" input_val="drag5">A proprietary protocol developed by Microsoft that provides a user with a graphical interface to connect computers over a network.</div>
+<div class="initiator" input_val="drag5">由Microsoft開發的專有協議，為用戶提供圖形界面以通過網絡連接計算機。</div>
+<div class="initiator" input_val="drag6">Enables collection of information from and configuration of network devices on an Internet protocol (IP) network.</div>
+<div class="initiator" input_val="drag6">支持從Internet協議（IP）網絡上的網絡設備收集信息並進行配置。</div>
+<div class="initiator" input_val="drag18">389</div>
+<span> </span>
+<div class="initiator" input_val="drag4">Text-based remote access program for computers.</div>
+<div class="initiator" input_val="drag4">用於計算機的基於文本的遠程訪問程序。</div>
+<span> </span>
+<div class="initiator" input_val="drag1">Unsecured web browsing.</div>
+<div class="initiator" input_val="drag1">不安全的網頁瀏覽。</div>
+<span> </span>
+<div class="initiator" input_val="drag17">139</div>
+<div class="initiator" input_val="drag9">Allows email to be sent from network devices.</div>
+<div class="initiator" input_val="drag9">允許從網絡設備發送電子郵件。</div>
+<span> </span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div actguid="d87f2f790a0001dc53eb3ff50a12f0d6" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f790a0001dc53eb3ff50a12f0d6&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose didigetthis flash" id="dpch14_digt04">
+<div class="activityhead">
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch14_digt04">
+<div class="page 482721" id="opch14_digt04">
+<div class="question" id="482721">
+<div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="activitywrap purpose checkpoint wbactivity">
+<div class="actContain">
+<div class="activity wbactivity" id="N1071D">
+<div actguid="d87f2f700a0001dc2bd46fe7c1605ec1" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f700a0001dc2bd46fe7c1605ec1&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap compositeNest flash" id="dpch14_checkpoint2">
+<div class="actContain"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div actguid="d87f2f620a0001dc225192ccfc0a4150" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f620a0001dc225192ccfc0a4150&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap compositeNest flash" id="dpch14_checkpoint1">
+<div class="activityhead" style="text-align: center;">
+<div class="activityinfo"></div>
+</div>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><br />TCP Windowing TCP窗口 << <a href='TCP Windowing TCP窗口.html'>Previous</a> </div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

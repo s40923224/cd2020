@@ -133,19 +133,51 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Overview 總覽-1 << <a href='Overview 總覽-1.html'>Previous</a> <a href='IPv4 and IPv6 Addresses IPv4 與 IPv6 位址.html'>Next</a> >> IPv4 and IPv6 Addresses IPv4 與 IPv6 位址<br /><h1>TCP and IP TCP與IP</h1>
-<p id="N1069E" lang="">Computer networks — including the Internet, which is the largest computer network — use Transmission Control Protocol/Internet Protocol or TCP/IP for network communications both internally on a LAN/WAN and externally to the Internet.</p>
-<p lang=""><span>計算機網絡（包括最大的計算機網絡Internet）使用傳輸控制協議/ Internet協議或TCP / IP進行內部LAN / WAN上和外部Internet的網絡通信。</span></p>
-<p id="N106A1" lang="">TCP/IP provides end-to-end connectivity of data. TCP/IP specifies how data should be grouped, addressed, transmitted, routed, and received at the destination address. The TCP/IP model, along with many of its protocols, is maintained and managed by the IETF (Internet Engineering Task Force).</p>
-<p lang=""><span>TCP / IP提供數據的端到端連接。 TCP / IP指定如何在目標地址處對數據進行分組，尋址，傳輸，路由和接收。 TCP / IP模型及其許多協議由IETF（Internet工程任務組）維護和管理。</span></p>
-<p id="N106A4" lang="">TCP/IP is one of two sets of protocols that collectively operate in the transport and network layers of the OSI model.</p>
-<p lang=""><span>TCP / IP是在OSI模型的傳輸層和網絡層中共同運行的兩組協議之一。</span></p>
-<p><span title="Quick scroll up"><span class="imagewrap"><span class="image"><img class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image1.png"/></span><span class="caption" lang=""></span></span></span></p>
-<p id="N106AB" lang="">OSI Model. Image used under CC-BY-SA license from<span> </span><a href="https://commons.wikimedia.org/wiki/File:Osi-model-jb.svg#/media/File:Osi-model-jb.svg" id="_i_1" lang="" target="_blank">Wikimedia Commons</a>.</p>
-<p id="N106B3" lang="">In addition to creating message segments and ensuring connectivity, some of the basic characteristics of the IP protocol ensure that datagrams are routed to the correct destination using a binary addressing scheme. While the process of how the IP addresses are derived from binary (and hexadecimal relationships) is not covered in this course, it is important to know that just as computer CPUs use binary numbers to process data, networking hardware and protocols do so as well.</p>
-<p lang=""><span>除了創建消息段並確保連接性之外，IP協議的某些基本特徵還可以確保使用二進制尋址方案將數據報路由到正確的目的地。儘管本課程未涵蓋如何從二進制（和十六進制關係）派生IP地址的過程，但重要的是要知道，就像計算機CPU使用二進制數來處理數據一樣，網絡硬件和協議也是如此。</span></p>
-<p lang=""><span></span></p>
-<br />Overview 總覽-1 << <a href='Overview 總覽-1.html'>Previous</a> <a href='IPv4 and IPv6 Addresses IPv4 與 IPv6 位址.html'>Next</a> >> IPv4 and IPv6 Addresses IPv4 與 IPv6 位址</div>
+    <div id="tipue_search_content">Benefits of IPv6 IPv6的好處 << <a href='Benefits of IPv6 IPv6的好處.html'>Previous</a> <a href='IPv6 Data Flows IPv6數據流.html'>Next</a> >> IPv6 Data Flows IPv6數據流<br /><h1>IPv6 Address Structure IPv6地址結構</h1>
+<p id="N106D3" lang="">While IPv6 has numerous improvements over IPv4, the most notable thing about IPv6 that people see is the format of the address. Instead of the dotted-decimal notation we used in IPv4 with addresses like 192.168.1.1, IPv6 uses eight groupings of four hexadecimal digits in each group. Each group is then broken apart by a colon (:). An example of an IPv6 address is 2002:0000:0000:0000:0000:0000:4815:54ae.</p>
+<p lang=""><br/>儘管IPv6相對於IPv4進行了許多改進，但是人們看到的關於IPv6的最值得注意的事情是地址的格式。 IPv6不是在IPv4中使用像192.168.1.1這樣的地址使用的點分十進製表示法，而是在每個組中使用四個十六進制數字組成的八組。 然後，每個組用冒號（:)分隔。 IPv6地址的示例是2002：0000：0000：0000：0000：0000：0000：4815：54ae。</p>
+<p id="N106D6" lang="">A hexadecimal digit allows for counting from zero to 15 using the digits 0-9, then the letters A through F. Each hexadecimal digit replaces four binary digits (or four 1s and 0s), allowing us to write an IPv6 address using (at most) 32 hexadecimal digits.</p>
+<p lang="">十六進制數字允許使用數字0-9從0到15進行計數，然後使用字母A至F。每個十六進制數字都替換了四個二進制數字（或四個1和0），從而使我們可以使用（最多為 ）32個十六進制數字。</p>
+<p id="N106D9" lang="">Luckily, the creators of IPv6 allowed for a shorthand. First, anytime there are leading zeros, they can be dropped. This is equivalent to dropping the leading zeros in the number 0010 to 10. The numbers are equivalent, as long as the zeros are in front of the other digits. The second shorthand technique involves several groupings of four zeros. When multiple groupings of four zeros are present, they can be represented by a double colon (::). Note that you can only use the double colon once per address, because the only way to know how many sets of zeros you’ve replaced with the double colon is to compare the shorthand address with the total number of bits available.</p>
+<p lang="">幸運的是，IPv6的創建者允許使用簡寫形式。 首先，只要有前導零，就可以將其丟棄。 這等效於將數字0010中的前導零刪除為10。這些數字是等效的，只要零在其他數字的前面即可。 第二種速記技術涉及四個零的幾個分組。 當存在四個零的多個分組時，可以用雙冒號（：:)表示。 請注意，每個地址只能使用雙冒號一次，因為要知道用雙冒號替換了多少個零集的唯一方法是將速記地址與可用位數進行比較。</p>
+</div>
+</div>
+<div class="examplewrap">
+<div class="exHead"><span class="scnReader">EXAMPLE 範例</span></div>
+<div class="example clearfix">
+<h5></h5>
+<div>
+<p id="N106E0" lang="">2002:0000:0000:0000:0000:0000:0000:4815:54ae can be rewritten. One way to rewrite this address is to eliminate the leading zeros.</p>
+<p lang="">2002：0000：0000：0000：0000：0000：0000：0000：4815：54ae可以重寫。 重寫此地址的一種方法是消除前導零。</p>
+<div class="image shouldbeleft"><img class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image8.png"/></div>
+<p id="N106E7" lang="">By eliminating the leading zeros, 2002:0000:0000:0000:0000:0000:0000:4815:54ae becomes 2002:0:0:0:0:0:0:4815:54ae.</p>
+<p lang="">通過消除前導零，2002：0000：0000：0000：0000：0000：0000：4815：54ae變為2002：0：0：0：0：0：0：0：4815：54ae。</p>
+<p id="N106EA" lang="">Alternatively, this address can be rewritten using a double colon (::) in place of a multiple grouping of four 0s.</p>
+<p lang="">或者，可以使用雙冒號（：:)代替四個0的多個分組來重寫此地址。</p>
+<div class="image shouldbeleft"><img class="popimg" id="_i_1" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image9.png"/></div>
+<p id="N106F1" lang="">By replacing multiple groupings of four 0s with a double colon, 2002:0000:0000:0000:0000:0000:0000:4815:54ae becomes 2002::4815:54ae.</p>
+<p lang="">通過用雙冒號替換四個0的多個分組，2002：0000：0000：0000：0000：0000：0000：0000：4815：54ae變為2002 :: 4815：54ae。</p>
+</div>
+</div>
+</div>
+<div class="examplewrap">
+<div class="exHead"><span class="scnReader">EXAMPLE 範例</span></div>
+<div class="example clearfix">
+<h5></h5>
+<div>
+<p id="N106F7" lang="">2009:0123:4040:0000:0000:0000:000A:100B can be written by both eliminating leading zeros and using double colons.</p>
+<p lang="">可以通過消除前導零和使用雙冒號來編寫2009：0123：4040：0000：0000：0000：000A：100B。</p>
+<div class="image shouldbeleft"><img class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image10.png"/></div>
+<p id="N106FE" lang="">2009:0123:4040:0000:0000:0000:000A:100B becomes 2009:123:4040::A:100B.</p>
+<p lang="">2009：0123：4040：0000：0000：0000：000A：100B變為2009：123：4040 :: A：100B</p>
+<p id="N10701" lang="">As you can see, the IPv6 addresses are more complex than their IPv4 counterparts, but over time, you will get used to seeing how they are written, and what the different notation indicates.</p>
+<p lang="">如您所見，IPv6地址比其對應的IPv4地址要復雜得多，但是隨著時間的流逝，您將習慣於看到它們的寫法以及不同符號的含義。</p>
+</div>
+</div>
+</div>
+<div class="section" id="ipv6_data_flows">
+<div class="sectionContain">
+<br />Benefits of IPv6 IPv6的好處 << <a href='Benefits of IPv6 IPv6的好處.html'>Previous</a> <a href='IPv6 Data Flows IPv6數據流.html'>Next</a> >> IPv6 Data Flows IPv6數據流</div>
         
     <!-- footer -->
       <div class="container">

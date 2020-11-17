@@ -2,7 +2,7 @@
 <p>內容</p>
 <p><span>PCH 13: IPv4 and IPv6 Addresses IPv4 與 IPv6 地址</span><br/><span>PCH 14: TCP and UDP Protocols  TCP 與 UDP 協議</span></p>
 <p><span></span></p>
-<h1 class="title">IPv4 與 IPv6 地址</h1>
+<h1>IPv4 與 IPv6 地址</h1>
 <div class="section" id="N1068A">
 <div class="sectionContain" style="text-align: left;">
 <h2>Overview 總覽</h2>
@@ -29,7 +29,7 @@
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">儘管當今我們的大多數網絡仍使用IPv4，但許多網絡正在遷移到更新的IPv6尋址標準。此外，在過渡期間<br/>，許多網絡都對IPv4和IPv6提供雙重支持。進行此轉換的原因是我們用盡了有效的IPv4地址。 IPv4使用<br/>32位尋址方案，僅提供42億個可用地址，而IPv6使用128位尋址方案。 IPv6允許2128個地址或340,282,<br/>366,920,938,000,000,000,000,000,000,000,000,000,000（3.4 x 1038）個唯一IP地址。 IPv6所<br/>允許的IP地址比人類所能利用的更多。至少這就是我們現在的想法。<br/><br/></span></pre>
 <div class="section" id="N10690">
 <div class="sectionContain">
-<h2 class="title">IPv4 Addressing IPv4 位址</h2>
+<h2>IPv4 Addressing IPv4 位址</h2>
 <h2>Addressing Notation 尋址符號</h2>
 <div class="tlid-input input">
 <div class="source-wrap">
@@ -503,7 +503,7 @@
 </div>
 <div class="section" id="ipv4_data_flows">
 <div class="sectionContain">
-<h2 contenteditable="true" lang=""><span title="Quick scroll up">IPv4 Data Flows</span></h2>
+<h2>IPv4 Data Flows IPv4數據流</h2>
 <p id="N107CD" lang="">In Internet protocol version 4, there are three types of data flows that can occur: unicast, broadcast, and multicast.</p>
 <p lang="">在Internet協議版本4中，可以發生三種類型的數據流：單播，廣播和多播。</p>
 <p id="N107D0" lang="">The most common and most widely used is called unicast. In unicast communication, data travels from a single device to another single device on the network. For example, when you go to www.google.com in your web browser, your computer makes a request to one of Google’s web servers using unicast communication, and one of Google’s computers then sends the data back using unicast communication to just your computer.</p>
@@ -516,13 +516,114 @@
 </div>
 <p id="N107F0" lang="">The final method of data travel is called multicast. In multicast communication, data travels from a single device to multiple other devices on the network, but not necessarily to all of them, like it does when using broadcast communication. Also, this can expand outside of a single subnet. This works well when sharing a resource, such as streaming video. You can think of this type of communication as the Internet equivalent of watching satellite TV. For satellite TV, the signal is being sent out, but you have to “tune in” in order to receive (view) the data.</p>
 <p lang="">數據傳輸的最終方法稱為多播。 在多播通信中，數據從單個設備傳輸到網絡上的多個其他設備，但不一定要傳輸到所有其他設備，就像使用廣播通信時那樣。 而且，這可以擴展到單個子網之外。 在共享資源（例如流視頻）時，此方法效果很好。 您可以將這種類型的通信視為觀看衛星電視的互聯網。 對於衛星電視，正在發送信號，但是您必須“調入”才能接收（查看）數據。</p>
-<div class="imagewrap"><span class="image"><img alt="One communication node is red, three nodes are yellow, and and three nodes are green. There are arrows pointing from the one red node to all three green nodes." class="popimg" id="_i_6" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image5.png" title="One communication node is red, three nodes are yellow, and and three nodes are green. There are arrows pointing from the one red node to all three green nodes."/></span>
-<p id="N107F8" lang=""></p>
-</div>
+<div class="imagewrap"><span class="image"><img alt="One communication node is red, three nodes are yellow, and and three nodes are green. There are arrows pointing from the one red node to all three green nodes." class="popimg" id="_i_6" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image5.png" title="One communication node is red, three nodes are yellow, and and three nodes are green. There are arrows pointing from the one red node to all three green nodes."/></span></div>
+<div class="imagewrap">
+<h2>Assigning an IP Address 分配IP地址</h2>
 <div actguid="d87f2f3d0a0001dc636591baf3b305e2" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f3d0a0001dc636591baf3b305e2&amp;userGUID=d1c2f9970a0001dc43499890ec9e3fd1&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
 <div class="activitywrap purpose didigetthis flash" id="dpch13_digt04">
+<div class="activityhead" style="text-align: center;">
+<div class="purposeType purposedidigetthis" title="">
+<p id="N10690" lang=""></p>
+</div>
+</div>
+<p id="N10690" lang="" style="text-align: center;">There are four components that make up a properly configured IPv4 network client: IP address, subnet mask, default gateway, and domain name system (DNS) IP address.</p>
+<p lang="" style="text-align: center;">正確配置IPv4網絡客戶端的過程由四個部分組成：IP地址，子網掩碼，默認網關和域名系統（DNS）IP</p>
+<p lang="" style="text-align: center;">地址。</p>
+<p id="N10693" lang="" style="text-align: center;">The first component of a properly configured IPv4 network client is the IP address. This is the logical name assigned to that particular host. In the image below, you can see that the host is assigned 200.200.200.5. No other device on the network can have this exact IP address or conflicts will occur. This IP address is like the device’s first name: no one else in its family (or network in this case) can have this IP address.</p>
+<p lang="" style="text-align: center;">正確配置的IPv4網絡客戶端的第一部分是IP地址。這是分配給該特定主機的邏輯名稱。在下圖中，您可以看到為主機分配了200.200.200.5。網絡上的任何其他設備都不能具有此確切的IP地址，否則會發生衝突。該IP地址就像設備的名字一樣：其係列（在這種情況下為網絡）中沒有其他人可以使用此IP地址。</p>
+<div class="imagewrap" style="text-align: center;"><span class="image"><img alt="Screenshot of the Internet protocol (TCP/IP) properties window. There are choices for “automatic private IP address” and “user configured.” “User configured” is selected. The IP address reads 200.200.200.5. The subnet mask reads 255.255.255.0. The default gateway reads 200.200.200.1. Alternate DNS server is blank. Preferred WINS server reads 200.200.200.1. Alternate WINS server is blank." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image6.png" title="Screenshot of the Internet protocol (TCP/IP) properties window. There are choices for “automatic private IP address” and “user configured.” “User configured” is selected. The IP address reads 200.200.200.5. The subnet mask reads 255.255.255.0. The default gateway reads 200.200.200.1. Alternate DNS server is blank. Preferred WINS server reads 200.200.200.1. Alternate WINS server is blank."/></span></div>
+<p id="N106A3" lang="" style="text-align: center;">The second component of a properly configured IPv4 network client is the subnet mask. The subnet mask is required to ensure that the host knows what other IP addresses are on its network (which is defined by the subnet mask). In this example, the default class C subnet mask was used, which is 255.255.255.0. This tells the client that its host’s IP address resides on the 200.200.200.0 network, so other IPs in the 200.200.200.x range will be in the same subnet.</p>
+<p lang="" style="text-align: center;">正確配置的IPv4網絡客戶端的第二個組件是子網掩碼。 需要子網掩碼以確保主機知道其網絡上還有哪些其他IP地址（由子網掩碼定義）。 在此示例中，使用了默認的C類子網掩碼，即255.255.255.0。 這告訴客戶端其主機的IP地址位於200.200.200.0網絡上，因此200.200.200.x範圍內的其他IP將位於同一子網中。</p>
+<p id="N106A6" lang="" style="text-align: center;">The third component of a properly configured IPv4 network client is the default gateway. This is the IP address of the device (normally a router) that connects this particular network to another network. For example, if our host wants to talk to someone outside of the 200.200.200.0 network, it would send the message to this default gateway (200.200.200.10 in our example), and this device will forward that request outside of the network.</p>
+<p lang="" style="text-align: center;">正確配置的IPv4網絡客戶端的第三個組件是默認網關。 這是將該特定網絡連接到另一個網絡的設備（通常是路由器）的IP地址。 例如，如果我們的主機希望與200.200.200.0網絡外部的某人交談，則它將消息發送到該默認網關（在我們的示例中為200.200.200.10），並且該設備將把該請求轉發到網絡外部。</p>
+<p id="N106A9" lang="" style="text-align: center;">The final component of a properly configured IPv4 network client is the DNS server IP address, or WINS server IP. The DNS server is the domain name system server, and is responsible for converting domain names into IP addresses for the host. For example, if you wanted to go to www.google.com, your host doesn’t know where that is, but the DNS server does know the location. Providing your host with the DNS server address allows it to send the request to the DNS server, which will convert the name into an IP address, and send that address back to the requesting host, which can then go to that IP address with the request. A WINS server is like a DNS server, but is specific to Windows NetBIOS computer names and IP addresses. WINS is usually used inside a Windows network, while DNS is used for clients on the Internet.</p>
+<p lang="" style="text-align: center;">正確配置的IPv4網絡客戶端的最後一個組件是DNS服務器IP地址或WINS服務器IP。 DNS服務器是域名系統服務器，並負責將域名轉換為主機的IP地址。 例如，如果您想訪問www.google.com，則您的主機不知道該地址在哪裡，但是DNS服務器確實知道該位置。 為您的主機提供DNS服務器地址可以使其向DNS服務器發送請求，DNS服務器會將名稱轉換為IP地址，然後將該地址發送回請求主機，然後主機可以隨請求轉到該IP地址 。 WINS服務器類似於DNS服務器，但特定於Windows NetBIOS計算機名稱和IP地址。 WINS通常在Windows網絡內部使用，而DNS用於Internet上的客戶端。</p>
+<div actguid="d87f2f420a0001dc09309f7f94887f04" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f420a0001dc09309f7f94887f04&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;" style="text-align: center;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch13_lbd05">
 <div class="activityhead">
-<div class="purposeType purposedidigetthis" title=""><span class="scnReader"></span></div>
+<div class="purposeType purposelearnbydoing" title=""></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch13_lbd05">
+<div class="page 482479" id="opch13_lbd05">
+<div class="question" id="482479">
+<div>True or False: On this network, no other device can have the IP address of 192.168.10.1 or conflicts may occur.</div>
+<div>是非題：在該網絡上，沒有其他設備的IP地址為192.168.10.1，否則可能會發生衝突。</div>
+<div>
+<div class="image shouldbeleft"><img class="popimg" id="N10066" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image7.png"/></div>
+</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582442_i1_rad_0" name="582442_i1_group" type="radio" value="A"/><label for="582442_i1_rad_0">True</label></span><span class="radioContainer clearfix"><input id="582442_i1_rad_1" name="582442_i1_group" type="radio" value="B"/><label for="582442_i1_rad_1">False</label></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p id="N106CB" lang="" style="text-align: center;">IP addresses are assigned to a client or workstation using either static or dynamic configuration. In static configuration, we find a simple method for assigning an address, but it is more time-consuming. This method requires the technician to input the four required pieces of information that make up an address (IP address, subnet mask, default gateway, and DNS server IP address). This is prone to human errors, since a single, mistyped digit will cause the device to be unable to connect to the network. Also, because each client has to be configured individually and no repeating of IP addresses is allowed, this requires detailed documentation of the used IP addresses and becomes impractical for large networks very quickly.</p>
+<p lang="" style="text-align: center;">IP地址使用靜態或動態配置分配給客戶端或工作站。 在靜態配置中，我們找到了一種分配地址的簡單方法，但是這比較耗時。 此方法要求技術人員輸入組成地址（IP地址，子網掩碼，默認網關和DNS服務器IP地址）的四個必需信息。 這很容易發生人為錯誤，因為單個錯誤鍵入的數字將導致設備無法連接到網絡。 另外，由於必須分別配置每個客戶端，並且不允許重複IP地址，因此這需要詳細記錄已使用的IP地址，並且對於大型網絡來說非常不切實際。</p>
+<p id="N106CE" lang="" style="text-align: center;">Dynamic configuration is much quicker and easier. There are two dynamic configuration methods: DHCP and BOOTP. Dynamic host configuration protocol (DHCP) is simple for large networks and less confusing, because a server handles the assignment of the IP addresses for the client, as well as the subnet mask, default gateway, and DNS server. In practice, the network administrator simply provides the DHCP server with a range of IP addresses to hand out, and the DHCP server does all the work for the network administrator. The DHCP server gives a client an IP address and the associated parameters, as well as a “lease time.” The lease time is the specific amount of time the client is allowed to use that IP address. When the lease is nearing the end of its term, the DHCP server gives the client the option of keeping the lease longer (if it is still using it), or the server can take the lease back to reuse (if it cannot get in touch with the client at the lease renewal). Most large-scale networks and most home networks use DHCP for configuration.</p>
+<p lang="" style="text-align: center;">動態配置更快，更容易。動態配置方法有兩種：DHCP和BOOTP。動態主機配置協議（DHCP）對於大型網絡來說很簡單，並且不易混淆，因為服務器可以處理客戶端IP地址的分配以及子網掩碼，默認網關和DNS服務器。實際上，網絡管理員只需為DHCP服務器提供一系列IP地址即可分發，而DHCP服務器將為網絡管理員完成所有工作。 DHCP服務器為客戶端提供IP地址和關聯的參數，以及“租用時間”。租用時間是允許客戶端使用該IP地址的特定時間。當租約即將到期時，DHCP服務器會為客戶端提供延長租約（如果仍在使用租約）的選項，或者服務器可以將租約重新使用（如果無法聯繫）與客戶續約）。大多數大型網絡和大多數家庭網絡都使用DHCP進行配置。</p>
+<p id="N106D1" lang="" style="text-align: center;">Bootstrap protocol, more commonly referred to as BOOTP, is an older dynamic addressing protocol and only assigns IP addresses, subnet masks, and default gateways. BOOTP doesn’t support providing DNS server information or WINS server information. BOOTP is considered obsolete now, as it has been replaced by DHCP. DHCP, on the other hand, is based upon the legacy BOOTP protocol but added DNS, WINS and other variables that are related to newer standards like voice-over IP. If your network is dynamically configured, DHCP is most likely in use.</p>
+<p lang="" style="text-align: center;">Bootstrap協議（通常稱為BOOTP）是一種較舊的動態尋址協議，僅分配IP地址，子網掩碼和默認網關。 BOOTP不支持提供DNS服務器信息或WINS服務器信息。 BOOTP現在已被淘汰，因為它已被DHCP取代。 另一方面，DHCP基於舊式BOOTP協議，但添加了DNS，WINS和其他與諸如語音IP之類的新標準相關的變量。 如果您的網絡是動態配置的，則最有可能使用DHCP。</p>
+<div actguid="d87f2f430a0001dc4510f01699735d02" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f430a0001dc4510f01699735d02&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;" style="text-align: center;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch13_lbd06">
+<div class="activityhead">
+<div class="purposeType purposelearnbydoing" title=""><span class="scnReader"></span></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch13_lbd06">
+<div class="page 482465" id="opch13_lbd06">
+<div class="question ddfb" id="482465">
+<div>A technician must manually enter the IP address into the computer when<span> </span><span class="i1"> <span class="component"><select id="i1">
+<option id="i1_EMPTY_CHOICE" value="">--</option>
+<option id="i1_opt_0" value="A">static</option>
+<option id="i1_opt_1" value="B">dynamic</option>
+</select></span><a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/x-oli-workbook_page/javascript();" rel="556254" title="Click for hint"></a></span><span> </span>configuration is used.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="activitywrap purpose checkpoint wbactivity">
+<div class="activityhead" style="text-align: center;">
+<div class="purposeType purposecheckpoint" title=""><span class="scnReader">checkpoint</span></div>
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity wbactivity" id="N106F3">
+<p id="N106F8" lang="" style="text-align: center;">Take a minute to stop and reflect on your progress for this learning objective.</p>
+<div actguid="d87f2f440a0001dc527ecdd818b76799" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f440a0001dc527ecdd818b76799&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap compositeNest flash" id="dpch13_checkpoint1">
+<div class="activityhead" style="text-align: center;">
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash" style="text-align: center;">
+<div class="flash_obj asx testFlash" id="pch13_checkpoint1">
+<div class="page 482873" id="opch13_checkpoint1">
+<div class="question" id="482873">
+<div>Do you feel comfortable with this material and ready to move on?</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582984_i1_rad_0" name="582984_i1_group" type="radio" value="A"/><label for="582984_i1_rad_0">Yes, I feel confident in my ability to meet this learning objective.</label></span><span class="radioContainer clearfix"><input id="582984_i1_rad_1" name="582984_i1_group" type="radio" value="B"/><label for="582984_i1_rad_1">No, I'd like to see some more material on this learning objective.</label></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pageControls clearfix" id="pagecontrols-d87f2f440a0001dc527ecdd818b76799" style="text-align: center;">技術人員必須在以下情況下手動將IP地址輸入計算機<br/>-<br/> 使用配置。<br/>檢查站<br/><br/>花一點時間停下來，為這個學習目標反思自己的進步。<br/><br/><br/>您對這種材料感到滿意並準備繼續前進嗎？<br/>是的，我對實現此學習目標的能力充滿信心。不，我希望看到有關此學習目標的更多材料。</div>
+<div class="pageControls clearfix" style="text-align: center;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="actContain">
 <div class="pageControls clearfix" id="pagecontrols-d87f2f3d0a0001dc636591baf3b305e2">
@@ -531,13 +632,203 @@
 <div class="input-full-height-wrapper tlid-input-full-height-wrapper">
 <div class="source-input">
 <div class="source-footer-wrap source-or-target-footer">
-<div class="character-count tlid-character-count"></div>
 <div class="source-footer">
 <div class="speech-wrap source-or-target-footer-button left-positioned">
 <div aria-disabled="false" aria-label="開啟語音輸入功能" aria-pressed="false" class="speech-button goog-toolbar-button" data-tooltip="開啟語音輸入功能" data-tooltip-align="t,c" id="gt-speech" role="button" tabindex="0"><span class="jfk-button-img"></span></div>
 </div>
 <div aria-disabled="false" aria-hidden="false" aria-label="聆聽" aria-pressed="false" class="src-tts left-positioned ttsbutton jfk-button-flat source-or-target-footer-button jfk-button" data-tooltip="聆聽" data-tooltip-align="t,c" role="button" tabindex="0">
-<div class="jfk-button-img"></div>
+<div class="jfk-button-img">
+<p id="N10688" lang="">Internet protocol version 6 was developed to provide more public IP addresses, because the IPv4 public addressing space was running out as a result of the proliferation of network devices in our lives. Now, our cellphones, laptops, tablets, thermostats, refrigerators, TVs, and more are all being connected to the network and they all need IP addresses. Due to the 32-bit addresses used by IPv4, we were limited to 4.2 billion IP addresses, but by increasing the address space to 128-bit addresses in IPv6, the number of IP addresses available has increased to 340 undecillion addresses. This is 5 x 10<sup lang="">28<span> </span></sup>IPv6 addresses for every person on the planet, including children.</p>
+<p lang="">Internet協議版本6的開發是為了提供更多的公共IP地址，因為由於我們生活中網絡設備的激增，IPv4公共尋址空間已耗盡。 現在，我們的手機，筆記本電腦，平板電腦，恆溫器，冰箱，電視等已全部連接到網絡，並且它們都需要IP地址。 由於IPv4使用32位地址，因此我們只能使用42億個IP地址，但是通過將地址空間增加到IPv6中的128位地址，可用的IP地址數量已增加到340個十億位地址。 這是地球上每個人（包括孩子）的5 x 1028 IPv6地址。</p>
+<p id="N1068E" lang="">IPv5 was designed, but eventually skipped in implementation, because it was only a 64-bit address and some feared it didn’t provide a large enough pool of available IP addresses. This experimental protocol was abandoned, but many of its concepts were incorporated into the IPv6 protocol, as well as some other protocols.</p>
+<p lang="">IPv5是經過設計的，但最終被跳過，因為它只是一個64位地址，並且有人擔心它不能提供足夠大的可用IP地址池。 該實驗性協議已被放棄，但其許多概念以及其他一些協議已合併到IPv6協議中。</p>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<tbody>
+<tr class="e">
+<td lang=""></td>
+<td align="center" colspan="2" lang="">Number of Addresses</td>
+</tr>
+<tr>
+<td lang="">IPv4</td>
+<td lang="">2<sup lang="">32</sup></td>
+<td lang="">4,294,967,296</td>
+</tr>
+<tr class="e">
+<td lang="">IPv6</td>
+<td lang="">2<sup lang="">128</sup></td>
+<td lang="">340,282,366,920,938,000,000,000,000,000,000,000,000</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="N106BA">
+<div class="sectionContain">
+<h2>Benefits of IPv6 IPv6的好處</h2>
+<p id="N106C1" lang="">IPv6 has many benefits over IPv4, the biggest of which is the number of available IP addresses. In IPv6, there is no broadcast provided, which frees up IP addresses, reduces the amount of traffic sent over the network, and increases bandwidth. Also, IPv6 doesn’t allow packets to be fragmented (broken into pieces) during transmission. This is handled by the protocol by resizing the maximum transmission unit size each time a session is created between two devices.</p>
+<p lang="">與IPv4相比，IPv6有很多好處，其中最大的好處就是可用IP地址的數量。 在IPv6中，沒有提供廣播，這釋放了IP地址，減少了通過網絡發送的流量，並增加了帶寬。 另外，IPv6不允許在傳輸過程中將數據包分段（分成碎片）。 協議通過每次在兩個設備之間創建會話時調整最大傳輸單元大小來解決此問題。</p>
+<p id="N106C4" lang="">A major benefit of IPv6 is that it allows for dual stack implementation, which means that IPv4 and IPv6 can run simultaneously on a device and provide service to the device from either protocol without conflict. IPv6 can also run on top of IPv4 as a tunneled protocol, thereby allowing it to run over older devices, as well.</p>
+<div class="tlid-input input">
+<div class="source-wrap">
+<div class="input-full-height-wrapper tlid-input-full-height-wrapper">
+<div class="source-input">
+<div class="source-footer-wrap source-or-target-footer">
+<div class="source-footer">
+<div class="speech-wrap source-or-target-footer-button left-positioned">
+<div aria-disabled="false" aria-label="開啟語音輸入功能" aria-pressed="false" class="speech-button goog-toolbar-button" data-tooltip="開啟語音輸入功能" data-tooltip-align="t,c" id="gt-speech" role="button" tabindex="0"><br/><span class="jfk-button-img"></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tlid-results-container results-container">
+<div class="tlid-result result-dict-wrapper">
+<div class="result tlid-copy-target">
+<div class="text-wrap tlid-copy-target">
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"><span title="">IPv6的主要優點在於它允許雙協議棧實現，這意味著IPv4和IPv6可以在設備上同時運行，並可以從任一協議向設備提供服務而不會發生衝突。</span> <span class="" title="">IPv6還可以作為隧道協議在IPv4之上運行，從而也可以在較舊的設備上運行。</span></span></div>
+</div>
+</div>
+</div>
+</div>
+<p id="N106C7" lang="">Lastly, the packet headers in IPv6 are much simpler than in IPv4. In IPv4, there are 12 fields that must be completely filled out (adding to overhead and complexity), but in IPv6 this was reduced to the bare minimum of five fields. This includes fields such as source and destination address, as well as quality of service priority.</p>
+<div class="tlid-input input">
+<div class="source-wrap">
+<div class="input-full-height-wrapper tlid-input-full-height-wrapper">
+<div class="source-input">
+<div class="source-footer-wrap source-or-target-footer">
+<div class="source-footer">
+<div class="speech-wrap source-or-target-footer-button left-positioned">
+<div aria-disabled="false" aria-label="開啟語音輸入功能" aria-pressed="false" class="speech-button goog-toolbar-button" data-tooltip="開啟語音輸入功能" data-tooltip-align="t,c" id="gt-speech" role="button" tabindex="0"><span class="jfk-button-img"></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tlid-results-container results-container">
+<div class="tlid-result result-dict-wrapper">
+<div class="result tlid-copy-target">
+<div class="text-wrap tlid-copy-target">
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"><span title="">最後，IPv6中的數據包頭比IPv4中的數據包頭簡單得多。</span> <span class="" title="">在IPv4中，必須完全填寫12個字段（增加了開銷和復雜性），但是在IPv6中，該字段減少到最少五個字段。</span> <span class="" title="">這包括諸如源地址和目標地址以及服務質量優先級之類的字段。</span></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="N106CC">
+<div class="sectionContain">
+<h2>IPv6 Address Structure IPv6地址結構</h2>
+<p id="N106D3" lang="">While IPv6 has numerous improvements over IPv4, the most notable thing about IPv6 that people see is the format of the address. Instead of the dotted-decimal notation we used in IPv4 with addresses like 192.168.1.1, IPv6 uses eight groupings of four hexadecimal digits in each group. Each group is then broken apart by a colon (:). An example of an IPv6 address is 2002:0000:0000:0000:0000:0000:4815:54ae.</p>
+<p lang=""><br/>儘管IPv6相對於IPv4進行了許多改進，但是人們看到的關於IPv6的最值得注意的事情是地址的格式。 IPv6不是在IPv4中使用像192.168.1.1這樣的地址使用的點分十進製表示法，而是在每個組中使用四個十六進制數字組成的八組。 然後，每個組用冒號（:)分隔。 IPv6地址的示例是2002：0000：0000：0000：0000：0000：0000：4815：54ae。</p>
+<p id="N106D6" lang="">A hexadecimal digit allows for counting from zero to 15 using the digits 0-9, then the letters A through F. Each hexadecimal digit replaces four binary digits (or four 1s and 0s), allowing us to write an IPv6 address using (at most) 32 hexadecimal digits.</p>
+<p lang="">十六進制數字允許使用數字0-9從0到15進行計數，然後使用字母A至F。每個十六進制數字都替換了四個二進制數字（或四個1和0），從而使我們可以使用（最多為 ）32個十六進制數字。</p>
+<p id="N106D9" lang="">Luckily, the creators of IPv6 allowed for a shorthand. First, anytime there are leading zeros, they can be dropped. This is equivalent to dropping the leading zeros in the number 0010 to 10. The numbers are equivalent, as long as the zeros are in front of the other digits. The second shorthand technique involves several groupings of four zeros. When multiple groupings of four zeros are present, they can be represented by a double colon (::). Note that you can only use the double colon once per address, because the only way to know how many sets of zeros you’ve replaced with the double colon is to compare the shorthand address with the total number of bits available.</p>
+<p lang="">幸運的是，IPv6的創建者允許使用簡寫形式。 首先，只要有前導零，就可以將其丟棄。 這等效於將數字0010中的前導零刪除為10。這些數字是等效的，只要零在其他數字的前面即可。 第二種速記技術涉及四個零的幾個分組。 當存在四個零的多個分組時，可以用雙冒號（：:)表示。 請注意，每個地址只能使用雙冒號一次，因為要知道用雙冒號替換了多少個零集的唯一方法是將速記地址與可用位數進行比較。</p>
+</div>
+</div>
+<div class="examplewrap">
+<div class="exHead"><span class="scnReader">EXAMPLE 範例</span></div>
+<div class="example clearfix">
+<h5></h5>
+<div>
+<p id="N106E0" lang="">2002:0000:0000:0000:0000:0000:0000:4815:54ae can be rewritten. One way to rewrite this address is to eliminate the leading zeros.</p>
+<p lang="">2002：0000：0000：0000：0000：0000：0000：0000：4815：54ae可以重寫。 重寫此地址的一種方法是消除前導零。</p>
+<div class="image shouldbeleft"><img class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image8.png"/></div>
+<p id="N106E7" lang="">By eliminating the leading zeros, 2002:0000:0000:0000:0000:0000:0000:4815:54ae becomes 2002:0:0:0:0:0:0:4815:54ae.</p>
+<p lang="">通過消除前導零，2002：0000：0000：0000：0000：0000：0000：4815：54ae變為2002：0：0：0：0：0：0：0：4815：54ae。</p>
+<p id="N106EA" lang="">Alternatively, this address can be rewritten using a double colon (::) in place of a multiple grouping of four 0s.</p>
+<p lang="">或者，可以使用雙冒號（：:)代替四個0的多個分組來重寫此地址。</p>
+<div class="image shouldbeleft"><img class="popimg" id="_i_1" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image9.png"/></div>
+<p id="N106F1" lang="">By replacing multiple groupings of four 0s with a double colon, 2002:0000:0000:0000:0000:0000:0000:4815:54ae becomes 2002::4815:54ae.</p>
+<p lang="">通過用雙冒號替換四個0的多個分組，2002：0000：0000：0000：0000：0000：0000：0000：4815：54ae變為2002 :: 4815：54ae。</p>
+</div>
+</div>
+</div>
+<div class="examplewrap">
+<div class="exHead"><span class="scnReader">EXAMPLE 範例</span></div>
+<div class="example clearfix">
+<h5></h5>
+<div>
+<p id="N106F7" lang="">2009:0123:4040:0000:0000:0000:000A:100B can be written by both eliminating leading zeros and using double colons.</p>
+<p lang="">可以通過消除前導零和使用雙冒號來編寫2009：0123：4040：0000：0000：0000：000A：100B。</p>
+<div class="image shouldbeleft"><img class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image10.png"/></div>
+<p id="N106FE" lang="">2009:0123:4040:0000:0000:0000:000A:100B becomes 2009:123:4040::A:100B.</p>
+<p lang="">2009：0123：4040：0000：0000：0000：000A：100B變為2009：123：4040 :: A：100B</p>
+<p id="N10701" lang="">As you can see, the IPv6 addresses are more complex than their IPv4 counterparts, but over time, you will get used to seeing how they are written, and what the different notation indicates.</p>
+<p lang="">如您所見，IPv6地址比其對應的IPv4地址要復雜得多，但是隨著時間的流逝，您將習慣於看到它們的寫法以及不同符號的含義。</p>
+</div>
+</div>
+</div>
+<div class="section" id="ipv6_data_flows">
+<div class="sectionContain">
+<h2>IPv6 Data Flows IPv6數據流</h2>
+<p id="N1070D" lang="">Data flows in IPv6 are similar to those in IPv4. In fact, unicast and multicast work identical to their IPv4 counterparts. But, because there is no broadcast in IPv6, it has been replaced with “anycast.” Anycast allows data to travel from a single source device to the<span> </span><em class="italic" lang="">nearest<span> </span></em>of multiple, but specific, devices on a network. Anycasting is designed to let one host initiate the efficient updating of router tables for a group of hosts. IPv6 can determine which gateway host is closest and sends the packets to that host as though it were a unicast communication. In turn, that host can anycast to another host in the group until all routing tables are updated.</p>
+<p lang="">IPv6中的數據流類似於IPv4中的數據流。 實際上，單播和多播的工作方式與IPv4相同。 但是，由於IPv6中沒有廣播，因此已將其替換為“任何廣播”。 Anycast允許數據從單個源設備傳輸到網絡上多個（但特定的）設備中最接近的一個。 任意廣播旨在讓一個主機為一組主機啟動路由器表的有效更新。 IPv6可以確定哪個網關主機最接近，並將數據包發送到該主機，就好像它是單播通信一樣。 相應地，該主機可以向組中的另一台主機任意廣播，直到更新所有路由表為止。</p>
+<div actguid="d87f2f4d0a0001dc7c1f620d703e6eab" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f4d0a0001dc7c1f620d703e6eab&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch13_lbd07">
+<div class="activityhead">
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch13_lbd07">
+<div class="page 482975 482976 482977" id="opch13_lbd07">
+<div class="question" id="482975">
+<div>Which of the following is not a benefit of IPv6 over IPv4?</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="583097_i1_rad_0" name="583097_i1_group" type="radio" value="A"/><label for="583097_i1_rad_0">More IP addresses.</label></span><span class="radioContainer clearfix"><input id="583097_i1_rad_1" name="583097_i1_group" type="radio" value="B"/><label for="583097_i1_rad_1">Does not allow packets to be fragmented during data transmission.</label></span><span class="radioContainer clearfix"><input id="583097_i1_rad_2" name="583097_i1_group" type="radio" value="C"/><label for="583097_i1_rad_2">Allows for dual stack implementation.</label></span><span class="radioContainer clearfix"><input id="583097_i1_rad_3" name="583097_i1_group" type="radio" value="D"/><label for="583097_i1_rad_3">There are 12 fields of data in the packet header, instead of five.</label></span></div>
+</div>
+<a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/x-oli-workbook_page/javascript();" rel="556923" title="Click for hint"></a></div>
+<div class="question" id="482976">
+<div>Rewrite the IPv6 address 1122:0000:1122:0000:1122:0000:0112:1122. Do not use any spaces in typing your answer.</div>
+<div class="i1"><span class="component"><input class="medium" id="i1" type="text"/></span><a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/x-oli-workbook_page/javascript();" rel="556924" title="Click for hint"></a></div>
+</div>
+<div class="question" id="482977">
+<div>Rewrite the IPv6 address 1122:0000:0000:0000:1234:0001:0002:0003. Do not use any spaces in typing your answer.</div>
+<div class="i1"><span class="component"><input class="medium" id="i1" type="text"/></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="activitywrap purpose checkpoint wbactivity">
+<div class="activityhead">
+<div class="purposeType purposecheckpoint" title=""><span class="scnReader">checkpoint</span></div>
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity wbactivity" id="N10735">
+<div actguid="d87f2f490a0001dc216bfa6279747aab" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f490a0001dc216bfa6279747aab&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap compositeNest flash" id="dpch13_checkpoint2">
+<div class="activityhead">
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch13_checkpoint2">
+<div class="page 482879" id="opch13_checkpoint2">
+<div class="question" id="482879">
+<div>Do you feel comfortable with this material and ready to move on?</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582994_i1_rad_0" name="582994_i1_group" type="radio" value="A"/><label for="582994_i1_rad_0">Yes, I feel confident in my ability to meet this learning objective.</label></span><span class="radioContainer clearfix"><input id="582994_i1_rad_1" name="582994_i1_group" type="radio" value="B"/><label for="582994_i1_rad_1">No, I'd like to see some more material on this learning objective.</label></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -551,27 +842,504 @@
 <div class="result-header">
 <div aria-label="收藏翻譯" class="starbutton jfk-button-flat jfk-button unstarred" data-tooltip="收藏翻譯" data-tooltip-align="t,c" role="button" tabindex="0">
 <div class="jfk-button-img"></div>
+<div class="jfk-button-img"></div>
+<h1>TCP 與 UDP 協議</h1>
+<h2>Overview 總覽</h2>
+<p><span>In this lesson, we will discuss transmission control protocol (TCP) and user datagram protocol (UDP), as well as their associated ports and protocols. We will specifically address the various email ports and protocols in use today, as well as discussing secure sockets layer and transport layer security (SSL/TLS) in the context of web security. Then, we will discuss file transfer protocol (FTP) and hypertext transfer protocol (HTTP) and their use on the Internet today, as well as some older technologies such as Telnet and its more secure alternative, secure shell (SSH).</span></p>
+<p>在本課程中，我們將討論傳輸控制協議（TCP）和用戶數據報協議（UDP）以及它們相關的端口和協議。 我們將專門解決當今使用的各種電子郵件端口和協議，並在Web安全的背景下討論安全套接字層and傳輸層安全性（SSL and TLS）。 然後，我們將討論文件傳輸協議（FTP）和超文本傳輸協議（HTTP）及其在當今Internet上的使用，以及一些較老的技術，例如Telnet及其更安全的替代方法，安全外殼（SSH）。</p>
+<h2>TCP and UDP TCP與UDP</h2>
+<p id="N106A0" lang="">TCP is a connection-oriented protocol that ensures the reliable transport of data segments from one device to another. During transmission, if a segment is dropped, it will be detected and resent or retransmitted by the originator device. Each communication is acknowledged upon receipt, providing a secure model to ensure successful communications. This type of transmission is great for all network data types, especially those that need delivery to be assured.</p>
+<p lang="">TCP是一種面向連接的協議，可確保將數據段從一台設備可靠地傳輸到另一台設備。 在傳輸過程中，如果某個段丟失，則發起方設備將檢測到該段並將其重新發送或重新傳輸。 每次通信在收到後都會得到確認，從而提供一個安全的模型來確保成功進行通信。 這種傳輸方式適用於所有網絡數據類型，尤其是那些需要確保傳輸的網絡數據類型。</p>
+<p id="N106A3" lang="">When a TCP communication is initiated, the originator and receiver perform a “three-way handshake” before starting the data transmission. In the first step, the originator sends a packet with a synchronization (SYN) flag set. Next, the receiver acknowledges receipt of this SYN flagged packet by sending back a synchronization-acknowledged (SYN-ACK) flagged packet. Finally, the originator sends an acknowledgement of the synchronization-acknowledged flagged packet, and then data transmission occurs.</p>
+<p lang="">啟動TCP通信時，發起方和接收方在開始數據傳輸之前執行“三向握手”。 第一步，發起方發送一個設置了同步（SYN）標誌的數據包。 接下來，接收器通過發回一個同步確認（SYN-ACK）標記數據包來確認此SYN標記數據包的接收。 最後，始發者發送對已同步確認的標記數據包的確認，然後發生數據傳輸。</p>
+<div class="examplewrap">
+<div class="exHead"><span class="scnReader">EXAMPLE 範例</span></div>
+<div class="example clearfix">
+<h5></h5>
+<div>
+<p id="N106A8" lang="">Think of this like two students who want to discuss an important project that is upcoming. The first student, Bob, says to Jane, “Jane, I want to talk to you.” Next, Jane says, “Bob, I acknowledge that you want to talk to me and I am ready to listen.” Finally, Bob tells her, “Jane, I understand you are ready to listen. Let’s talk.” At this point, the two students can talk, knowing they are both ready to listen to each other.</p>
+<p lang="">就像兩個想討論即將開展的重要項目的學生一樣。 第一位學生鮑勃對簡說：“簡，我想和你說話。” 接下來，簡說：“鮑勃，我承認你想和我說話，我已經準備好傾聽。” 最後，鮑勃告訴她：“簡，我知道你已經準備好聽了。 讓我們談談。” 此時，兩個學生可以交談，知道他們倆都準備好了互相傾聽。</p>
+<div class="imagewrap"><span class="image"><img class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/PCH14/image1.png"/></span></div>
 </div>
 </div>
-<div class="text-wrap tlid-copy-target">
-<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+</div>
+<p id="N106B8" lang="">UDP, or user datagram protocol, was developed as a connectionless protocol in order to increase the speed of the network over TCP transmissions. Because of the three-way handshake in TCP, as well as all the delivery assurance and quality control, TCP has a good amount of network overhead that slows down its communications. Network engineers realized that sometimes you don’t need delivery assurance or quality control. So UDP was established.</p>
+<p lang="">UDP（或用戶數據報協議）被開發為無連接協議，目的是通過TCP傳輸提高網絡速度。 由於TCP中的三向握手以及所有的交付保證和質量控制，TCP具有大量的網絡開銷，從而降低了其通信速度。 網絡工程師意識到有時您不需要交付保證或質量控制。 這樣就建立了UDP。</p>
+<p id="N106BB" lang="">UDP is considered unreliable, because if a segment is dropped during transmission, the sending device doesn’t know and doesn’t care. There is no retransmission. Once data is sent, it is gone. This is good, though, for audio and video streaming. In these applications, the data transferred is enormously large, and if a single segment is dropped it doesn’t affect the overall quality of the audio or video sent.</p>
+<p lang="">UDP被認為是不可靠的，因為如果在傳輸過程中丟棄了網段，則發送設備將不知道也不在乎。 沒有重傳。 數據一旦發送，就消失了。 但是，這對於音頻和視頻流來說是很好的。 在這些應用中，傳輸的數據非常大，如果丟棄單個片段，則不會影響所發送的音頻或視頻的整體質量。</p>
+<div class="examplewrap">
+<div class="exHead"><span class="scnReader">EXAMPLE 範例</span></div>
+<div class="example clearfix">
+<h5></h5>
+<div>
+<p id="N106C0" lang="">I like to think of UDP as my college calculus teacher. He started at one side of the board at 8 a.m., and by 9 a.m. he was done at the other side of the board. He never asked if the students understood what he said or wrote, he just kept transmitting. This is a great example of UDP.</p>
+<p lang="">我喜歡將UDP視為我的大學微積分老師。 他在上午8點從董事會的一側開始，到上午9點，他在董事會的另一側完成了工作。 他從不問學生是否理解他所說或寫的內容，他只是不斷地傳播。 這是UDP的一個很好的例子。</p>
+<div class="imagewrap"><span class="image"><img class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/PCH14/image2.png"/></span></div>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
-<p lang=""><span></span></p>
-<p><span title="Quick scroll up"></span></p>
-<div class="section" id="tcpip">
-<div class="sectionContain">
-<div class="section" id="N106B8">
+<div class="section" id="N106D0">
 <div class="sectionContain"></div>
+</div>
+<h2>TCP Vs. UDP</h2>
+<p id="N106D7" lang="">TCP and UDP have many differences. TCP is reliable, but UDP is unreliable. TCP focuses on connection-oriented communications using the three-way handshake, while UDP is connectionless. TCP uses windowing, discussed in more detail later, to control the amount of data sent at a given time based on changing network speeds, but UDP simply transmits everything once with no windowing. TCP also supports segment sequencing; UDP just hopes it gets to the destination in the right order. Finally, TCP waits for acknowledgements, but UDP just hopes it got there. To simplify it, TCP is an assured and reliable communication method, UDP is just a best-effort model.</p>
+<p lang="">TCP和UDP有很多區別。 TCP是可靠的，但UDP是不可靠的。 TCP專注於使用三向握手的面向連接的通信，而UDP是無連接的。 TCP使用開窗（稍後將更詳細地討論）來基於不斷變化的網絡速度來控制在給定時間發送的數據量，但是UDP僅傳輸所有信息一次而沒有開窗。 TCP還支持段排序； UDP只是希望它以正確的順序到達目的地。 最後，TCP等待確認，但是UDP只是希望它到達目的地。 為簡化起見，TCP是一種有保證且可靠的通信方法，UDP只是一種盡力而為的模型。</p>
+<div actguid="d87f2f670a0001dc7fae7e2bb7e1fe1e" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f670a0001dc7fae7e2bb7e1fe1e&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch14_lbd01">
+<div class="activityhead">
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch14_lbd01">
+<div class="page 482828 482829" id="opch14_lbd01">
+<div class="question" id="482828">
+<div>True or False: UDP is slower than TCP because UDP transmits everything at once with no windowing.</div>
+<div>是非題：UDP比TCP慢，因為UDP一次無窗口傳輸所有內容。</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582906_i1_rad_0" name="582906_i1_group" type="radio" value="A"/><label for="582906_i1_rad_0">True</label></span><span class="radioContainer clearfix"><input id="582906_i1_rad_1" name="582906_i1_group" type="radio" value="B"/><label for="582906_i1_rad_1">False</label></span></div>
+</div>
+<a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/x-oli-workbook_page/javascript();" rel="556732" title="Click for hint"></a></div>
+<div class="question" id="482829">
+<div>True or False: TCP is more reliable than UDP.</div>
+<div>是非題：TCP比UDP更可靠。</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582907_i1_rad_0" name="582907_i1_group" type="radio" value="A"/><label for="582907_i1_rad_0">True</label></span><span class="radioContainer clearfix"><input id="582907_i1_rad_1" name="582907_i1_group" type="radio" value="B"/><label for="582907_i1_rad_1">False</label></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div actguid="d87f2f680a0001dc695874177a8a648a" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f680a0001dc695874177a8a648a&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose didigetthis flash" id="dpch14_digt01">
+<div class="activityhead">
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch14_digt01">
+<div class="page 482854 482855" id="opch14_digt01">
+<div class="question" id="482854">
+<div>Golda needs to stream large amounts of video quickly. Which protocol would best meet Golda’s needs?</div>
+<div>Golda需要快速流式傳輸大量視頻。 哪種協議最能滿足Golda的需求？</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582942_i1_rad_0" name="582942_i1_group" type="radio" value="A"/><label class="" for="582942_i1_rad_0">TCP</label></span><span class="radioContainer clearfix"><input id="582942_i1_rad_1" name="582942_i1_group" type="radio" value="B"/><label class="correctPrimary" for="582942_i1_rad_1">UDP</label></span><span class="radioContainer clearfix"><input id="582942_i1_rad_2" name="582942_i1_group" type="radio" value="C"/><label class="" for="582942_i1_rad_2">ADP</label></span><span class="radioContainer clearfix"><input id="582942_i1_rad_3" name="582942_i1_group" type="radio" value="D"/><label class="" for="582942_i1_rad_3">None of the above.</label></span></div>
+<div class="feedback clearfix correct"><span class="icon"></span>
+<div class="response">Correct. UDP is best suited for video streaming because it transmits data all at once. By transmitting data all at once, UDP can transmit large amounts of data quickly. Because there is so much data in a video, any loss of small data packets in transmission will likely not be noticeable to the end user.</div>
+<div class="response">正確。 UDP最適合視頻流，因為它可以一次傳輸所有數據。 通過一次全部傳輸數據，UDP可以快速傳輸大量數據。 由於視頻中的數據太多，因此最終用戶可能不會注意到傳輸中丟失的小數據包。</div>
+</div>
+</div>
+</div>
+<div class="question ddfb" id="482855">
+<p id="N1007C" lang="">Using the dropdown menus, select the protocol that best fits the description.</p>
+<p lang="">使用下拉菜單，選擇最適合描述的協議。</p>
+<p id="N1007F" lang="">Connection oriented:<span> </span><span class="i1"> <span class="component"><select id="i1">
+<option id="i1_EMPTY_CHOICE" value="">--</option>
+<option id="i1_opt_0" value="A">TCP</option>
+<option id="i1_opt_1" value="B">UDP</option>
+</select></span></span></p>
+<p id="N10084" lang="">Connectionless:<span> </span><span class="i2"> <span class="component"><select id="i2">
+<option id="i2_EMPTY_CHOICE" value="">--</option>
+<option id="i2_opt_0" value="A">TCP</option>
+<option id="i2_opt_1" value="B">UDP</option>
+</select></span></span></p>
+<p id="N10089" lang="">No windowing or retransmission:<span> </span><span class="i3"> <span class="component"><select id="i3">
+<option id="i3_EMPTY_CHOICE" value="">--</option>
+<option id="i3_opt_0" value="A">TCP</option>
+<option id="i3_opt_1" value="B">UDP</option>
+</select></span></span></p>
+<p id="N1008E" lang="">No sequencing:<span> </span><span class="i4"> <span class="component"><select id="i4">
+<option id="i4_EMPTY_CHOICE" value="">--</option>
+<option id="i4_opt_0" value="A">TCP</option>
+<option id="i4_opt_1" value="B">UDP</option>
+</select></span></span></p>
+<p id="N10093" lang="">Acknowledge segments:<span> </span><span class="i5"> <span class="component"><select id="i5">
+<option id="i5_EMPTY_CHOICE" value="">--</option>
+<option id="i5_opt_0" value="A">TCP</option>
+<option id="i5_opt_1" value="B">UDP</option>
+</select></span></span></p>
+<p id="N10098" lang="">Segment sequencing:<span> </span><span class="i6"> <span class="component"><select id="i6">
+<option id="i6_EMPTY_CHOICE" value="">--</option>
+<option id="i6_opt_0" value="A">TCP</option>
+<option id="i6_opt_1" value="B">UDP</option>
+</select></span></span></p>
+<p id="N1009D" lang="">Segment retransmission and flow control through windowing:<span> </span><span class="i7"> <span class="component"><select id="i7">
+<option id="i7_EMPTY_CHOICE" value="">--</option>
+<option id="i7_opt_0" value="A">TCP</option>
+<option id="i7_opt_1" value="B">UDP</option>
+</select></span></span></p>
+<p id="N100A2" lang="">No acknowledgements:<span> </span><span class="i8"> <span class="component"><select id="i8">
+<option id="i8_EMPTY_CHOICE" value="">--</option>
+<option id="i8_opt_0" value="A">TCP</option>
+<option id="i8_opt_1" value="B">UDP</option>
+</select></span></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="pageControls clearfix" id="pagecontrols-d87f2f680a0001dc695874177a8a648a"><a alt="Click to reset all Hints, Feedback, and answers for this activity." class="btnReset" contextguids="d87f2f680a0001dc695874177a8a648a" id="reset-d87f2f680a0001dc695874177a8a648a"></a>Reset this Activity</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="tcp_windowing">
+<div class="sectionContain">
+<h2 style="text-align: center;">TCP Windowing TCP窗口</h2>
+<p id="N10722" lang="" style="text-align: center;">TCP also supports a concept called windowing. If you have ever copied a file from a network share drive on the Windows operating system, you have seen windowing. Have you ever noticed when you copy a file over the network, it may start out saying there are “2 minutes remaining” until completion, then it jumps up to “3 hours remaining,” then back down to “30 minutes remaining”? This is TCP windowing in action.</p>
+<p lang="" style="text-align: center;">TCP還支持稱為窗口化的概念。 如果您曾經從Windows操作系統上的網絡共享驅動器中復製過文件，則會看到窗口。 您是否曾經註意到通過網絡複製文件時，它可能會說“剩餘2分鐘”直到完成，然後跳到“剩餘3小時”，然後又跳回到“剩餘30分鐘”？ 這是TCP窗口在起作用。</p>
+<p id="N10725" lang="" style="text-align: center;">Essentially, when a communication session is established with TCP, it first performs the three-way handshake. Next, it starts with a small window size, like windows size 1 in the image below, where a single segment is sent over the network and acknowledged. If this is successful, it increases the window size to 2, sending two segments at a time. It continues to do this, increasing the number of segments each time, transmitting more data in each window until an error occurs and retransmissions must be done. If errors occur, TCP understands that it must have been transmitting too fast, so it shrinks the window to slow down communication. As transmissions occur successfully, it again increases the window to push more data in each window. This window size is continually adjusted to get the most segments per window with the least errors in communication.</p>
+<p lang="" style="text-align: center;">本質上，當使用TCP建立通信會話時，它首先執行三向握手。 接下來，它以較小的窗口大小開始，如下面的圖片中的窗口大小1所示，其中單個段通過網絡發送並確認。 如果成功，它將窗口大小增加到2，一次發送兩個段。 它會繼續這樣做，每次增加段數，在每個窗口中傳輸更多數據，直到發生錯誤並必須重新傳輸為止。 如果發生錯誤，TCP知道它一定傳輸速度太快，因此它縮小了窗口以減慢通信速度。 隨著傳輸成功進行，它將再次增加窗口以在每個窗口中推送更多數據。 不斷調整此窗口大小，以使每個窗口獲得最多的段，並且通信錯誤最少。</p>
+<div class="imagewrap" style="text-align: center;"><span class="image"><img class="popimg" id="_i_4" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/PCH14/image3.png"/></span></div>
+<div actguid="d87f2f5e0a0001dc1b677a5c838d016f" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f5e0a0001dc1b677a5c838d016f&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;" style="text-align: center;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch14_lbd02">
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch14_lbd02">
+<div class="page 482806" id="opch14_lbd02">
+<div class="question" id="482806">
+<div>
+<p id="N10065" lang="">Put the steps of a TCP communication session in the correct order.</p>
+<p lang="">以正確的順序放置TCP通信會話的步驟。</p>
+</div>
+<div class="i1">
+<div class="component ordering">
+<div>
+<ul>
+<li answervalue="6" draggable="true" id="i1_li_0">
+<div class="grip"></div>
+<div class="phContain">Segments two and three are sent over the network.</div>
+</li>
+<li answervalue="7" draggable="true" id="i1_li_1">
+<div class="grip"></div>
+<div class="phContain">Segments two and three are acknowledged.</div>
+</li>
+<li answervalue="1" draggable="true" id="i1_li_2">
+<div class="grip"></div>
+<div class="phContain">Three-way handshake.</div>
+</li>
+<li answervalue="4" draggable="true" id="i1_li_3">
+<div class="grip"></div>
+<div class="phContain">Segment one is acknowledged.</div>
+</li>
+<li answervalue="5" draggable="true" id="i1_li_4">
+<div class="grip"></div>
+<div class="phContain">Window size 2 is established.</div>
+</li>
+<li answervalue="2" draggable="true" id="i1_li_5">
+<div class="grip"></div>
+<div class="phContain">Window size 1 is established.</div>
+</li>
+<li answervalue="3" draggable="true" id="i1_li_6">
+<div class="grip"></div>
+<div class="phContain">A single segment (segment 1) is sent over the network.</div>
+</li>
+</ul>
+</div>
+<input type="button" value="Check My Answer"/></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div actguid="d87f2f5f0a0001dc1c968eeed73132fa" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f5f0a0001dc1c968eeed73132fa&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;" style="text-align: center;">
+<div class="activitywrap purpose didigetthis flash" id="dpch14_digt02">
+<div class="activityhead">
+<div class="purposeType purposedidigetthis" title=""><span class="scnReader"></span></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch14_digt02">
+<div class="page 482823" id="opch14_digt02">
+<div class="question" id="482823">
+<div>True or False: In TCP windowing, if an error occurs, TCP understands that it must have been transmitting too fast, so it shrinks the window to slow down communication.</div>
+<div>是非題：在TCP窗口中，如果發生錯誤，則TCP知道傳輸速度太快，因此會縮小窗口以減慢通信速度</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582901_i1_rad_0" name="582901_i1_group" type="radio" value="A"/><label for="582901_i1_rad_0">True</label></span><span class="radioContainer clearfix"><input id="582901_i1_rad_1" name="582901_i1_group" type="radio" value="B"/><label for="582901_i1_rad_1">False</label></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pageControls clearfix" id="pagecontrols-d87f2f5f0a0001dc1c968eeed73132fa"><a alt="Click to reset all Hints, Feedback, and answers for this activity." class="btnReset" contextguids="d87f2f5f0a0001dc1c968eeed73132fa" id="reset-d87f2f5f0a0001dc1c968eeed73132fa"></a>Reset this Activity</div>
+</div>
+</div>
+</div>
+<div class="activitywrap purpose checkpoint wbactivity">
+<div class="activityhead" style="text-align: center;">
+<div class="purposeType purposecheckpoint" title=""><span class="scnReader">checkpoint</span></div>
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity wbactivity" id="N10774">
+<p id="N10779" lang="" style="text-align: center;">Take a minute to stop and reflect on your progress for this learning objective.</p>
+<p lang="" style="text-align: center;">花一點時間停下來，為這個學習目標反思自己的進步。</p>
+<h2 class="title">Networking: Transfer Protocols 網絡：傳輸協議</h2>
+<p id="N10698" lang="">TCP and IP contains a suite of many different transfer protocols for routing information across networks. Each protocol uses a different well-known port to keep its traffic separate from the others. Web browsing occurs using either hypertext transfer protocol (HTTP) or hypertext transfer protocol secure (HTTPS). When it uses HTTP, it uses port 80. If, however, the client requests that the site be sent securely using encryption, then it uses the HTTPS protocol and port 443. When being sent securely, the client and server use either secure sockets layer (SSL) or transport layer security (TLS). These additional layers are put on top of the existing HTTP standard to encrypt the data connection between the client and the server.</p>
+<p lang="">TCP and  IP包含一組用於在網絡之間路由信息的許多不同的傳輸協議。 每種協議使用不同的眾所周知的端口，以使其流量彼此獨立。 使用超文本傳輸協議（HTTP）或安全超文本傳輸協議（HTTPS）進行Web瀏覽。 當使用HTTP時，它將使用端口80。但是，如果客戶端請求使用加密安全地發送站點，則它將使用HTTPS協議和端口443。在安全發送時，客戶端和服務器將使用安全套接字層 （SSL）或傳輸層安全性（TLS）。 這些額外的層放在現有HTTP標準之上，以加密客戶端和服務器之間的數據連接。</p>
+<p id="N1069B" lang="">In addition to browsing the web, there are many other things that can be done on the network and each uses its own dedicated port number to keep the traffic separate. File transfer protocol (FTP) uses port 21. FTP is a standard network protocol used to transfer computer files from one host to another host over a TCP-based network, such as the Internet. FTP is built on a client-server architecture and uses separate control and data connections between the client and the server.</p>
+<p lang="">除了瀏覽網絡之外，網絡上還有許多其他事情可以做，每件事都使用自己的專用端口號來保持流量分開。 文件傳輸協議（FTP）使用端口21。FTP是一種標準網絡協議，用於通過基於TCP的網絡（例如Internet）將計算機文件從一台主機傳輸到另一台主機。 FTP建立在客戶端-服務器體系結構上，並在客戶端和服務器之間使用單獨的控制和數據連接。</p>
+<p id="N1069E" lang="">Telnet is a text-based remote access program for computers that communicates over port 23. Telnet is a user command and an underlying TCP and IP protocol for accessing computers remotely. Through telnet, an administrator or another user can access someone else's computer remotely. Unfortunately, telnet is an unsecured protocol where all the information between the client and server is communicated in clear text, so anyone who can capture this data can read it easily. For this reason, secure shell (SSH), which uses port 22, was introduced to replace telnet. SSH is a cryptographic (encrypted) network protocol for initiating text-based shell sessions on remote machines, similar to telnet but with the added strength of encryption.</p>
+<p lang="">Telnet是用於通過端口23進行通信的計算機的基於文本的遠程訪問程序。Telnet是用戶命令和用於遠程訪問計算機的基礎TCP and IP協議。 通過telnet，管理員或其他用戶可以遠程訪問其他人的計算機。 不幸的是，telnet是一種不安全的協議，其中客戶端與服務器之間的所有信息均以明文形式進行通信，因此任何可以捕獲此數據的人都可以輕鬆地讀取它。 因此，引入了使用端口22的安全外殼（SSH）來代替telnet。 SSH是一種加密（加密）網絡協議，用於在遠程計算機上啟動基於文本的Shell會話，類似於telnet，但具有增強的加密強度。</p>
+<p id="N106A1" lang="">The domain name system (DNS) is a hierarchical distributed naming system for computers, services, or any resource connected to the Internet or to a private network. It allows for the translation of IP addresses to domain names, and from domain names to IP addresses. Remote desktop protocol (RDP) is a proprietary protocol developed by Microsoft, which provides users with a graphical interface to connect to other computers over a network connection using port 3389. The user employs RDP client software for this purpose, while the other computer must run RDP server software. RDP is a huge step up over telnet and SSH, because you receive a graphical environment to control the other user’s machine, just as if you were sitting in front of their Windows desktop.</p>
+<p lang="">域名系統（DNS）是用於計算機，服務或連接到Internet或專用網絡的任何資源的分層分佈式命名系統。 它允許將IP地址轉換為域名，也可以將域名轉換為IP地址。 遠程桌面協議（RDP）是Microsoft開發的專有協議，它為用戶提供圖形界面以使用端口3389通過網絡連接連接到其他計算機。用戶為此目的使用RDP客戶端軟件，而另一台計算機必須運行 RDP服務器軟件。 RDP是telnet和SSH的一大進步，因為您將獲得一個圖形化的環境來控制其他用戶的計算機，就像坐在他們的Windows桌面前一樣。</p>
+<p id="N106A4" lang="">Simple network management protocol (SNMP) is a popular protocol for network management. It is used for collecting information from and configuring network devices, such as servers, printers, hubs, switches, and routers, on an Internet protocol (IP) network. SNMP traffic is sent over port 161.</p>
+<p lang="">簡單網絡管理協議（SNMP）是用於網絡管理的流行協議。 它用於從Internet協議（IP）網絡上的服務器，打印機，集線器，交換機和路由器等網絡設備收集信息並對其進行配置。 SNMP通信通過端口161發送。</p>
+<p id="N106A7" lang="">Server message block (SMB) is a network protocol used for providing shared access to files, printers, and serial ports and miscellaneous communications between nodes on a network using port 139.</p>
+<p lang="">服務器消息塊（SMB）是一種網絡協議，用於提供對文件，打印機和串行端口的共享訪問以及使用端口139的網絡上節點之間的其他通信。</p>
+<p id="N106AA" lang="">The lightweight directory access protocol (LDAP) is a directory service protocol that runs over port 389. LDAP provides a mechanism used to connect to, search, and modify Internet directories. The LDAP directory service is based on a client-server model.輕型目錄訪問協議（LDAP）是在端口389上運行的目錄服務協議。LDAP提供了一種用於連接，搜索和修改Internet目錄的機制。 LDAP目錄服務基於客戶端-服務器模型。</p>
+<p lang=""><span title="Quick scroll up">Email 信箱</span></p>
+<div class="section" id="email">
+<div class="sectionContain">
+<p id="N106B5" lang="">Email has evolved a lot over the years, but still operates on three main protocols. Simple mail transfer protocol (SMTP) is an Internet standard for sending email and most outbound email is sent using SMTP. SMTP uses port 25 to send email from network devices.</p>
+<p lang="">多年來，電子郵件已經有了很大的發展，但仍在三種主要協議上運行。 簡單郵件傳輸協議（SMTP）是用於發送電子郵件的Internet標準，大多數出站電子郵件都是使用SMTP發送的。 SMTP使用端口25從網絡設備發送電子郵件。</p>
+<p id="N106B8" lang="">POP3 is the most common account type for personal email, but messages are typically deleted from the server when you check your email.</p>
+<p lang="">POP3是最常見的個人電子郵件帳戶類型，但是當您檢查電子郵件時，通常會將郵件從服務器中刪除。</p>
+<p id="N106BB" lang="">Internet message access protocol (IMAP) servers let you work with email messages without downloading them to your computer first. This allows for email to be synchronized (synced) across multiple devices, including your desktop, laptop, tablet, and smartphone. IMAP uses port 143 to receive and synchronize your email. The real benefit of using IMAP, especially in today’s multiple device access world, is that it can change the read and delete state of messages across the multiple devices. For example, if I read a message on my phone, when I log into my desktop, the message will also show as having been read already.</p>
+<p lang="">Internet郵件訪問協議（IMAP）服務器使您可以處理電子郵件，而無需先將其下載到計算機上。 這允許跨多個設備（包括台式機，筆記本電腦，平板電腦和智能手機）同步電子郵件。 IMAP使用端口143接收和同步您的電子郵件。 使用IMAP的真正好處（尤其是在當今的多設備訪問世界中）是，它可以更改跨多個設備的消息的讀取和刪除狀態。 例如，如果我在手機上閱讀了一條消息，則當我登錄到桌面時，該消息也將顯示為已被閱讀。</p>
+<div actguid="d87f2f740a0001dc7a56021680c68725" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f740a0001dc7a56021680c68725&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch14_lbd04">
+<div class="activityhead">
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch14_lbd04">
+<div class="page 482759" id="opch14_lbd04">
+<div class="question" id="482759">
+<div>Manny needs to set up an email service for his client that synchronizes email across devices such as laptops, smartphones and tablets. Which protocol should Manny select?</div>
+<div>Manny需要為其客戶設置電子郵件服務，以便跨筆記本電腦，智能手機和平板電腦等設備同步電子郵件。 Manny應該選擇哪種協議？</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582817_i1_rad_0" name="582817_i1_group" type="radio" value="A"/><label for="582817_i1_rad_0">POP3</label></span><span class="radioContainer clearfix"><input id="582817_i1_rad_1" name="582817_i1_group" type="radio" value="B"/><label for="582817_i1_rad_1">SMTP</label></span><span class="radioContainer clearfix"><input id="582817_i1_rad_2" name="582817_i1_group" type="radio" value="C"/><label for="582817_i1_rad_2">IMAP</label></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div actguid="d87f2f750a0001dc2657b0de4c418c67" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f750a0001dc2657b0de4c418c67&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose didigetthis flash" id="dpch14_digt03">
+<div class="activityhead">
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch14_digt03">
+<div class="page 482710" id="opch14_digt03">
+<div class="question ddfb" id="482710">
+<p id="N1006C" lang="">Drag and drop the items to align the activity and port with the protocol.</p>
+<p lang="">拖放項目以使活動和端口與協議對齊。</p>
+<div class="customActivityHolder" data-showinputs="false" height="477" id="custom-482710" layout="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/pch14_digt03_layout.xml" source="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/webcontent/DragDropWrapper.js" type="javascript" width="550">
+<div class="component">
+<table border="0" cellspacing="4" width="100%">
+<tbody>
+<tr>
+<td><em>Protocol</em></td>
+<td><em>Activity</em></td>
+<td><em>Port</em></td>
+</tr>
+<tr>
+<td>HTTP</td>
+<td>
+<div class="target" input_ref="target1"></div>
+</td>
+<td>
+<div class="target" input_ref="target11"></div>
+</td>
+</tr>
+<tr>
+<td>HTTPS</td>
+<td>
+<div class="target" input_ref="target2"></div>
+</td>
+<td>
+<div class="target" input_ref="target12"></div>
+</td>
+</tr>
+<tr>
+<td>FTP</td>
+<td>
+<div class="target" input_ref="target3"></div>
+</td>
+<td>
+<div class="target" input_ref="target13"></div>
+</td>
+</tr>
+<tr>
+<td>Telnet</td>
+<td>
+<div class="target" input_ref="target4"></div>
+</td>
+<td>
+<div class="target" input_ref="target14"></div>
+</td>
+</tr>
+<tr>
+<td>RDP</td>
+<td>
+<div class="target" input_ref="target5"></div>
+</td>
+<td>
+<div class="target" input_ref="target15"></div>
+</td>
+</tr>
+<tr>
+<td>SNMP</td>
+<td>
+<div class="target" input_ref="target6"></div>
+</td>
+<td>
+<div class="target" input_ref="target16"></div>
+</td>
+</tr>
+<tr>
+<td>SMB</td>
+<td>
+<div class="target" input_ref="target7"></div>
+</td>
+<td>
+<div class="target" input_ref="target17"></div>
+</td>
+</tr>
+<tr>
+<td>LDAP</td>
+<td>
+<div class="target" input_ref="target8"></div>
+</td>
+<td>
+<div class="target" input_ref="target18"></div>
+</td>
+</tr>
+<tr>
+<td>SMTP</td>
+<td>
+<div class="target" input_ref="target9"></div>
+</td>
+<td>
+<div class="target" input_ref="target19"></div>
+</td>
+</tr>
+<tr>
+<td>IMAP</td>
+<td>
+<div class="target" input_ref="target10"></div>
+</td>
+<td>
+<div class="target" input_ref="target20"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="input_source">
+<p></p>
+<div class="initiator" input_val="drag3">Transfer computer files from one host to another host over a TCP-based network.</div>
+<div class="initiator" input_val="drag3">通過基於TCP的網絡將計算機文件從一台主機傳輸到另一台主機。</div>
+<span> </span>
+<div class="initiator" input_val="drag20">143</div>
+<span> </span>
+<div class="initiator" input_val="drag19">25</div>
+<div class="initiator" input_val="drag10">Allows email to be synchronized (synced) across multiple devices, including your desktop, laptop, tablet, and smartphone.</div>
+<div class="initiator" input_val="drag10">允許在多個設備（包括台式機，筆記本電腦，平板電腦和智能手機）之間同步電子郵件。</div>
+<div class="initiator" input_val="drag11">80</div>
+<span> </span>
+<div class="initiator" input_val="drag14">23</div>
+<span> </span>
+<div class="initiator" input_val="drag2">Secure web browsing.</div>
+<div class="initiator" input_val="drag2">安全的網頁瀏覽。</div>
+<span> </span>
+<div class="initiator" input_val="drag7">Provides shared access to files.</div>
+<div class="initiator" input_val="drag7">提供對文件的共享訪問。</div>
+<span> </span>
+<div class="initiator" input_val="drag15">3389</div>
+<div class="initiator" input_val="drag8">Provides a mechanism used to connect to, search, and modify Internet directories.</div>
+<div class="initiator" input_val="drag8">提供一種用於連接，搜索和修改Internet目錄的機制。</div>
+<span> </span>
+<div class="initiator" input_val="drag12">443</div>
+<span> </span>
+<div class="initiator" input_val="drag16">161</div>
+<div class="initiator" input_val="drag5">A proprietary protocol developed by Microsoft that provides a user with a graphical interface to connect computers over a network.</div>
+<div class="initiator" input_val="drag5">由Microsoft開發的專有協議，為用戶提供圖形界面以通過網絡連接計算機。</div>
+<div class="initiator" input_val="drag6">Enables collection of information from and configuration of network devices on an Internet protocol (IP) network.</div>
+<div class="initiator" input_val="drag6">支持從Internet協議（IP）網絡上的網絡設備收集信息並進行配置。</div>
+<div class="initiator" input_val="drag18">389</div>
+<span> </span>
+<div class="initiator" input_val="drag4">Text-based remote access program for computers.</div>
+<div class="initiator" input_val="drag4">用於計算機的基於文本的遠程訪問程序。</div>
+<span> </span>
+<div class="initiator" input_val="drag1">Unsecured web browsing.</div>
+<div class="initiator" input_val="drag1">不安全的網頁瀏覽。</div>
+<span> </span>
+<div class="initiator" input_val="drag17">139</div>
+<div class="initiator" input_val="drag9">Allows email to be sent from network devices.</div>
+<div class="initiator" input_val="drag9">允許從網絡設備發送電子郵件。</div>
+<span> </span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div actguid="d87f2f790a0001dc53eb3ff50a12f0d6" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f790a0001dc53eb3ff50a12f0d6&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose didigetthis flash" id="dpch14_digt04">
+<div class="activityhead">
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch14_digt04">
+<div class="page 482721" id="opch14_digt04">
+<div class="question" id="482721">
+<div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="activitywrap purpose checkpoint wbactivity">
+<div class="actContain">
+<div class="activity wbactivity" id="N1071D">
+<div actguid="d87f2f700a0001dc2bd46fe7c1605ec1" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f700a0001dc2bd46fe7c1605ec1&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap compositeNest flash" id="dpch14_checkpoint2">
+<div class="actContain"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div actguid="d87f2f620a0001dc225192ccfc0a4150" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f620a0001dc225192ccfc0a4150&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap compositeNest flash" id="dpch14_checkpoint1">
+<div class="activityhead" style="text-align: center;">
+<div class="activityinfo"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>

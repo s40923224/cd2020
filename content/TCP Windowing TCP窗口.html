@@ -133,19 +133,99 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Overview 總覽-1 << <a href='Overview 總覽-1.html'>Previous</a> <a href='IPv4 and IPv6 Addresses IPv4 與 IPv6 位址.html'>Next</a> >> IPv4 and IPv6 Addresses IPv4 與 IPv6 位址<br /><h1>TCP and IP TCP與IP</h1>
-<p id="N1069E" lang="">Computer networks — including the Internet, which is the largest computer network — use Transmission Control Protocol/Internet Protocol or TCP/IP for network communications both internally on a LAN/WAN and externally to the Internet.</p>
-<p lang=""><span>計算機網絡（包括最大的計算機網絡Internet）使用傳輸控制協議/ Internet協議或TCP / IP進行內部LAN / WAN上和外部Internet的網絡通信。</span></p>
-<p id="N106A1" lang="">TCP/IP provides end-to-end connectivity of data. TCP/IP specifies how data should be grouped, addressed, transmitted, routed, and received at the destination address. The TCP/IP model, along with many of its protocols, is maintained and managed by the IETF (Internet Engineering Task Force).</p>
-<p lang=""><span>TCP / IP提供數據的端到端連接。 TCP / IP指定如何在目標地址處對數據進行分組，尋址，傳輸，路由和接收。 TCP / IP模型及其許多協議由IETF（Internet工程任務組）維護和管理。</span></p>
-<p id="N106A4" lang="">TCP/IP is one of two sets of protocols that collectively operate in the transport and network layers of the OSI model.</p>
-<p lang=""><span>TCP / IP是在OSI模型的傳輸層和網絡層中共同運行的兩組協議之一。</span></p>
-<p><span title="Quick scroll up"><span class="imagewrap"><span class="image"><img class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image1.png"/></span><span class="caption" lang=""></span></span></span></p>
-<p id="N106AB" lang="">OSI Model. Image used under CC-BY-SA license from<span> </span><a href="https://commons.wikimedia.org/wiki/File:Osi-model-jb.svg#/media/File:Osi-model-jb.svg" id="_i_1" lang="" target="_blank">Wikimedia Commons</a>.</p>
-<p id="N106B3" lang="">In addition to creating message segments and ensuring connectivity, some of the basic characteristics of the IP protocol ensure that datagrams are routed to the correct destination using a binary addressing scheme. While the process of how the IP addresses are derived from binary (and hexadecimal relationships) is not covered in this course, it is important to know that just as computer CPUs use binary numbers to process data, networking hardware and protocols do so as well.</p>
-<p lang=""><span>除了創建消息段並確保連接性之外，IP協議的某些基本特徵還可以確保使用二進制尋址方案將數據報路由到正確的目的地。儘管本課程未涵蓋如何從二進制（和十六進制關係）派生IP地址的過程，但重要的是要知道，就像計算機CPU使用二進制數來處理數據一樣，網絡硬件和協議也是如此。</span></p>
-<p lang=""><span></span></p>
-<br />Overview 總覽-1 << <a href='Overview 總覽-1.html'>Previous</a> <a href='IPv4 and IPv6 Addresses IPv4 與 IPv6 位址.html'>Next</a> >> IPv4 and IPv6 Addresses IPv4 與 IPv6 位址</div>
+    <div id="tipue_search_content">TCP Vs. UDP << <a href='TCP Vs. UDP.html'>Previous</a> <a href='Networking Transfer Protocols 網絡傳輸協議.html'>Next</a> >> Networking Transfer Protocols 網絡傳輸協議<br /><h1>TCP Windowing TCP窗口</h1>
+<p id="N10722" lang="" style="text-align: center;">TCP also supports a concept called windowing. If you have ever copied a file from a network share drive on the Windows operating system, you have seen windowing. Have you ever noticed when you copy a file over the network, it may start out saying there are “2 minutes remaining” until completion, then it jumps up to “3 hours remaining,” then back down to “30 minutes remaining”? This is TCP windowing in action.</p>
+<p lang="" style="text-align: center;">TCP還支持稱為窗口化的概念。 如果您曾經從Windows操作系統上的網絡共享驅動器中復製過文件，則會看到窗口。 您是否曾經註意到通過網絡複製文件時，它可能會說“剩餘2分鐘”直到完成，然後跳到“剩餘3小時”，然後又跳回到“剩餘30分鐘”？ 這是TCP窗口在起作用。</p>
+<p id="N10725" lang="" style="text-align: center;">Essentially, when a communication session is established with TCP, it first performs the three-way handshake. Next, it starts with a small window size, like windows size 1 in the image below, where a single segment is sent over the network and acknowledged. If this is successful, it increases the window size to 2, sending two segments at a time. It continues to do this, increasing the number of segments each time, transmitting more data in each window until an error occurs and retransmissions must be done. If errors occur, TCP understands that it must have been transmitting too fast, so it shrinks the window to slow down communication. As transmissions occur successfully, it again increases the window to push more data in each window. This window size is continually adjusted to get the most segments per window with the least errors in communication.</p>
+<p lang="" style="text-align: center;">本質上，當使用TCP建立通信會話時，它首先執行三向握手。 接下來，它以較小的窗口大小開始，如下面的圖片中的窗口大小1所示，其中單個段通過網絡發送並確認。 如果成功，它將窗口大小增加到2，一次發送兩個段。 它會繼續這樣做，每次增加段數，在每個窗口中傳輸更多數據，直到發生錯誤並必須重新傳輸為止。 如果發生錯誤，TCP知道它一定傳輸速度太快，因此它縮小了窗口以減慢通信速度。 隨著傳輸成功進行，它將再次增加窗口以在每個窗口中推送更多數據。 不斷調整此窗口大小，以使每個窗口獲得最多的段，並且通信錯誤最少。</p>
+<div class="imagewrap" style="text-align: center;"><span class="image"><img class="popimg" id="_i_4" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/PCH14/image3.png"/></span></div>
+<div actguid="d87f2f5e0a0001dc1b677a5c838d016f" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f5e0a0001dc1b677a5c838d016f&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;" style="text-align: center;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch14_lbd02">
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch14_lbd02">
+<div class="page 482806" id="opch14_lbd02">
+<div class="question" id="482806">
+<div>
+<p id="N10065" lang="">Put the steps of a TCP communication session in the correct order.</p>
+<p lang="">以正確的順序放置TCP通信會話的步驟。</p>
+</div>
+<div class="i1">
+<div class="component ordering">
+<div>
+<ul>
+<li answervalue="6" draggable="true" id="i1_li_0">
+<div class="grip"></div>
+<div class="phContain">Segments two and three are sent over the network.</div>
+</li>
+<li answervalue="7" draggable="true" id="i1_li_1">
+<div class="grip"></div>
+<div class="phContain">Segments two and three are acknowledged.</div>
+</li>
+<li answervalue="1" draggable="true" id="i1_li_2">
+<div class="grip"></div>
+<div class="phContain">Three-way handshake.</div>
+</li>
+<li answervalue="4" draggable="true" id="i1_li_3">
+<div class="grip"></div>
+<div class="phContain">Segment one is acknowledged.</div>
+</li>
+<li answervalue="5" draggable="true" id="i1_li_4">
+<div class="grip"></div>
+<div class="phContain">Window size 2 is established.</div>
+</li>
+<li answervalue="2" draggable="true" id="i1_li_5">
+<div class="grip"></div>
+<div class="phContain">Window size 1 is established.</div>
+</li>
+<li answervalue="3" draggable="true" id="i1_li_6">
+<div class="grip"></div>
+<div class="phContain">A single segment (segment 1) is sent over the network.</div>
+</li>
+</ul>
+</div>
+<input type="button" value="Check My Answer"/></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div actguid="d87f2f5f0a0001dc1c968eeed73132fa" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f5f0a0001dc1c968eeed73132fa&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;" style="text-align: center;">
+<div class="activitywrap purpose didigetthis flash" id="dpch14_digt02">
+<div class="activityhead">
+<div class="purposeType purposedidigetthis" title=""><span class="scnReader"></span></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch14_digt02">
+<div class="page 482823" id="opch14_digt02">
+<div class="question" id="482823">
+<div>True or False: In TCP windowing, if an error occurs, TCP understands that it must have been transmitting too fast, so it shrinks the window to slow down communication.</div>
+<div>是非題：在TCP窗口中，如果發生錯誤，則TCP知道傳輸速度太快，因此會縮小窗口以減慢通信速度</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582901_i1_rad_0" name="582901_i1_group" type="radio" value="A"/><label for="582901_i1_rad_0">True</label></span><span class="radioContainer clearfix"><input id="582901_i1_rad_1" name="582901_i1_group" type="radio" value="B"/><label for="582901_i1_rad_1">False</label></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pageControls clearfix" id="pagecontrols-d87f2f5f0a0001dc1c968eeed73132fa"><a alt="Click to reset all Hints, Feedback, and answers for this activity." class="btnReset" contextguids="d87f2f5f0a0001dc1c968eeed73132fa" id="reset-d87f2f5f0a0001dc1c968eeed73132fa"></a>Reset this Activity</div>
+</div>
+</div>
+</div>
+<div class="activitywrap purpose checkpoint wbactivity">
+<div class="activityhead" style="text-align: center;">
+<div class="purposeType purposecheckpoint" title=""><span class="scnReader">checkpoint</span></div>
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity wbactivity" id="N10774">
+<p id="N10779" lang="" style="text-align: center;">Take a minute to stop and reflect on your progress for this learning objective.</p>
+<p lang="" style="text-align: center;">花一點時間停下來，為這個學習目標反思自己的進步。</p>
+<br />TCP Vs. UDP << <a href='TCP Vs. UDP.html'>Previous</a> <a href='Networking Transfer Protocols 網絡傳輸協議.html'>Next</a> >> Networking Transfer Protocols 網絡傳輸協議</div>
         
     <!-- footer -->
       <div class="container">

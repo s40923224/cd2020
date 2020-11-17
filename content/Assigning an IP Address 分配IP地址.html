@@ -1,0 +1,330 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>s40923224 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">s40923224 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='首頁.html'>首頁</a><li class='has-children'><a href='IPv4 與 IPv6 地址.html'>IPv4 與 IPv6 地址</a><ul class='dropdown'><li><a href='Overview 總覽-1.html'>Overview 總覽-1</a><li><a href='TCP and IP TCP與IP.html'>TCP and IP TCP與IP</a><li><a href='IPv4 and IPv6 Addresses IPv4 與 IPv6 位址.html'>IPv4 and IPv6 Addresses IPv4 與 IPv6 位址</a><li><a href='IPv4 Addressing IPv4 位址.html'>IPv4 Addressing IPv4 位址</a><li><a href='Addressing Notation 尋址符號.html'>Addressing Notation 尋址符號</a><li><a href='Network and Host Addresses 網絡和主機地址.html'>Network and Host Addresses 網絡和主機地址</a><li><a href='IPv4 Address Classes IPv4地址類別.html'>IPv4 Address Classes IPv4地址類別</a><li><a href='IPv4 Data Flows IPv4數據流.html'>IPv4 Data Flows IPv4數據流</a><li><a href='Assigning an IP Address 分配IP地址.html'>Assigning an IP Address 分配IP地址</a><li><a href='Benefits of IPv6 IPv6的好處.html'>Benefits of IPv6 IPv6的好處</a><li><a href='IPv6 Address Structure IPv6地址結構.html'>IPv6 Address Structure IPv6地址結構</a><li><a href='IPv6 Data Flows IPv6數據流.html'>IPv6 Data Flows IPv6數據流</a></li></ul><li class='has-children'><a href='TCP 與 UDP 協議.html'>TCP 與 UDP 協議</a><ul class='dropdown'><li><a href='Overview 總覽-2.html'>Overview 總覽-2</a><li><a href='TCP and UDP TCP與UDP.html'>TCP and UDP TCP與UDP</a><li><a href='TCP Vs. UDP.html'>TCP Vs. UDP</a><li><a href='TCP Windowing TCP窗口.html'>TCP Windowing TCP窗口</a><li><a href='Networking Transfer Protocols 網絡傳輸協議.html'>Networking Transfer Protocols 網絡傳輸協議</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">IPv4 Data Flows IPv4數據流 << <a href='IPv4 Data Flows IPv4數據流.html'>Previous</a> <a href='Benefits of IPv6 IPv6的好處.html'>Next</a> >> Benefits of IPv6 IPv6的好處<br /><h1>Assigning an IP Address 分配IP地址</h1>
+<div actguid="d87f2f3d0a0001dc636591baf3b305e2" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f3d0a0001dc636591baf3b305e2&amp;userGUID=d1c2f9970a0001dc43499890ec9e3fd1&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose didigetthis flash" id="dpch13_digt04">
+<div class="activityhead" style="text-align: center;">
+<div class="purposeType purposedidigetthis" title="">
+<p id="N10690" lang=""></p>
+</div>
+</div>
+<p id="N10690" lang="" style="text-align: center;">There are four components that make up a properly configured IPv4 network client: IP address, subnet mask, default gateway, and domain name system (DNS) IP address.</p>
+<p lang="" style="text-align: center;">正確配置IPv4網絡客戶端的過程由四個部分組成：IP地址，子網掩碼，默認網關和域名系統（DNS）IP</p>
+<p lang="" style="text-align: center;">地址。</p>
+<p id="N10693" lang="" style="text-align: center;">The first component of a properly configured IPv4 network client is the IP address. This is the logical name assigned to that particular host. In the image below, you can see that the host is assigned 200.200.200.5. No other device on the network can have this exact IP address or conflicts will occur. This IP address is like the device’s first name: no one else in its family (or network in this case) can have this IP address.</p>
+<p lang="" style="text-align: center;">正確配置的IPv4網絡客戶端的第一部分是IP地址。這是分配給該特定主機的邏輯名稱。在下圖中，您可以看到為主機分配了200.200.200.5。網絡上的任何其他設備都不能具有此確切的IP地址，否則會發生衝突。該IP地址就像設備的名字一樣：其係列（在這種情況下為網絡）中沒有其他人可以使用此IP地址。</p>
+<div class="imagewrap" style="text-align: center;"><span class="image"><img alt="Screenshot of the Internet protocol (TCP/IP) properties window. There are choices for “automatic private IP address” and “user configured.” “User configured” is selected. The IP address reads 200.200.200.5. The subnet mask reads 255.255.255.0. The default gateway reads 200.200.200.1. Alternate DNS server is blank. Preferred WINS server reads 200.200.200.1. Alternate WINS server is blank." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image6.png" title="Screenshot of the Internet protocol (TCP/IP) properties window. There are choices for “automatic private IP address” and “user configured.” “User configured” is selected. The IP address reads 200.200.200.5. The subnet mask reads 255.255.255.0. The default gateway reads 200.200.200.1. Alternate DNS server is blank. Preferred WINS server reads 200.200.200.1. Alternate WINS server is blank."/></span></div>
+<p id="N106A3" lang="" style="text-align: center;">The second component of a properly configured IPv4 network client is the subnet mask. The subnet mask is required to ensure that the host knows what other IP addresses are on its network (which is defined by the subnet mask). In this example, the default class C subnet mask was used, which is 255.255.255.0. This tells the client that its host’s IP address resides on the 200.200.200.0 network, so other IPs in the 200.200.200.x range will be in the same subnet.</p>
+<p lang="" style="text-align: center;">正確配置的IPv4網絡客戶端的第二個組件是子網掩碼。 需要子網掩碼以確保主機知道其網絡上還有哪些其他IP地址（由子網掩碼定義）。 在此示例中，使用了默認的C類子網掩碼，即255.255.255.0。 這告訴客戶端其主機的IP地址位於200.200.200.0網絡上，因此200.200.200.x範圍內的其他IP將位於同一子網中。</p>
+<p id="N106A6" lang="" style="text-align: center;">The third component of a properly configured IPv4 network client is the default gateway. This is the IP address of the device (normally a router) that connects this particular network to another network. For example, if our host wants to talk to someone outside of the 200.200.200.0 network, it would send the message to this default gateway (200.200.200.10 in our example), and this device will forward that request outside of the network.</p>
+<p lang="" style="text-align: center;">正確配置的IPv4網絡客戶端的第三個組件是默認網關。 這是將該特定網絡連接到另一個網絡的設備（通常是路由器）的IP地址。 例如，如果我們的主機希望與200.200.200.0網絡外部的某人交談，則它將消息發送到該默認網關（在我們的示例中為200.200.200.10），並且該設備將把該請求轉發到網絡外部。</p>
+<p id="N106A9" lang="" style="text-align: center;">The final component of a properly configured IPv4 network client is the DNS server IP address, or WINS server IP. The DNS server is the domain name system server, and is responsible for converting domain names into IP addresses for the host. For example, if you wanted to go to www.google.com, your host doesn’t know where that is, but the DNS server does know the location. Providing your host with the DNS server address allows it to send the request to the DNS server, which will convert the name into an IP address, and send that address back to the requesting host, which can then go to that IP address with the request. A WINS server is like a DNS server, but is specific to Windows NetBIOS computer names and IP addresses. WINS is usually used inside a Windows network, while DNS is used for clients on the Internet.</p>
+<p lang="" style="text-align: center;">正確配置的IPv4網絡客戶端的最後一個組件是DNS服務器IP地址或WINS服務器IP。 DNS服務器是域名系統服務器，並負責將域名轉換為主機的IP地址。 例如，如果您想訪問www.google.com，則您的主機不知道該地址在哪裡，但是DNS服務器確實知道該位置。 為您的主機提供DNS服務器地址可以使其向DNS服務器發送請求，DNS服務器會將名稱轉換為IP地址，然後將該地址發送回請求主機，然後主機可以隨請求轉到該IP地址 。 WINS服務器類似於DNS服務器，但特定於Windows NetBIOS計算機名稱和IP地址。 WINS通常在Windows網絡內部使用，而DNS用於Internet上的客戶端。</p>
+<div actguid="d87f2f420a0001dc09309f7f94887f04" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f420a0001dc09309f7f94887f04&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;" style="text-align: center;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch13_lbd05">
+<div class="activityhead">
+<div class="purposeType purposelearnbydoing" title=""></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch13_lbd05">
+<div class="page 482479" id="opch13_lbd05">
+<div class="question" id="482479">
+<div>True or False: On this network, no other device can have the IP address of 192.168.10.1 or conflicts may occur.</div>
+<div>是非題：在該網絡上，沒有其他設備的IP地址為192.168.10.1，否則可能會發生衝突。</div>
+<div>
+<div class="image shouldbeleft"><img class="popimg" id="N10066" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image7.png"/></div>
+</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582442_i1_rad_0" name="582442_i1_group" type="radio" value="A"/><label for="582442_i1_rad_0">True</label></span><span class="radioContainer clearfix"><input id="582442_i1_rad_1" name="582442_i1_group" type="radio" value="B"/><label for="582442_i1_rad_1">False</label></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p id="N106CB" lang="" style="text-align: center;">IP addresses are assigned to a client or workstation using either static or dynamic configuration. In static configuration, we find a simple method for assigning an address, but it is more time-consuming. This method requires the technician to input the four required pieces of information that make up an address (IP address, subnet mask, default gateway, and DNS server IP address). This is prone to human errors, since a single, mistyped digit will cause the device to be unable to connect to the network. Also, because each client has to be configured individually and no repeating of IP addresses is allowed, this requires detailed documentation of the used IP addresses and becomes impractical for large networks very quickly.</p>
+<p lang="" style="text-align: center;">IP地址使用靜態或動態配置分配給客戶端或工作站。 在靜態配置中，我們找到了一種分配地址的簡單方法，但是這比較耗時。 此方法要求技術人員輸入組成地址（IP地址，子網掩碼，默認網關和DNS服務器IP地址）的四個必需信息。 這很容易發生人為錯誤，因為單個錯誤鍵入的數字將導致設備無法連接到網絡。 另外，由於必須分別配置每個客戶端，並且不允許重複IP地址，因此這需要詳細記錄已使用的IP地址，並且對於大型網絡來說非常不切實際。</p>
+<p id="N106CE" lang="" style="text-align: center;">Dynamic configuration is much quicker and easier. There are two dynamic configuration methods: DHCP and BOOTP. Dynamic host configuration protocol (DHCP) is simple for large networks and less confusing, because a server handles the assignment of the IP addresses for the client, as well as the subnet mask, default gateway, and DNS server. In practice, the network administrator simply provides the DHCP server with a range of IP addresses to hand out, and the DHCP server does all the work for the network administrator. The DHCP server gives a client an IP address and the associated parameters, as well as a “lease time.” The lease time is the specific amount of time the client is allowed to use that IP address. When the lease is nearing the end of its term, the DHCP server gives the client the option of keeping the lease longer (if it is still using it), or the server can take the lease back to reuse (if it cannot get in touch with the client at the lease renewal). Most large-scale networks and most home networks use DHCP for configuration.</p>
+<p lang="" style="text-align: center;">動態配置更快，更容易。動態配置方法有兩種：DHCP和BOOTP。動態主機配置協議（DHCP）對於大型網絡來說很簡單，並且不易混淆，因為服務器可以處理客戶端IP地址的分配以及子網掩碼，默認網關和DNS服務器。實際上，網絡管理員只需為DHCP服務器提供一系列IP地址即可分發，而DHCP服務器將為網絡管理員完成所有工作。 DHCP服務器為客戶端提供IP地址和關聯的參數，以及“租用時間”。租用時間是允許客戶端使用該IP地址的特定時間。當租約即將到期時，DHCP服務器會為客戶端提供延長租約（如果仍在使用租約）的選項，或者服務器可以將租約重新使用（如果無法聯繫）與客戶續約）。大多數大型網絡和大多數家庭網絡都使用DHCP進行配置。</p>
+<p id="N106D1" lang="" style="text-align: center;">Bootstrap protocol, more commonly referred to as BOOTP, is an older dynamic addressing protocol and only assigns IP addresses, subnet masks, and default gateways. BOOTP doesn’t support providing DNS server information or WINS server information. BOOTP is considered obsolete now, as it has been replaced by DHCP. DHCP, on the other hand, is based upon the legacy BOOTP protocol but added DNS, WINS and other variables that are related to newer standards like voice-over IP. If your network is dynamically configured, DHCP is most likely in use.</p>
+<p lang="" style="text-align: center;">Bootstrap協議（通常稱為BOOTP）是一種較舊的動態尋址協議，僅分配IP地址，子網掩碼和默認網關。 BOOTP不支持提供DNS服務器信息或WINS服務器信息。 BOOTP現在已被淘汰，因為它已被DHCP取代。 另一方面，DHCP基於舊式BOOTP協議，但添加了DNS，WINS和其他與諸如語音IP之類的新標準相關的變量。 如果您的網絡是動態配置的，則最有可能使用DHCP。</p>
+<div actguid="d87f2f430a0001dc4510f01699735d02" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f430a0001dc4510f01699735d02&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;" style="text-align: center;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch13_lbd06">
+<div class="activityhead">
+<div class="purposeType purposelearnbydoing" title=""><span class="scnReader"></span></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch13_lbd06">
+<div class="page 482465" id="opch13_lbd06">
+<div class="question ddfb" id="482465">
+<div>A technician must manually enter the IP address into the computer when<span> </span><span class="i1"> <span class="component"><select id="i1">
+<option id="i1_EMPTY_CHOICE" value="">--</option>
+<option id="i1_opt_0" value="A">static</option>
+<option id="i1_opt_1" value="B">dynamic</option>
+</select></span><a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/x-oli-workbook_page/javascript();" rel="556254" title="Click for hint"></a></span><span> </span>configuration is used.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="activitywrap purpose checkpoint wbactivity">
+<div class="activityhead" style="text-align: center;">
+<div class="purposeType purposecheckpoint" title=""><span class="scnReader">checkpoint</span></div>
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity wbactivity" id="N106F3">
+<p id="N106F8" lang="" style="text-align: center;">Take a minute to stop and reflect on your progress for this learning objective.</p>
+<div actguid="d87f2f440a0001dc527ecdd818b76799" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f440a0001dc527ecdd818b76799&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap compositeNest flash" id="dpch13_checkpoint1">
+<div class="activityhead" style="text-align: center;">
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash" style="text-align: center;">
+<div class="flash_obj asx testFlash" id="pch13_checkpoint1">
+<div class="page 482873" id="opch13_checkpoint1">
+<div class="question" id="482873">
+<div>Do you feel comfortable with this material and ready to move on?</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582984_i1_rad_0" name="582984_i1_group" type="radio" value="A"/><label for="582984_i1_rad_0">Yes, I feel confident in my ability to meet this learning objective.</label></span><span class="radioContainer clearfix"><input id="582984_i1_rad_1" name="582984_i1_group" type="radio" value="B"/><label for="582984_i1_rad_1">No, I'd like to see some more material on this learning objective.</label></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pageControls clearfix" id="pagecontrols-d87f2f440a0001dc527ecdd818b76799" style="text-align: center;">技術人員必須在以下情況下手動將IP地址輸入計算機<br/>-<br/> 使用配置。<br/>檢查站<br/><br/>花一點時間停下來，為這個學習目標反思自己的進步。<br/><br/><br/>您對這種材料感到滿意並準備繼續前進嗎？<br/>是的，我對實現此學習目標的能力充滿信心。不，我希望看到有關此學習目標的更多材料。</div>
+<div class="pageControls clearfix" style="text-align: center;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="actContain">
+<div class="pageControls clearfix" id="pagecontrols-d87f2f3d0a0001dc636591baf3b305e2">
+<div class="tlid-input input">
+<div class="source-wrap">
+<div class="input-full-height-wrapper tlid-input-full-height-wrapper">
+<div class="source-input">
+<div class="source-footer-wrap source-or-target-footer">
+<div class="source-footer">
+<div class="speech-wrap source-or-target-footer-button left-positioned">
+<div aria-disabled="false" aria-label="開啟語音輸入功能" aria-pressed="false" class="speech-button goog-toolbar-button" data-tooltip="開啟語音輸入功能" data-tooltip-align="t,c" id="gt-speech" role="button" tabindex="0"><span class="jfk-button-img"></span></div>
+</div>
+<div aria-disabled="false" aria-hidden="false" aria-label="聆聽" aria-pressed="false" class="src-tts left-positioned ttsbutton jfk-button-flat source-or-target-footer-button jfk-button" data-tooltip="聆聽" data-tooltip-align="t,c" role="button" tabindex="0">
+<div class="jfk-button-img">
+<p id="N10688" lang="">Internet protocol version 6 was developed to provide more public IP addresses, because the IPv4 public addressing space was running out as a result of the proliferation of network devices in our lives. Now, our cellphones, laptops, tablets, thermostats, refrigerators, TVs, and more are all being connected to the network and they all need IP addresses. Due to the 32-bit addresses used by IPv4, we were limited to 4.2 billion IP addresses, but by increasing the address space to 128-bit addresses in IPv6, the number of IP addresses available has increased to 340 undecillion addresses. This is 5 x 10<sup lang="">28<span> </span></sup>IPv6 addresses for every person on the planet, including children.</p>
+<p lang="">Internet協議版本6的開發是為了提供更多的公共IP地址，因為由於我們生活中網絡設備的激增，IPv4公共尋址空間已耗盡。 現在，我們的手機，筆記本電腦，平板電腦，恆溫器，冰箱，電視等已全部連接到網絡，並且它們都需要IP地址。 由於IPv4使用32位地址，因此我們只能使用42億個IP地址，但是通過將地址空間增加到IPv6中的128位地址，可用的IP地址數量已增加到340個十億位地址。 這是地球上每個人（包括孩子）的5 x 1028 IPv6地址。</p>
+<p id="N1068E" lang="">IPv5 was designed, but eventually skipped in implementation, because it was only a 64-bit address and some feared it didn’t provide a large enough pool of available IP addresses. This experimental protocol was abandoned, but many of its concepts were incorporated into the IPv6 protocol, as well as some other protocols.</p>
+<p lang="">IPv5是經過設計的，但最終被跳過，因為它只是一個64位地址，並且有人擔心它不能提供足夠大的可用IP地址池。 該實驗性協議已被放棄，但其許多概念以及其他一些協議已合併到IPv6協議中。</p>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<tbody>
+<tr class="e">
+<td lang=""></td>
+<td align="center" colspan="2" lang="">Number of Addresses</td>
+</tr>
+<tr>
+<td lang="">IPv4</td>
+<td lang="">2<sup lang="">32</sup></td>
+<td lang="">4,294,967,296</td>
+</tr>
+<tr class="e">
+<td lang="">IPv6</td>
+<td lang="">2<sup lang="">128</sup></td>
+<td lang="">340,282,366,920,938,000,000,000,000,000,000,000,000</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="N106BA">
+<div class="sectionContain">
+<br />IPv4 Data Flows IPv4數據流 << <a href='IPv4 Data Flows IPv4數據流.html'>Previous</a> <a href='Benefits of IPv6 IPv6的好處.html'>Next</a> >> Benefits of IPv6 IPv6的好處</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
