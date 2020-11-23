@@ -2,35 +2,35 @@
 <p>內容</p>
 <p><span>PCH 13: IPv4 and IPv6 Addresses IPv4 與 IPv6 地址</span><br/><span>PCH 14: TCP and UDP Protocols  TCP 與 UDP 協議</span></p>
 <p><span></span></p>
-<h1>IPv4 與 IPv6 地址</h1>
+<h1><span>HW1</span></h1>
+<p><span></span></p>
+<h2>IPv4 與 IPv6 地址</h2>
 <div class="section" id="N1068A">
-<div class="sectionContain" style="text-align: left;">
-<h2>Overview 總覽</h2>
-<p><span>In this lesson, we will discuss TCP/IP, and the two common types of Internet addressing: Internet protocol version 4 (IPv4) and Internet protocol version 6 (IPv6). We will discuss IPv4 in depth, as it is still the most dominant version in use in our networks. Then, we will cover the specifics of IPv6, differences between IPv4 and IPv6, and the reason we are moving toward IPv6 in the future.</span></p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">在本課程中，我們將討論TCP / IP以及Internet尋址的兩種常見類型：Internet協議版本4（IPv4）和<br/>Internet協議版本6（IPv6）。我們將深入討論IPv4，因為它仍然是我們網絡中使用的最主要版本。然後<br/>，我們將介紹IPv6的詳細信息，IPv4和IPv6之間的差異以及將來向IPv6過渡的原因。</span></pre>
-<h2>TCP and IP TCP與IP</h2>
-<p id="N1069E" lang="">Computer networks — including the Internet, which is the largest computer network — use Transmission Control Protocol/Internet Protocol or TCP/IP for network communications both internally on a LAN/WAN and externally to the Internet.</p>
-<p lang=""><span>計算機網絡（包括最大的計算機網絡Internet）使用傳輸控制協議/ Internet協議或TCP / IP進行內部LAN / WAN上和外部Internet的網絡通信。</span></p>
-<p id="N106A1" lang="">TCP/IP provides end-to-end connectivity of data. TCP/IP specifies how data should be grouped, addressed, transmitted, routed, and received at the destination address. The TCP/IP model, along with many of its protocols, is maintained and managed by the IETF (Internet Engineering Task Force).</p>
-<p lang=""><span>TCP / IP提供數據的端到端連接。 TCP / IP指定如何在目標地址處對數據進行分組，尋址，傳輸，路由和接收。 TCP / IP模型及其許多協議由IETF（Internet工程任務組）維護和管理。</span></p>
-<p id="N106A4" lang="">TCP/IP is one of two sets of protocols that collectively operate in the transport and network layers of the OSI model.</p>
-<p lang=""><span>TCP / IP是在OSI模型的傳輸層和網絡層中共同運行的兩組協議之一。</span></p>
-<p><span title="Quick scroll up"><span class="imagewrap"><span class="image"><img class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image1.png"/></span><span class="caption" lang=""></span></span></span></p>
-<p id="N106AB" lang="">OSI Model. Image used under CC-BY-SA license from<span> </span><a href="https://commons.wikimedia.org/wiki/File:Osi-model-jb.svg#/media/File:Osi-model-jb.svg" id="_i_1" lang="" target="_blank">Wikimedia Commons</a>.</p>
-<p id="N106B3" lang="">In addition to creating message segments and ensuring connectivity, some of the basic characteristics of the IP protocol ensure that datagrams are routed to the correct destination using a binary addressing scheme. While the process of how the IP addresses are derived from binary (and hexadecimal relationships) is not covered in this course, it is important to know that just as computer CPUs use binary numbers to process data, networking hardware and protocols do so as well.</p>
-<p lang=""><span>除了創建消息段並確保連接性之外，IP協議的某些基本特徵還可以確保使用二進制尋址方案將數據報路由到正確的目的地。儘管本課程未涵蓋如何從二進制（和十六進制關係）派生IP地址的過程，但重要的是要知道，就像計算機CPU使用二進制數來處理數據一樣，網絡硬件和協議也是如此。</span></p>
-<p lang=""><span></span></p>
-<h2>IPv4 and IPv6 Addresses IPv4 與 IPv6 位址</h2>
-<p id="N106BF" lang="">Network devices require a logical address — either an IPv4 or IPv6 address (see the network layer in the diagram above) — when moving data from one network segment to another. As we discussed in previous modules, switches make their intelligent switching decisions (see the data link layer in the diagram above based on media access control (MAC) addresses. The MAC address, also known as the physical address, is the unique identifier hard coded on a network interface card by the manufacturer. Switches use these MAC addresses to identify which devices are on which switch ports, and forward traffic within the network segment to the correct ports based on these addresses. When data traffic needs to cross the boundaries of the network, it requires a logical address that the router can use to make intelligent routing decisions. In most modern networks, this is done by using TCP/IP addressing. Historically, other protocols existed, such as internetwork packet exchange/sequenced packet exchange (IPX/SPX) for Novell networks, AppleTalk, and NetBEUI for Microsoft networks. TCP/IP replaced these protocols almost exclusively due to its robust nature, reliability, and availability.</p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">將數據從一個網段移動到另一個網段時，網絡設備需要邏輯地址-IPv4或IPv6地址（請參見上圖中的網<br/>絡層）。正如我們在之前的模塊中討論的那樣，交換機做出明智的交換決策（請參見上圖中的數據鏈路<br/>層，基於媒體訪問控制（MAC）地址。MAC地址，也稱為物理地址，是唯一的硬編碼標識符）交換機使用這<br/>些MAC地址來識別哪些設備在哪個交換機端口上，然後根據這些地址將網段內的流量轉發到正確的端口。<br/>網絡中，它需要路由器可以用來做出智能路由決策的邏輯地址。在大多數現代網絡中，這是通過使用<br/>TCP / IP尋址來完成的。 / SPX）（用於Novell網絡，AppleTalk和用於Microsoft網絡的NetBEUI）<br/>，TCP / IP幾乎完全由於其魯棒性，可靠性和可用性而取代了這些協議。不可靠。</span></pre>
-<p id="N106C2" lang="">While the majority of our networks today still use IPv4, many networks are migrating to the newer IPv6 addressing standards. Additionally, many networks are offering dual support to both IPv4 and IPv6 during the transition. The reason for this transition is that we were running out of valid IPv4 addresses. IPv4 uses a 32-bit addressing scheme, providing only 4.2 billion available addresses, but IPv6 uses a 128-bit addressing scheme. IPv6 allows for 2<sup lang="">128</sup>addresses, or 340,282,366,920,938,000,000,000,000,000,000,000,000 (3.4 x 10<sup lang="">38</sup>) unique IP addresses. IPv6 allows for more IP addresses than humanity could ever utilize. At least that is what we think right now.</p>
-<div id="KnM9nf">
+<h3>Overview 總覽</h3>
+<h4><span>In this lesson, we will discuss TCP/IP, and the two common types of Internet addressing: Internet protocol version 4 (IPv4) and Internet protocol version 6 (IPv6). We will discuss IPv4 in depth, as it is still the most dominant version in use in our networks. Then, we will cover the specifics of IPv6, differences between IPv4 and IPv6, and the reason we are moving toward IPv6 in the future.</span></h4>
+<h4 class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">在本課程中，我們將討論TCP / IP以及Internet尋址的兩種常見類型：Internet協議版本4（IPv4）和<br/>Internet協議版本6（IPv6）。我們將深入討論IPv4，因為它仍然是我們網絡中使用的最主要版本。然後<br/>，我們將介紹IPv6的詳細信息，IPv4和IPv6之間的差異以及將來向IPv6過渡的原因。</span></h4>
+<h3>TCP and IP TCP與IP</h3>
+<h4 id="N1069E">Computer networks — including the Internet, which is the largest computer network — use Transmission Control Protocol/Internet Protocol or TCP/IP for network communications both internally on a LAN/WAN and externally to the Internet.</h4>
+<h4><span>計算機網絡（包括最大的計算機網絡Internet）使用傳輸控制協議/ Internet協議或TCP / IP進行內部LAN / WAN上和外部Internet的網絡通信。</span></h4>
+<h4 id="N106A1">TCP/IP provides end-to-end connectivity of data. TCP/IP specifies how data should be grouped, addressed, transmitted, routed, and received at the destination address. The TCP/IP model, along with many of its protocols, is maintained and managed by the IETF (Internet Engineering Task Force).</h4>
+<h4><span>TCP / IP提供數據的端到端連接。 TCP / IP指定如何在目標地址處對數據進行分組，尋址，傳輸，路由和接收。 TCP / IP模型及其許多協議由IETF（Internet工程任務組）維護和管理。</span></h4>
+<h4 id="N106A4">TCP/IP is one of two sets of protocols that collectively operate in the transport and network layers of the OSI model.</h4>
+<h4><span>TCP / IP是在OSI模型的傳輸層和網絡層中共同運行的兩組協議之一。</span></h4>
+<h4><span title="Quick scroll up"><span class="imagewrap"><span class="image"><img class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image1.png"/></span><span class="caption" lang=""></span></span></span></h4>
+<h4>OSI Model. Image used under CC-BY-SA license from<span> </span><a href="https://commons.wikimedia.org/wiki/File:Osi-model-jb.svg#/media/File:Osi-model-jb.svg" id="_i_1" lang="" target="_blank">Wikimedia Commons</a>.</h4>
+<h4 id="N106B3">In addition to creating message segments and ensuring connectivity, some of the basic characteristics of the IP protocol ensure that datagrams are routed to the correct destination using a binary addressing scheme. While the process of how the IP addresses are derived from binary (and hexadecimal relationships) is not covered in this course, it is important to know that just as computer CPUs use binary numbers to process data, networking hardware and protocols do so as well.</h4>
+<h4><span>除了創建消息段並確保連接性之外，IP協議的某些基本特徵還可以確保使用二進制尋址方案將數據報路由到正確的目的地。儘管本課程未涵蓋如何從二進制（和十六進制關係）派生IP地址的過程，但重要的是要知道，就像計算機CPU使用二進制數來處理數據一樣，網絡硬件和協議也是如此。</span></h4>
+<h4><span></span></h4>
+<h3 class="sectionContain" style="text-align: left;">IPv4 and IPv6 Addresses IPv4 與 IPv6 位址</h3>
+<h4 id="N106BF">Network devices require a logical address — either an IPv4 or IPv6 address (see the network layer in the diagram above) — when moving data from one network segment to another. As we discussed in previous modules, switches make their intelligent switching decisions (see the data link layer in the diagram above based on media access control (MAC) addresses. The MAC address, also known as the physical address, is the unique identifier hard coded on a network interface card by the manufacturer. Switches use these MAC addresses to identify which devices are on which switch ports, and forward traffic within the network segment to the correct ports based on these addresses. When data traffic needs to cross the boundaries of the network, it requires a logical address that the router can use to make intelligent routing decisions. In most modern networks, this is done by using TCP/IP addressing. Historically, other protocols existed, such as internetwork packet exchange/sequenced packet exchange (IPX/SPX) for Novell networks, AppleTalk, and NetBEUI for Microsoft networks. TCP/IP replaced these protocols almost exclusively due to its robust nature, reliability, and availability.</h4>
+<h4 class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">將數據從一個網段移動到另一個網段時，網絡設備需要邏輯地址-IPv4或IPv6地址（請參見上圖中的網<br/>絡層）。正如我們在之前的模塊中討論的那樣，交換機做出明智的交換決策（請參見上圖中的數據鏈路<br/>層，基於媒體訪問控制（MAC）地址。MAC地址，也稱為物理地址，是唯一的硬編碼標識符）交換機使用這<br/>些MAC地址來識別哪些設備在哪個交換機端口上，然後根據這些地址將網段內的流量轉發到正確的端口。<br/>網絡中，它需要路由器可以用來做出智能路由決策的邏輯地址。在大多數現代網絡中，這是通過使用<br/>TCP / IP尋址來完成的。 / SPX）（用於Novell網絡，AppleTalk和用於Microsoft網絡的NetBEUI）<br/>，TCP / IP幾乎完全由於其魯棒性，可靠性和可用性而取代了這些協議。不可靠。</span></h4>
+<br/><br/>While the majority of our networks today still use IPv4, many networks are migrating to the newer IPv6 addressing standards. Additionally, many networks are offering dual support to both IPv4 and IPv6 during the transition. The reason for this transition is that we were running out of valid IPv4 addresses. IPv4 uses a 32-bit addressing scheme, providing only 4.2 billion available addresses, but IPv6 uses a 128-bit addressing scheme. IPv6 allows for 2<sup lang="">128</sup>addresses, or 340,282,366,920,938,000,000,000,000,000,000,000,000 (3.4 x 10<sup lang="">38</sup>) unique IP addresses. IPv6 allows for more IP addresses than humanity could ever utilize. At least that is what we think right now.
 <div class="tw-menu" id="tw-smenu">
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">儘管當今我們的大多數網絡仍使用IPv4，但許多網絡正在遷移到更新的IPv6尋址標準。此外，在過渡期間<br/>，許多網絡都對IPv4和IPv6提供雙重支持。進行此轉換的原因是我們用盡了有效的IPv4地址。 IPv4使用<br/>32位尋址方案，僅提供42億個可用地址，而IPv6使用128位尋址方案。 IPv6允許2128個地址或340,282,<br/>366,920,938,000,000,000,000,000,000,000,000,000,000（3.4 x 1038）個唯一IP地址。 IPv6所<br/>允許的IP地址比人類所能利用的更多。至少這就是我們現在的想法。<br/><br/></span></pre>
 <div class="section" id="N10690">
 <div class="sectionContain">
-<h2>IPv4 Addressing IPv4 位址</h2>
-<h2>Addressing Notation 尋址符號</h2>
+<h3>IPv4 Addressing IPv4 位址</h3>
+<h3>Addressing Notation 尋址符號</h3>
 <div class="tlid-input input">
 <div class="source-wrap">
 <div class="input-full-height-wrapper tlid-input-full-height-wrapper">
@@ -124,7 +124,7 @@
 </div>
 <div class="section" id="network_and_host_addresses">
 <div class="sectionContain">
-<h2>Network and Host Addresses 網絡和主機地址</h2>
+<h3>Network and Host Addresses 網絡和主機地址</h3>
 <p id="N106CB" lang="">An IPv4 network address is further divided into two portions based upon the subnet mask: the network portion and the host portion. A subnet mask is a series of numbers used for routing traffic within a subnetwork. When a subnet mask is used to define the network portion, anywhere there is a binary “11111111” (or 255 in decimal) used, this area is considered part of the network portion. When a binary “00000000” (0 in decimal) is used, this represents the host portion of the address. The host represents a single device on the network, such as your computer or phone.</p>
 <p lang=""><span>IPv4網絡地址根據子網掩碼進一步分為兩部分：網絡部分和主機部分。子網掩碼是用於在子網內路由流量的一系列數字。當使用子網掩碼定義網絡部分時，在任何使用二進制“ 11111111”（或十進制255）的地方，該區域均被視為網絡部分的一部分。當使用二進制“ 00000000”（十進制為0）時，它表示地址的主機部分。主機代表網絡上的單個設備，例如您的計算機或電話。</span></p>
 <p id="N106CE" lang="">The following two tables show the network and host portions of IP addresses.</p>
@@ -201,7 +201,7 @@
 </div>
 </div>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"> <br/><br/></span></pre>
-<h2>IPv4 Address Classes IPv4地址類別</h2>
+<h3>IPv4 Address Classes IPv4地址類別</h3>
 <p id="N10690" lang="">As you can see, when the subnet mask has a 255 in it, it is defining the network portion of the address. In class A addresses, the first octet defines the network, and the last three define the host. In class B addresses, the first two octets define the network, the last two define the host. In class C addresses, the first three octets define the network, the last one defines the host.</p>
 <p lang="">如您所見，當子網掩碼中包含255時，它定義了地址的網絡部分。 在A類地址中，第一個八位位組定義網絡，最後三個八位位組定義主機。 在B類地址中，前兩個八位位組定義網絡，後兩個定義主機。 在C類地址中，前三個八位位組定義網絡，最後一個八位位組定義主機。</p>
 <div class="imagewrap"><span class="image"><img class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image2.png"/></span></div>
@@ -497,13 +497,12 @@
 </div>
 </div>
 </div>
-<div class="pageControls clearfix"><br/>我得到這個了嗎<br/><br/>網絡IP地址192.168.1.1和子網掩碼255.255.255.0是一個類的示例<br/>-<br/> 地址。<br/>任何計算機的“ localhost”都使用回送地址。 環回IP地址是<br/>。<br/><br/></div>
+<br/><br/>我得到這個了嗎<br/><br/>網絡IP地址192.168.1.1和子網掩碼255.255.255.0是一個類的示例<br/>-<br/> 地址。<br/>任何計算機的“ localhost”都使用回送地址。 環回IP地址是<br/>。<br/><br/>
 </div>
 </div>
 </div>
 <div class="section" id="ipv4_data_flows">
-<div class="sectionContain">
-<h2>IPv4 Data Flows IPv4數據流</h2>
+<h3 class="sectionContain">IPv4 Data Flows IPv4數據流</h3>
 <p id="N107CD" lang="">In Internet protocol version 4, there are three types of data flows that can occur: unicast, broadcast, and multicast.</p>
 <p lang="">在Internet協議版本4中，可以發生三種類型的數據流：單播，廣播和多播。</p>
 <p id="N107D0" lang="">The most common and most widely used is called unicast. In unicast communication, data travels from a single device to another single device on the network. For example, when you go to www.google.com in your web browser, your computer makes a request to one of Google’s web servers using unicast communication, and one of Google’s computers then sends the data back using unicast communication to just your computer.</p>
@@ -843,16 +842,15 @@
 <div aria-label="收藏翻譯" class="starbutton jfk-button-flat jfk-button unstarred" data-tooltip="收藏翻譯" data-tooltip-align="t,c" role="button" tabindex="0">
 <div class="jfk-button-img"></div>
 <div class="jfk-button-img"></div>
-<h1>TCP 與 UDP 協議</h1>
-<h2>Overview 總覽</h2>
-<p><span>In this lesson, we will discuss transmission control protocol (TCP) and user datagram protocol (UDP), as well as their associated ports and protocols. We will specifically address the various email ports and protocols in use today, as well as discussing secure sockets layer and transport layer security (SSL/TLS) in the context of web security. Then, we will discuss file transfer protocol (FTP) and hypertext transfer protocol (HTTP) and their use on the Internet today, as well as some older technologies such as Telnet and its more secure alternative, secure shell (SSH).</span></p>
-<p>在本課程中，我們將討論傳輸控制協議（TCP）和用戶數據報協議（UDP）以及它們相關的端口和協議。 我們將專門解決當今使用的各種電子郵件端口和協議，並在Web安全的背景下討論安全套接字層and傳輸層安全性（SSL and TLS）。 然後，我們將討論文件傳輸協議（FTP）和超文本傳輸協議（HTTP）及其在當今Internet上的使用，以及一些較老的技術，例如Telnet及其更安全的替代方法，安全外殼（SSH）。</p>
-<h2>TCP and UDP TCP與UDP</h2>
-<p id="N106A0" lang="">TCP is a connection-oriented protocol that ensures the reliable transport of data segments from one device to another. During transmission, if a segment is dropped, it will be detected and resent or retransmitted by the originator device. Each communication is acknowledged upon receipt, providing a secure model to ensure successful communications. This type of transmission is great for all network data types, especially those that need delivery to be assured.</p>
-<p lang="">TCP是一種面向連接的協議，可確保將數據段從一台設備可靠地傳輸到另一台設備。 在傳輸過程中，如果某個段丟失，則發起方設備將檢測到該段並將其重新發送或重新傳輸。 每次通信在收到後都會得到確認，從而提供一個安全的模型來確保成功進行通信。 這種傳輸方式適用於所有網絡數據類型，尤其是那些需要確保傳輸的網絡數據類型。</p>
-<p id="N106A3" lang="">When a TCP communication is initiated, the originator and receiver perform a “three-way handshake” before starting the data transmission. In the first step, the originator sends a packet with a synchronization (SYN) flag set. Next, the receiver acknowledges receipt of this SYN flagged packet by sending back a synchronization-acknowledged (SYN-ACK) flagged packet. Finally, the originator sends an acknowledgement of the synchronization-acknowledged flagged packet, and then data transmission occurs.</p>
-<p lang="">啟動TCP通信時，發起方和接收方在開始數據傳輸之前執行“三向握手”。 第一步，發起方發送一個設置了同步（SYN）標誌的數據包。 接下來，接收器通過發回一個同步確認（SYN-ACK）標記數據包來確認此SYN標記數據包的接收。 最後，始發者發送對已同步確認的標記數據包的確認，然後發生數據傳輸。</p>
-<div class="examplewrap">
+<h2>TCP 與 UDP 協議</h2>
+<h3>Overview 總覽</h3>
+<h4><span>In this lesson, we will discuss transmission control protocol (TCP) and user datagram protocol (UDP), as well as their associated ports and protocols. We will specifically address the various email ports and protocols in use today, as well as discussing secure sockets layer and transport layer security (SSL/TLS) in the context of web security. Then, we will discuss file transfer protocol (FTP) and hypertext transfer protocol (HTTP) and their use on the Internet today, as well as some older technologies such as Telnet and its more secure alternative, secure shell (SSH).</span></h4>
+<h4>在本課程中，我們將討論傳輸控制協議（TCP）和用戶數據報協議（UDP）以及它們相關的端口和協議。 我們將專門解決當今使用的各種電子郵件端口和協議，並在Web安全的背景下討論安全套接字層and傳輸層安全性（SSL and TLS）。 然後，我們將討論文件傳輸協議（FTP）和超文本傳輸協議（HTTP）及其在當今Internet上的使用，以及一些較老的技術，例如Telnet及其更安全的替代方法，安全外殼（SSH）。</h4>
+<h3>TCP and UDP TCP與UDP</h3>
+<h4 id="N106A0">TCP is a connection-oriented protocol that ensures the reliable transport of data segments from one device to another. During transmission, if a segment is dropped, it will be detected and resent or retransmitted by the originator device. Each communication is acknowledged upon receipt, providing a secure model to ensure successful communications. This type of transmission is great for all network data types, especially those that need delivery to be assured.</h4>
+<h4>TCP是一種面向連接的協議，可確保將數據段從一台設備可靠地傳輸到另一台設備。 在傳輸過程中，如果某個段丟失，則發起方設備將檢測到該段並將其重新發送或重新傳輸。 每次通信在收到後都會得到確認，從而提供一個安全的模型來確保成功進行通信。 這種傳輸方式適用於所有網絡數據類型，尤其是那些需要確保傳輸的網絡數據類型。</h4>
+<h4 id="N106A3">When a TCP communication is initiated, the originator and receiver perform a “three-way handshake” before starting the data transmission. In the first step, the originator sends a packet with a synchronization (SYN) flag set. Next, the receiver acknowledges receipt of this SYN flagged packet by sending back a synchronization-acknowledged (SYN-ACK) flagged packet. Finally, the originator sends an acknowledgement of the synchronization-acknowledged flagged packet, and then data transmission occurs.</h4>
+<h4>啟動TCP通信時，發起方和接收方在開始數據傳輸之前執行“三向握手”。 第一步，發起方發送一個設置了同步（SYN）標誌的數據包。 接下來，接收器通過發回一個同步確認（SYN-ACK）標記數據包來確認此SYN標記數據包的接收。 最後，始發者發送對已同步確認的標記數據包的確認，然後發生數據傳輸。</h4>
 <div class="exHead"><span class="scnReader">EXAMPLE 範例</span></div>
 <div class="example clearfix">
 <h5></h5>
@@ -862,12 +860,10 @@
 <div class="imagewrap"><span class="image"><img class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/PCH14/image1.png"/></span></div>
 </div>
 </div>
-</div>
-<p id="N106B8" lang="">UDP, or user datagram protocol, was developed as a connectionless protocol in order to increase the speed of the network over TCP transmissions. Because of the three-way handshake in TCP, as well as all the delivery assurance and quality control, TCP has a good amount of network overhead that slows down its communications. Network engineers realized that sometimes you don’t need delivery assurance or quality control. So UDP was established.</p>
-<p lang="">UDP（或用戶數據報協議）被開發為無連接協議，目的是通過TCP傳輸提高網絡速度。 由於TCP中的三向握手以及所有的交付保證和質量控制，TCP具有大量的網絡開銷，從而降低了其通信速度。 網絡工程師意識到有時您不需要交付保證或質量控制。 這樣就建立了UDP。</p>
-<p id="N106BB" lang="">UDP is considered unreliable, because if a segment is dropped during transmission, the sending device doesn’t know and doesn’t care. There is no retransmission. Once data is sent, it is gone. This is good, though, for audio and video streaming. In these applications, the data transferred is enormously large, and if a single segment is dropped it doesn’t affect the overall quality of the audio or video sent.</p>
-<p lang="">UDP被認為是不可靠的，因為如果在傳輸過程中丟棄了網段，則發送設備將不知道也不在乎。 沒有重傳。 數據一旦發送，就消失了。 但是，這對於音頻和視頻流來說是很好的。 在這些應用中，傳輸的數據非常大，如果丟棄單個片段，則不會影響所發送的音頻或視頻的整體質量。</p>
-<div class="examplewrap">
+<h4 id="N106B8">UDP, or user datagram protocol, was developed as a connectionless protocol in order to increase the speed of the network over TCP transmissions. Because of the three-way handshake in TCP, as well as all the delivery assurance and quality control, TCP has a good amount of network overhead that slows down its communications. Network engineers realized that sometimes you don’t need delivery assurance or quality control. So UDP was established.</h4>
+<h4>UDP（或用戶數據報協議）被開發為無連接協議，目的是通過TCP傳輸提高網絡速度。 由於TCP中的三向握手以及所有的交付保證和質量控制，TCP具有大量的網絡開銷，從而降低了其通信速度。 網絡工程師意識到有時您不需要交付保證或質量控制。 這樣就建立了UDP。</h4>
+<h4 id="N106BB">UDP is considered unreliable, because if a segment is dropped during transmission, the sending device doesn’t know and doesn’t care. There is no retransmission. Once data is sent, it is gone. This is good, though, for audio and video streaming. In these applications, the data transferred is enormously large, and if a single segment is dropped it doesn’t affect the overall quality of the audio or video sent.</h4>
+<h4>UDP被認為是不可靠的，因為如果在傳輸過程中丟棄了網段，則發送設備將不知道也不在乎。 沒有重傳。 數據一旦發送，就消失了。 但是，這對於音頻和視頻流來說是很好的。 在這些應用中，傳輸的數據非常大，如果丟棄單個片段，則不會影響所發送的音頻或視頻的整體質量。</h4>
 <div class="exHead"><span class="scnReader">EXAMPLE 範例</span></div>
 <div class="example clearfix">
 <h5></h5>
@@ -877,14 +873,10 @@
 <div class="imagewrap"><span class="image"><img class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/PCH14/image2.png"/></span></div>
 </div>
 </div>
-</div>
-<div class="section" id="N106D0">
 <div class="sectionContain"></div>
-</div>
-<h2>TCP Vs. UDP</h2>
-<p id="N106D7" lang="">TCP and UDP have many differences. TCP is reliable, but UDP is unreliable. TCP focuses on connection-oriented communications using the three-way handshake, while UDP is connectionless. TCP uses windowing, discussed in more detail later, to control the amount of data sent at a given time based on changing network speeds, but UDP simply transmits everything once with no windowing. TCP also supports segment sequencing; UDP just hopes it gets to the destination in the right order. Finally, TCP waits for acknowledgements, but UDP just hopes it got there. To simplify it, TCP is an assured and reliable communication method, UDP is just a best-effort model.</p>
-<p lang="">TCP和UDP有很多區別。 TCP是可靠的，但UDP是不可靠的。 TCP專注於使用三向握手的面向連接的通信，而UDP是無連接的。 TCP使用開窗（稍後將更詳細地討論）來基於不斷變化的網絡速度來控制在給定時間發送的數據量，但是UDP僅傳輸所有信息一次而沒有開窗。 TCP還支持段排序； UDP只是希望它以正確的順序到達目的地。 最後，TCP等待確認，但是UDP只是希望它到達目的地。 為簡化起見，TCP是一種有保證且可靠的通信方法，UDP只是一種盡力而為的模型。</p>
-<div actguid="d87f2f670a0001dc7fae7e2bb7e1fe1e" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f670a0001dc7fae7e2bb7e1fe1e&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<h3>TCP Vs. UDP</h3>
+<h4 id="N106D7">TCP and UDP have many differences. TCP is reliable, but UDP is unreliable. TCP focuses on connection-oriented communications using the three-way handshake, while UDP is connectionless. TCP uses windowing, discussed in more detail later, to control the amount of data sent at a given time based on changing network speeds, but UDP simply transmits everything once with no windowing. TCP also supports segment sequencing; UDP just hopes it gets to the destination in the right order. Finally, TCP waits for acknowledgements, but UDP just hopes it got there. To simplify it, TCP is an assured and reliable communication method, UDP is just a best-effort model.</h4>
+<h4>TCP和UDP有很多區別。 TCP是可靠的，但UDP是不可靠的。 TCP專注於使用三向握手的面向連接的通信，而UDP是無連接的。 TCP使用開窗（稍後將更詳細地討論）來基於不斷變化的網絡速度來控制在給定時間發送的數據量，但是UDP僅傳輸所有信息一次而沒有開窗。 TCP還支持段排序； UDP只是希望它以正確的順序到達目的地。 最後，TCP等待確認，但是UDP只是希望它到達目的地。 為簡化起見，TCP是一種有保證且可靠的通信方法，UDP只是一種盡力而為的模型。</h4>
 <div class="activitywrap purpose learnbydoing flash" id="dpch14_lbd01">
 <div class="activityhead">
 <div class="activityinfo"></div>
@@ -912,8 +904,6 @@
 </div>
 </div>
 </div>
-</div>
-<div actguid="d87f2f680a0001dc695874177a8a648a" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f680a0001dc695874177a8a648a&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
 <div class="activitywrap purpose didigetthis flash" id="dpch14_digt01">
 <div class="activityhead">
 <div class="activityinfo"></div>
@@ -985,16 +975,14 @@
 </div>
 </div>
 </div>
-</div>
 <div class="section" id="tcp_windowing">
 <div class="sectionContain">
-<h2 style="text-align: center;">TCP Windowing TCP窗口</h2>
-<p id="N10722" lang="" style="text-align: center;">TCP also supports a concept called windowing. If you have ever copied a file from a network share drive on the Windows operating system, you have seen windowing. Have you ever noticed when you copy a file over the network, it may start out saying there are “2 minutes remaining” until completion, then it jumps up to “3 hours remaining,” then back down to “30 minutes remaining”? This is TCP windowing in action.</p>
-<p lang="" style="text-align: center;">TCP還支持稱為窗口化的概念。 如果您曾經從Windows操作系統上的網絡共享驅動器中復製過文件，則會看到窗口。 您是否曾經註意到通過網絡複製文件時，它可能會說“剩餘2分鐘”直到完成，然後跳到“剩餘3小時”，然後又跳回到“剩餘30分鐘”？ 這是TCP窗口在起作用。</p>
-<p id="N10725" lang="" style="text-align: center;">Essentially, when a communication session is established with TCP, it first performs the three-way handshake. Next, it starts with a small window size, like windows size 1 in the image below, where a single segment is sent over the network and acknowledged. If this is successful, it increases the window size to 2, sending two segments at a time. It continues to do this, increasing the number of segments each time, transmitting more data in each window until an error occurs and retransmissions must be done. If errors occur, TCP understands that it must have been transmitting too fast, so it shrinks the window to slow down communication. As transmissions occur successfully, it again increases the window to push more data in each window. This window size is continually adjusted to get the most segments per window with the least errors in communication.</p>
-<p lang="" style="text-align: center;">本質上，當使用TCP建立通信會話時，它首先執行三向握手。 接下來，它以較小的窗口大小開始，如下面的圖片中的窗口大小1所示，其中單個段通過網絡發送並確認。 如果成功，它將窗口大小增加到2，一次發送兩個段。 它會繼續這樣做，每次增加段數，在每個窗口中傳輸更多數據，直到發生錯誤並必須重新傳輸為止。 如果發生錯誤，TCP知道它一定傳輸速度太快，因此它縮小了窗口以減慢通信速度。 隨著傳輸成功進行，它將再次增加窗口以在每個窗口中推送更多數據。 不斷調整此窗口大小，以使每個窗口獲得最多的段，並且通信錯誤最少。</p>
-<div class="imagewrap" style="text-align: center;"><span class="image"><img class="popimg" id="_i_4" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/PCH14/image3.png"/></span></div>
-<div actguid="d87f2f5e0a0001dc1b677a5c838d016f" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f5e0a0001dc1b677a5c838d016f&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;" style="text-align: center;">
+<h3>TCP Windowing TCP窗口</h3>
+<h4 id="N10722" style="text-align: center;">TCP also supports a concept called windowing. If you have ever copied a file from a network share drive on the Windows operating system, you have seen windowing. Have you ever noticed when you copy a file over the network, it may start out saying there are “2 minutes remaining” until completion, then it jumps up to “3 hours remaining,” then back down to “30 minutes remaining”? This is TCP windowing in action.</h4>
+<h4 style="text-align: center;">TCP還支持稱為窗口化的概念。 如果您曾經從Windows操作系統上的網絡共享驅動器中復製過文件，則會看到窗口。 您是否曾經註意到通過網絡複製文件時，它可能會說“剩餘2分鐘”直到完成，然後跳到“剩餘3小時”，然後又跳回到“剩餘30分鐘”？ 這是TCP窗口在起作用。</h4>
+<h4 id="N10725" style="text-align: center;">Essentially, when a communication session is established with TCP, it first performs the three-way handshake. Next, it starts with a small window size, like windows size 1 in the image below, where a single segment is sent over the network and acknowledged. If this is successful, it increases the window size to 2, sending two segments at a time. It continues to do this, increasing the number of segments each time, transmitting more data in each window until an error occurs and retransmissions must be done. If errors occur, TCP understands that it must have been transmitting too fast, so it shrinks the window to slow down communication. As transmissions occur successfully, it again increases the window to push more data in each window. This window size is continually adjusted to get the most segments per window with the least errors in communication.</h4>
+<h4 style="text-align: center;">本質上，當使用TCP建立通信會話時，它首先執行三向握手。 接下來，它以較小的窗口大小開始，如下面的圖片中的窗口大小1所示，其中單個段通過網絡發送並確認。 如果成功，它將窗口大小增加到2，一次發送兩個段。 它會繼續這樣做，每次增加段數，在每個窗口中傳輸更多數據，直到發生錯誤並必須重新傳輸為止。 如果發生錯誤，TCP知道它一定傳輸速度太快，因此它縮小了窗口以減慢通信速度。 隨著傳輸成功進行，它將再次增加窗口以在每個窗口中推送更多數據。 不斷調整此窗口大小，以使每個窗口獲得最多的段，並且通信錯誤最少。</h4>
+<h4 class="imagewrap" style="text-align: center;"><span class="image"><img class="popimg" id="_i_4" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/PCH14/image3.png"/></span></h4>
 <div class="activitywrap purpose learnbydoing flash" id="dpch14_lbd02">
 <div class="actContain">
 <div class="activity flash">
@@ -1047,8 +1035,6 @@
 </div>
 </div>
 </div>
-</div>
-<div actguid="d87f2f5f0a0001dc1c968eeed73132fa" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f5f0a0001dc1c968eeed73132fa&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;" style="text-align: center;">
 <div class="activitywrap purpose didigetthis flash" id="dpch14_digt02">
 <div class="activityhead">
 <div class="purposeType purposedidigetthis" title=""><span class="scnReader"></span></div>
@@ -1070,40 +1056,36 @@
 <div class="pageControls clearfix" id="pagecontrols-d87f2f5f0a0001dc1c968eeed73132fa"><a alt="Click to reset all Hints, Feedback, and answers for this activity." class="btnReset" contextguids="d87f2f5f0a0001dc1c968eeed73132fa" id="reset-d87f2f5f0a0001dc1c968eeed73132fa"></a>Reset this Activity</div>
 </div>
 </div>
-</div>
 <div class="activitywrap purpose checkpoint wbactivity">
-<div class="activityhead" style="text-align: center;">
 <div class="purposeType purposecheckpoint" title=""><span class="scnReader">checkpoint</span></div>
 <div class="activityinfo"></div>
-</div>
 <div class="actContain">
 <div class="activity wbactivity" id="N10774">
-<p id="N10779" lang="" style="text-align: center;">Take a minute to stop and reflect on your progress for this learning objective.</p>
-<p lang="" style="text-align: center;">花一點時間停下來，為這個學習目標反思自己的進步。</p>
-<h2 class="title">Networking: Transfer Protocols 網絡：傳輸協議</h2>
-<p id="N10698" lang="">TCP and IP contains a suite of many different transfer protocols for routing information across networks. Each protocol uses a different well-known port to keep its traffic separate from the others. Web browsing occurs using either hypertext transfer protocol (HTTP) or hypertext transfer protocol secure (HTTPS). When it uses HTTP, it uses port 80. If, however, the client requests that the site be sent securely using encryption, then it uses the HTTPS protocol and port 443. When being sent securely, the client and server use either secure sockets layer (SSL) or transport layer security (TLS). These additional layers are put on top of the existing HTTP standard to encrypt the data connection between the client and the server.</p>
-<p lang="">TCP and  IP包含一組用於在網絡之間路由信息的許多不同的傳輸協議。 每種協議使用不同的眾所周知的端口，以使其流量彼此獨立。 使用超文本傳輸協議（HTTP）或安全超文本傳輸協議（HTTPS）進行Web瀏覽。 當使用HTTP時，它將使用端口80。但是，如果客戶端請求使用加密安全地發送站點，則它將使用HTTPS協議和端口443。在安全發送時，客戶端和服務器將使用安全套接字層 （SSL）或傳輸層安全性（TLS）。 這些額外的層放在現有HTTP標準之上，以加密客戶端和服務器之間的數據連接。</p>
-<p id="N1069B" lang="">In addition to browsing the web, there are many other things that can be done on the network and each uses its own dedicated port number to keep the traffic separate. File transfer protocol (FTP) uses port 21. FTP is a standard network protocol used to transfer computer files from one host to another host over a TCP-based network, such as the Internet. FTP is built on a client-server architecture and uses separate control and data connections between the client and the server.</p>
-<p lang="">除了瀏覽網絡之外，網絡上還有許多其他事情可以做，每件事都使用自己的專用端口號來保持流量分開。 文件傳輸協議（FTP）使用端口21。FTP是一種標準網絡協議，用於通過基於TCP的網絡（例如Internet）將計算機文件從一台主機傳輸到另一台主機。 FTP建立在客戶端-服務器體系結構上，並在客戶端和服務器之間使用單獨的控制和數據連接。</p>
-<p id="N1069E" lang="">Telnet is a text-based remote access program for computers that communicates over port 23. Telnet is a user command and an underlying TCP and IP protocol for accessing computers remotely. Through telnet, an administrator or another user can access someone else's computer remotely. Unfortunately, telnet is an unsecured protocol where all the information between the client and server is communicated in clear text, so anyone who can capture this data can read it easily. For this reason, secure shell (SSH), which uses port 22, was introduced to replace telnet. SSH is a cryptographic (encrypted) network protocol for initiating text-based shell sessions on remote machines, similar to telnet but with the added strength of encryption.</p>
-<p lang="">Telnet是用於通過端口23進行通信的計算機的基於文本的遠程訪問程序。Telnet是用戶命令和用於遠程訪問計算機的基礎TCP and IP協議。 通過telnet，管理員或其他用戶可以遠程訪問其他人的計算機。 不幸的是，telnet是一種不安全的協議，其中客戶端與服務器之間的所有信息均以明文形式進行通信，因此任何可以捕獲此數據的人都可以輕鬆地讀取它。 因此，引入了使用端口22的安全外殼（SSH）來代替telnet。 SSH是一種加密（加密）網絡協議，用於在遠程計算機上啟動基於文本的Shell會話，類似於telnet，但具有增強的加密強度。</p>
-<p id="N106A1" lang="">The domain name system (DNS) is a hierarchical distributed naming system for computers, services, or any resource connected to the Internet or to a private network. It allows for the translation of IP addresses to domain names, and from domain names to IP addresses. Remote desktop protocol (RDP) is a proprietary protocol developed by Microsoft, which provides users with a graphical interface to connect to other computers over a network connection using port 3389. The user employs RDP client software for this purpose, while the other computer must run RDP server software. RDP is a huge step up over telnet and SSH, because you receive a graphical environment to control the other user’s machine, just as if you were sitting in front of their Windows desktop.</p>
-<p lang="">域名系統（DNS）是用於計算機，服務或連接到Internet或專用網絡的任何資源的分層分佈式命名系統。 它允許將IP地址轉換為域名，也可以將域名轉換為IP地址。 遠程桌面協議（RDP）是Microsoft開發的專有協議，它為用戶提供圖形界面以使用端口3389通過網絡連接連接到其他計算機。用戶為此目的使用RDP客戶端軟件，而另一台計算機必須運行 RDP服務器軟件。 RDP是telnet和SSH的一大進步，因為您將獲得一個圖形化的環境來控制其他用戶的計算機，就像坐在他們的Windows桌面前一樣。</p>
-<p id="N106A4" lang="">Simple network management protocol (SNMP) is a popular protocol for network management. It is used for collecting information from and configuring network devices, such as servers, printers, hubs, switches, and routers, on an Internet protocol (IP) network. SNMP traffic is sent over port 161.</p>
-<p lang="">簡單網絡管理協議（SNMP）是用於網絡管理的流行協議。 它用於從Internet協議（IP）網絡上的服務器，打印機，集線器，交換機和路由器等網絡設備收集信息並對其進行配置。 SNMP通信通過端口161發送。</p>
-<p id="N106A7" lang="">Server message block (SMB) is a network protocol used for providing shared access to files, printers, and serial ports and miscellaneous communications between nodes on a network using port 139.</p>
-<p lang="">服務器消息塊（SMB）是一種網絡協議，用於提供對文件，打印機和串行端口的共享訪問以及使用端口139的網絡上節點之間的其他通信。</p>
-<p id="N106AA" lang="">The lightweight directory access protocol (LDAP) is a directory service protocol that runs over port 389. LDAP provides a mechanism used to connect to, search, and modify Internet directories. The LDAP directory service is based on a client-server model.輕型目錄訪問協議（LDAP）是在端口389上運行的目錄服務協議。LDAP提供了一種用於連接，搜索和修改Internet目錄的機制。 LDAP目錄服務基於客戶端-服務器模型。</p>
-<p lang=""><span title="Quick scroll up">Email 信箱</span></p>
+<h4 id="N10779" style="text-align: center;">Take a minute to stop and reflect on your progress for this learning objective.</h4>
+<h4 style="text-align: center;">花一點時間停下來，為這個學習目標反思自己的進步。</h4>
+<h3>Networking Transfer Protocols 網絡傳輸協議</h3>
+<h4 id="N10698">TCP and IP contains a suite of many different transfer protocols for routing information across networks. Each protocol uses a different well-known port to keep its traffic separate from the others. Web browsing occurs using either hypertext transfer protocol (HTTP) or hypertext transfer protocol secure (HTTPS). When it uses HTTP, it uses port 80. If, however, the client requests that the site be sent securely using encryption, then it uses the HTTPS protocol and port 443. When being sent securely, the client and server use either secure sockets layer (SSL) or transport layer security (TLS). These additional layers are put on top of the existing HTTP standard to encrypt the data connection between the client and the server.</h4>
+<h4>TCP and  IP包含一組用於在網絡之間路由信息的許多不同的傳輸協議。 每種協議使用不同的眾所周知的端口，以使其流量彼此獨立。 使用超文本傳輸協議（HTTP）或安全超文本傳輸協議（HTTPS）進行Web瀏覽。 當使用HTTP時，它將使用端口80。但是，如果客戶端請求使用加密安全地發送站點，則它將使用HTTPS協議和端口443。在安全發送時，客戶端和服務器將使用安全套接字層 （SSL）或傳輸層安全性（TLS）。 這些額外的層放在現有HTTP標準之上，以加密客戶端和服務器之間的數據連接。</h4>
+<h4 id="N1069B">In addition to browsing the web, there are many other things that can be done on the network and each uses its own dedicated port number to keep the traffic separate. File transfer protocol (FTP) uses port 21. FTP is a standard network protocol used to transfer computer files from one host to another host over a TCP-based network, such as the Internet. FTP is built on a client-server architecture and uses separate control and data connections between the client and the server.</h4>
+<h4>除了瀏覽網絡之外，網絡上還有許多其他事情可以做，每件事都使用自己的專用端口號來保持流量分開。 文件傳輸協議（FTP）使用端口21。FTP是一種標準網絡協議，用於通過基於TCP的網絡（例如Internet）將計算機文件從一台主機傳輸到另一台主機。 FTP建立在客戶端-服務器體系結構上，並在客戶端和服務器之間使用單獨的控制和數據連接。</h4>
+<h4 id="N1069E">Telnet is a text-based remote access program for computers that communicates over port 23. Telnet is a user command and an underlying TCP and IP protocol for accessing computers remotely. Through telnet, an administrator or another user can access someone else's computer remotely. Unfortunately, telnet is an unsecured protocol where all the information between the client and server is communicated in clear text, so anyone who can capture this data can read it easily. For this reason, secure shell (SSH), which uses port 22, was introduced to replace telnet. SSH is a cryptographic (encrypted) network protocol for initiating text-based shell sessions on remote machines, similar to telnet but with the added strength of encryption.</h4>
+<h4>Telnet是用於通過端口23進行通信的計算機的基於文本的遠程訪問程序。Telnet是用戶命令和用於遠程訪問計算機的基礎TCP and IP協議。 通過telnet，管理員或其他用戶可以遠程訪問其他人的計算機。 不幸的是，telnet是一種不安全的協議，其中客戶端與服務器之間的所有信息均以明文形式進行通信，因此任何可以捕獲此數據的人都可以輕鬆地讀取它。 因此，引入了使用端口22的安全外殼（SSH）來代替telnet。 SSH是一種加密（加密）網絡協議，用於在遠程計算機上啟動基於文本的Shell會話，類似於telnet，但具有增強的加密強度。</h4>
+<h4 id="N106A1">The domain name system (DNS) is a hierarchical distributed naming system for computers, services, or any resource connected to the Internet or to a private network. It allows for the translation of IP addresses to domain names, and from domain names to IP addresses. Remote desktop protocol (RDP) is a proprietary protocol developed by Microsoft, which provides users with a graphical interface to connect to other computers over a network connection using port 3389. The user employs RDP client software for this purpose, while the other computer must run RDP server software. RDP is a huge step up over telnet and SSH, because you receive a graphical environment to control the other user’s machine, just as if you were sitting in front of their Windows desktop.</h4>
+<h4>域名系統（DNS）是用於計算機，服務或連接到Internet或專用網絡的任何資源的分層分佈式命名系統。 它允許將IP地址轉換為域名，也可以將域名轉換為IP地址。 遠程桌面協議（RDP）是Microsoft開發的專有協議，它為用戶提供圖形界面以使用端口3389通過網絡連接連接到其他計算機。用戶為此目的使用RDP客戶端軟件，而另一台計算機必須運行 RDP服務器軟件。 RDP是telnet和SSH的一大進步，因為您將獲得一個圖形化的環境來控制其他用戶的計算機，就像坐在他們的Windows桌面前一樣。</h4>
+<h4 id="N106A4">Simple network management protocol (SNMP) is a popular protocol for network management. It is used for collecting information from and configuring network devices, such as servers, printers, hubs, switches, and routers, on an Internet protocol (IP) network. SNMP traffic is sent over port 161.</h4>
+<h4>簡單網絡管理協議（SNMP）是用於網絡管理的流行協議。 它用於從Internet協議（IP）網絡上的服務器，打印機，集線器，交換機和路由器等網絡設備收集信息並對其進行配置。 SNMP通信通過端口161發送。</h4>
+<h4 id="N106A7">Server message block (SMB) is a network protocol used for providing shared access to files, printers, and serial ports and miscellaneous communications between nodes on a network using port 139.</h4>
+<h4>服務器消息塊（SMB）是一種網絡協議，用於提供對文件，打印機和串行端口的共享訪問以及使用端口139的網絡上節點之間的其他通信。</h4>
+<h4 id="N106AA">The lightweight directory access protocol (LDAP) is a directory service protocol that runs over port 389. LDAP provides a mechanism used to connect to, search, and modify Internet directories. The LDAP directory service is based on a client-server model.輕型目錄訪問協議（LDAP）是在端口389上運行的目錄服務協議。LDAP提供了一種用於連接，搜索和修改Internet目錄的機制。 LDAP目錄服務基於客戶端-服務器模型。</h4>
+<h4><span title="Quick scroll up">Email 信箱</span></h4>
 <div class="section" id="email">
 <div class="sectionContain">
-<p id="N106B5" lang="">Email has evolved a lot over the years, but still operates on three main protocols. Simple mail transfer protocol (SMTP) is an Internet standard for sending email and most outbound email is sent using SMTP. SMTP uses port 25 to send email from network devices.</p>
-<p lang="">多年來，電子郵件已經有了很大的發展，但仍在三種主要協議上運行。 簡單郵件傳輸協議（SMTP）是用於發送電子郵件的Internet標準，大多數出站電子郵件都是使用SMTP發送的。 SMTP使用端口25從網絡設備發送電子郵件。</p>
-<p id="N106B8" lang="">POP3 is the most common account type for personal email, but messages are typically deleted from the server when you check your email.</p>
-<p lang="">POP3是最常見的個人電子郵件帳戶類型，但是當您檢查電子郵件時，通常會將郵件從服務器中刪除。</p>
-<p id="N106BB" lang="">Internet message access protocol (IMAP) servers let you work with email messages without downloading them to your computer first. This allows for email to be synchronized (synced) across multiple devices, including your desktop, laptop, tablet, and smartphone. IMAP uses port 143 to receive and synchronize your email. The real benefit of using IMAP, especially in today’s multiple device access world, is that it can change the read and delete state of messages across the multiple devices. For example, if I read a message on my phone, when I log into my desktop, the message will also show as having been read already.</p>
-<p lang="">Internet郵件訪問協議（IMAP）服務器使您可以處理電子郵件，而無需先將其下載到計算機上。 這允許跨多個設備（包括台式機，筆記本電腦，平板電腦和智能手機）同步電子郵件。 IMAP使用端口143接收和同步您的電子郵件。 使用IMAP的真正好處（尤其是在當今的多設備訪問世界中）是，它可以更改跨多個設備的消息的讀取和刪除狀態。 例如，如果我在手機上閱讀了一條消息，則當我登錄到桌面時，該消息也將顯示為已被閱讀。</p>
-<div actguid="d87f2f740a0001dc7a56021680c68725" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f740a0001dc7a56021680c68725&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<h4 id="N106B5">Email has evolved a lot over the years, but still operates on three main protocols. Simple mail transfer protocol (SMTP) is an Internet standard for sending email and most outbound email is sent using SMTP. SMTP uses port 25 to send email from network devices.</h4>
+<h4>多年來，電子郵件已經有了很大的發展，但仍在三種主要協議上運行。 簡單郵件傳輸協議（SMTP）是用於發送電子郵件的Internet標準，大多數出站電子郵件都是使用SMTP發送的。 SMTP使用端口25從網絡設備發送電子郵件。</h4>
+<h4 id="N106B8">POP3 is the most common account type for personal email, but messages are typically deleted from the server when you check your email.</h4>
+<h4>POP3是最常見的個人電子郵件帳戶類型，但是當您檢查電子郵件時，通常會將郵件從服務器中刪除。</h4>
+<h4 id="N106BB">Internet message access protocol (IMAP) servers let you work with email messages without downloading them to your computer first. This allows for email to be synchronized (synced) across multiple devices, including your desktop, laptop, tablet, and smartphone. IMAP uses port 143 to receive and synchronize your email. The real benefit of using IMAP, especially in today’s multiple device access world, is that it can change the read and delete state of messages across the multiple devices. For example, if I read a message on my phone, when I log into my desktop, the message will also show as having been read already.</h4>
+<h4>Internet郵件訪問協議（IMAP）服務器使您可以處理電子郵件，而無需先將其下載到計算機上。 這允許跨多個設備（包括台式機，筆記本電腦，平板電腦和智能手機）同步電子郵件。 IMAP使用端口143接收和同步您的電子郵件。 使用IMAP的真正好處（尤其是在當今的多設備訪問世界中）是，它可以更改跨多個設備的消息的讀取和刪除狀態。 例如，如果我在手機上閱讀了一條消息，則當我登錄到桌面時，該消息也將顯示為已被閱讀。</h4>
 <div class="activitywrap purpose learnbydoing flash" id="dpch14_lbd04">
 <div class="activityhead">
 <div class="activityinfo"></div>
@@ -1124,21 +1106,17 @@
 </div>
 </div>
 </div>
-</div>
 <div actguid="d87f2f750a0001dc2657b0de4c418c67" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f750a0001dc2657b0de4c418c67&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
 <div class="activitywrap purpose didigetthis flash" id="dpch14_digt03">
-<div class="activityhead">
 <div class="activityinfo"></div>
-</div>
 <div class="actContain">
 <div class="activity flash">
 <div class="flash_obj asx testFlash" id="pch14_digt03">
 <div class="page 482710" id="opch14_digt03">
 <div class="question ddfb" id="482710">
-<p id="N1006C" lang="">Drag and drop the items to align the activity and port with the protocol.</p>
-<p lang="">拖放項目以使活動和端口與協議對齊。</p>
+<h4 id="N1006C">Drag and drop the items to align the activity and port with the protocol.</h4>
+<h4>拖放項目以使活動和端口與協議對齊。</h4>
 <div class="customActivityHolder" data-showinputs="false" height="477" id="custom-482710" layout="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/pch14_digt03_layout.xml" source="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/webcontent/DragDropWrapper.js" type="javascript" width="550">
-<div class="component">
 <table border="0" cellspacing="4" width="100%">
 <tbody>
 <tr>
@@ -1238,49 +1216,48 @@
 </tr>
 </tbody>
 </table>
-</div>
 <div class="input_source">
-<p></p>
-<div class="initiator" input_val="drag3">Transfer computer files from one host to another host over a TCP-based network.</div>
-<div class="initiator" input_val="drag3">通過基於TCP的網絡將計算機文件從一台主機傳輸到另一台主機。</div>
-<span> </span>
-<div class="initiator" input_val="drag20">143</div>
-<span> </span>
-<div class="initiator" input_val="drag19">25</div>
-<div class="initiator" input_val="drag10">Allows email to be synchronized (synced) across multiple devices, including your desktop, laptop, tablet, and smartphone.</div>
-<div class="initiator" input_val="drag10">允許在多個設備（包括台式機，筆記本電腦，平板電腦和智能手機）之間同步電子郵件。</div>
-<div class="initiator" input_val="drag11">80</div>
-<span> </span>
-<div class="initiator" input_val="drag14">23</div>
-<span> </span>
-<div class="initiator" input_val="drag2">Secure web browsing.</div>
-<div class="initiator" input_val="drag2">安全的網頁瀏覽。</div>
-<span> </span>
-<div class="initiator" input_val="drag7">Provides shared access to files.</div>
-<div class="initiator" input_val="drag7">提供對文件的共享訪問。</div>
-<span> </span>
-<div class="initiator" input_val="drag15">3389</div>
-<div class="initiator" input_val="drag8">Provides a mechanism used to connect to, search, and modify Internet directories.</div>
-<div class="initiator" input_val="drag8">提供一種用於連接，搜索和修改Internet目錄的機制。</div>
-<span> </span>
-<div class="initiator" input_val="drag12">443</div>
-<span> </span>
-<div class="initiator" input_val="drag16">161</div>
-<div class="initiator" input_val="drag5">A proprietary protocol developed by Microsoft that provides a user with a graphical interface to connect computers over a network.</div>
-<div class="initiator" input_val="drag5">由Microsoft開發的專有協議，為用戶提供圖形界面以通過網絡連接計算機。</div>
-<div class="initiator" input_val="drag6">Enables collection of information from and configuration of network devices on an Internet protocol (IP) network.</div>
-<div class="initiator" input_val="drag6">支持從Internet協議（IP）網絡上的網絡設備收集信息並進行配置。</div>
-<div class="initiator" input_val="drag18">389</div>
-<span> </span>
-<div class="initiator" input_val="drag4">Text-based remote access program for computers.</div>
-<div class="initiator" input_val="drag4">用於計算機的基於文本的遠程訪問程序。</div>
-<span> </span>
-<div class="initiator" input_val="drag1">Unsecured web browsing.</div>
-<div class="initiator" input_val="drag1">不安全的網頁瀏覽。</div>
-<span> </span>
-<div class="initiator" input_val="drag17">139</div>
-<div class="initiator" input_val="drag9">Allows email to be sent from network devices.</div>
-<div class="initiator" input_val="drag9">允許從網絡設備發送電子郵件。</div>
+<h4></h4>
+<h4 class="initiator" input_val="drag3">Transfer computer files from one host to another host over a TCP-based network.</h4>
+<h4 class="initiator" input_val="drag3">通過基於TCP的網絡將計算機文件從一台主機傳輸到另一台主機。</h4>
+<h4><span> </span></h4>
+<h4 class="initiator" input_val="drag20">143</h4>
+<h4><span> </span></h4>
+<h4 class="initiator" input_val="drag19">25</h4>
+<h4 class="initiator" input_val="drag10">Allows email to be synchronized (synced) across multiple devices, including your desktop, laptop, tablet, and smartphone.</h4>
+<h4 class="initiator" input_val="drag10">允許在多個設備（包括台式機，筆記本電腦，平板電腦和智能手機）之間同步電子郵件。</h4>
+<h4 class="initiator" input_val="drag11">80</h4>
+<h4><span> </span></h4>
+<h4 class="initiator" input_val="drag14">23</h4>
+<h4><span> </span></h4>
+<h4 class="initiator" input_val="drag2">Secure web browsing.</h4>
+<h4 class="initiator" input_val="drag2">安全的網頁瀏覽。</h4>
+<h4><span> </span></h4>
+<h4 class="initiator" input_val="drag7">Provides shared access to files.</h4>
+<h4 class="initiator" input_val="drag7">提供對文件的共享訪問。</h4>
+<h4><span> </span></h4>
+<h4 class="initiator" input_val="drag15">3389</h4>
+<h4 class="initiator" input_val="drag8">Provides a mechanism used to connect to, search, and modify Internet directories.</h4>
+<h4 class="initiator" input_val="drag8">提供一種用於連接，搜索和修改Internet目錄的機制。</h4>
+<h4><span> </span></h4>
+<h4 class="initiator" input_val="drag12">443</h4>
+<h4><span> </span></h4>
+<h4 class="initiator" input_val="drag16">161</h4>
+<h4 class="initiator" input_val="drag5">A proprietary protocol developed by Microsoft that provides a user with a graphical interface to connect computers over a network.</h4>
+<h4 class="initiator" input_val="drag5">由Microsoft開發的專有協議，為用戶提供圖形界面以通過網絡連接計算機。</h4>
+<h4 class="initiator" input_val="drag6">Enables collection of information from and configuration of network devices on an Internet protocol (IP) network.</h4>
+<h4 class="initiator" input_val="drag6">支持從Internet協議（IP）網絡上的網絡設備收集信息並進行配置。</h4>
+<h4 class="initiator" input_val="drag18">389</h4>
+<h4><span> </span></h4>
+<h4 class="initiator" input_val="drag4">Text-based remote access program for computers.</h4>
+<h4 class="initiator" input_val="drag4">用於計算機的基於文本的遠程訪問程序。</h4>
+<h4><span> </span></h4>
+<h4 class="initiator" input_val="drag1">Unsecured web browsing.</h4>
+<h4 class="initiator" input_val="drag1">不安全的網頁瀏覽。</h4>
+<h4><span> </span></h4>
+<h4 class="initiator" input_val="drag17">139</h4>
+<h4 class="initiator" input_val="drag9">Allows email to be sent from network devices.</h4>
+<h4 class="initiator" input_val="drag9">允許從網絡設備發送電子郵件。</h4>
 <span> </span></div>
 </div>
 </div>
@@ -1325,9 +1302,6 @@
 <div class="activitywrap compositeNest flash" id="dpch14_checkpoint1">
 <div class="activityhead" style="text-align: center;">
 <div class="activityinfo"></div>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>

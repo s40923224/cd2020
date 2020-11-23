@@ -122,7 +122,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='首頁.html'>首頁</a><li class='has-children'><a href='IPv4 與 IPv6 地址.html'>IPv4 與 IPv6 地址</a><ul class='dropdown'><li><a href='Overview 總覽-1.html'>Overview 總覽-1</a><li><a href='TCP and IP TCP與IP.html'>TCP and IP TCP與IP</a><li><a href='IPv4 and IPv6 Addresses IPv4 與 IPv6 位址.html'>IPv4 and IPv6 Addresses IPv4 與 IPv6 位址</a><li><a href='IPv4 Addressing IPv4 位址.html'>IPv4 Addressing IPv4 位址</a><li><a href='Addressing Notation 尋址符號.html'>Addressing Notation 尋址符號</a><li><a href='Network and Host Addresses 網絡和主機地址.html'>Network and Host Addresses 網絡和主機地址</a><li><a href='IPv4 Address Classes IPv4地址類別.html'>IPv4 Address Classes IPv4地址類別</a><li><a href='IPv4 Data Flows IPv4數據流.html'>IPv4 Data Flows IPv4數據流</a><li><a href='Assigning an IP Address 分配IP地址.html'>Assigning an IP Address 分配IP地址</a><li><a href='Benefits of IPv6 IPv6的好處.html'>Benefits of IPv6 IPv6的好處</a><li><a href='IPv6 Address Structure IPv6地址結構.html'>IPv6 Address Structure IPv6地址結構</a><li><a href='IPv6 Data Flows IPv6數據流.html'>IPv6 Data Flows IPv6數據流</a></li></ul><li class='has-children'><a href='TCP 與 UDP 協議.html'>TCP 與 UDP 協議</a><ul class='dropdown'><li><a href='Overview 總覽-2.html'>Overview 總覽-2</a><li><a href='TCP and UDP TCP與UDP.html'>TCP and UDP TCP與UDP</a><li><a href='TCP Vs. UDP.html'>TCP Vs. UDP</a><li><a href='TCP Windowing TCP窗口.html'>TCP Windowing TCP窗口</a><li><a href='Networking Transfer Protocols 網絡傳輸協議.html'>Networking Transfer Protocols 網絡傳輸協議</a></li>
+                     <li><a href='首頁.html'>首頁</a><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li class='has-children'><a href='IPv4 與 IPv6 地址.html'>IPv4 與 IPv6 地址</a><ul class='dropdown'><li><a href='Overview 總覽-1.html'>Overview 總覽-1</a><li><a href='TCP and IP TCP與IP.html'>TCP and IP TCP與IP</a><li><a href='IPv4 and IPv6 Addresses IPv4 與 IPv6 位址.html'>IPv4 and IPv6 Addresses IPv4 與 IPv6 位址</a><li><a href='IPv4 Addressing IPv4 位址.html'>IPv4 Addressing IPv4 位址</a><li><a href='Addressing Notation 尋址符號.html'>Addressing Notation 尋址符號</a><li><a href='Network and Host Addresses 網絡和主機地址.html'>Network and Host Addresses 網絡和主機地址</a><li><a href='IPv4 Address Classes IPv4地址類別.html'>IPv4 Address Classes IPv4地址類別</a><li><a href='IPv4 Data Flows IPv4數據流.html'>IPv4 Data Flows IPv4數據流</a><li><a href='Assigning an IP Address 分配IP地址.html'>Assigning an IP Address 分配IP地址</a><li><a href='Benefits of IPv6 IPv6的好處.html'>Benefits of IPv6 IPv6的好處</a><li><a href='IPv6 Address Structure IPv6地址結構.html'>IPv6 Address Structure IPv6地址結構</a><li><a href='IPv6 Data Flows IPv6數據流.html'>IPv6 Data Flows IPv6數據流</a></li></ul><li class='has-children'><a href='TCP 與 UDP 協議.html'>TCP 與 UDP 協議</a><ul class='dropdown'><li><a href='Overview 總覽-2.html'>Overview 總覽-2</a><li><a href='TCP and UDP TCP與UDP.html'>TCP and UDP TCP與UDP</a><li><a href='TCP Vs. UDP.html'>TCP Vs. UDP</a><li><a href='TCP Windowing TCP窗口.html'>TCP Windowing TCP窗口</a><li><a href='Networking Transfer Protocols 網絡傳輸協議.html'>Networking Transfer Protocols 網絡傳輸協議</a></li>
                       </ul>
                 </nav>
               </div>
@@ -134,11 +134,10 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">Overview 總覽-2 << <a href='Overview 總覽-2.html'>Previous</a> <a href='TCP Vs. UDP.html'>Next</a> >> TCP Vs. UDP<br /><h1>TCP and UDP TCP與UDP</h1>
-<p id="N106A0" lang="">TCP is a connection-oriented protocol that ensures the reliable transport of data segments from one device to another. During transmission, if a segment is dropped, it will be detected and resent or retransmitted by the originator device. Each communication is acknowledged upon receipt, providing a secure model to ensure successful communications. This type of transmission is great for all network data types, especially those that need delivery to be assured.</p>
-<p lang="">TCP是一種面向連接的協議，可確保將數據段從一台設備可靠地傳輸到另一台設備。 在傳輸過程中，如果某個段丟失，則發起方設備將檢測到該段並將其重新發送或重新傳輸。 每次通信在收到後都會得到確認，從而提供一個安全的模型來確保成功進行通信。 這種傳輸方式適用於所有網絡數據類型，尤其是那些需要確保傳輸的網絡數據類型。</p>
-<p id="N106A3" lang="">When a TCP communication is initiated, the originator and receiver perform a “three-way handshake” before starting the data transmission. In the first step, the originator sends a packet with a synchronization (SYN) flag set. Next, the receiver acknowledges receipt of this SYN flagged packet by sending back a synchronization-acknowledged (SYN-ACK) flagged packet. Finally, the originator sends an acknowledgement of the synchronization-acknowledged flagged packet, and then data transmission occurs.</p>
-<p lang="">啟動TCP通信時，發起方和接收方在開始數據傳輸之前執行“三向握手”。 第一步，發起方發送一個設置了同步（SYN）標誌的數據包。 接下來，接收器通過發回一個同步確認（SYN-ACK）標記數據包來確認此SYN標記數據包的接收。 最後，始發者發送對已同步確認的標記數據包的確認，然後發生數據傳輸。</p>
-<div class="examplewrap">
+<h4 id="N106A0">TCP is a connection-oriented protocol that ensures the reliable transport of data segments from one device to another. During transmission, if a segment is dropped, it will be detected and resent or retransmitted by the originator device. Each communication is acknowledged upon receipt, providing a secure model to ensure successful communications. This type of transmission is great for all network data types, especially those that need delivery to be assured.</h4>
+<h4>TCP是一種面向連接的協議，可確保將數據段從一台設備可靠地傳輸到另一台設備。 在傳輸過程中，如果某個段丟失，則發起方設備將檢測到該段並將其重新發送或重新傳輸。 每次通信在收到後都會得到確認，從而提供一個安全的模型來確保成功進行通信。 這種傳輸方式適用於所有網絡數據類型，尤其是那些需要確保傳輸的網絡數據類型。</h4>
+<h4 id="N106A3">When a TCP communication is initiated, the originator and receiver perform a “three-way handshake” before starting the data transmission. In the first step, the originator sends a packet with a synchronization (SYN) flag set. Next, the receiver acknowledges receipt of this SYN flagged packet by sending back a synchronization-acknowledged (SYN-ACK) flagged packet. Finally, the originator sends an acknowledgement of the synchronization-acknowledged flagged packet, and then data transmission occurs.</h4>
+<h4>啟動TCP通信時，發起方和接收方在開始數據傳輸之前執行“三向握手”。 第一步，發起方發送一個設置了同步（SYN）標誌的數據包。 接下來，接收器通過發回一個同步確認（SYN-ACK）標記數據包來確認此SYN標記數據包的接收。 最後，始發者發送對已同步確認的標記數據包的確認，然後發生數據傳輸。</h4>
 <div class="exHead"><span class="scnReader">EXAMPLE 範例</span></div>
 <div class="example clearfix">
 <h5></h5>
@@ -148,12 +147,10 @@ img.add_border {
 <div class="imagewrap"><span class="image"><img class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/PCH14/image1.png"/></span></div>
 </div>
 </div>
-</div>
-<p id="N106B8" lang="">UDP, or user datagram protocol, was developed as a connectionless protocol in order to increase the speed of the network over TCP transmissions. Because of the three-way handshake in TCP, as well as all the delivery assurance and quality control, TCP has a good amount of network overhead that slows down its communications. Network engineers realized that sometimes you don’t need delivery assurance or quality control. So UDP was established.</p>
-<p lang="">UDP（或用戶數據報協議）被開發為無連接協議，目的是通過TCP傳輸提高網絡速度。 由於TCP中的三向握手以及所有的交付保證和質量控制，TCP具有大量的網絡開銷，從而降低了其通信速度。 網絡工程師意識到有時您不需要交付保證或質量控制。 這樣就建立了UDP。</p>
-<p id="N106BB" lang="">UDP is considered unreliable, because if a segment is dropped during transmission, the sending device doesn’t know and doesn’t care. There is no retransmission. Once data is sent, it is gone. This is good, though, for audio and video streaming. In these applications, the data transferred is enormously large, and if a single segment is dropped it doesn’t affect the overall quality of the audio or video sent.</p>
-<p lang="">UDP被認為是不可靠的，因為如果在傳輸過程中丟棄了網段，則發送設備將不知道也不在乎。 沒有重傳。 數據一旦發送，就消失了。 但是，這對於音頻和視頻流來說是很好的。 在這些應用中，傳輸的數據非常大，如果丟棄單個片段，則不會影響所發送的音頻或視頻的整體質量。</p>
-<div class="examplewrap">
+<h4 id="N106B8">UDP, or user datagram protocol, was developed as a connectionless protocol in order to increase the speed of the network over TCP transmissions. Because of the three-way handshake in TCP, as well as all the delivery assurance and quality control, TCP has a good amount of network overhead that slows down its communications. Network engineers realized that sometimes you don’t need delivery assurance or quality control. So UDP was established.</h4>
+<h4>UDP（或用戶數據報協議）被開發為無連接協議，目的是通過TCP傳輸提高網絡速度。 由於TCP中的三向握手以及所有的交付保證和質量控制，TCP具有大量的網絡開銷，從而降低了其通信速度。 網絡工程師意識到有時您不需要交付保證或質量控制。 這樣就建立了UDP。</h4>
+<h4 id="N106BB">UDP is considered unreliable, because if a segment is dropped during transmission, the sending device doesn’t know and doesn’t care. There is no retransmission. Once data is sent, it is gone. This is good, though, for audio and video streaming. In these applications, the data transferred is enormously large, and if a single segment is dropped it doesn’t affect the overall quality of the audio or video sent.</h4>
+<h4>UDP被認為是不可靠的，因為如果在傳輸過程中丟棄了網段，則發送設備將不知道也不在乎。 沒有重傳。 數據一旦發送，就消失了。 但是，這對於音頻和視頻流來說是很好的。 在這些應用中，傳輸的數據非常大，如果丟棄單個片段，則不會影響所發送的音頻或視頻的整體質量。</h4>
 <div class="exHead"><span class="scnReader">EXAMPLE 範例</span></div>
 <div class="example clearfix">
 <h5></h5>
@@ -163,10 +160,7 @@ img.add_border {
 <div class="imagewrap"><span class="image"><img class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/PCH14/image2.png"/></span></div>
 </div>
 </div>
-</div>
-<div class="section" id="N106D0">
 <div class="sectionContain"></div>
-</div>
 <br />Overview 總覽-2 << <a href='Overview 總覽-2.html'>Previous</a> <a href='TCP Vs. UDP.html'>Next</a> >> TCP Vs. UDP</div>
         
     <!-- footer -->
