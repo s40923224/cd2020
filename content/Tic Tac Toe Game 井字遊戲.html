@@ -133,51 +133,97 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Benefits of IPv6 IPv6的好處 << <a href='Benefits of IPv6 IPv6的好處.html'>Previous</a> <a href='IPv6 Data Flows IPv6數據流.html'>Next</a> >> IPv6 Data Flows IPv6數據流<br /><h1>IPv6 Address Structure IPv6地址結構</h1>
-<p id="N106D3" lang="">While IPv6 has numerous improvements over IPv4, the most notable thing about IPv6 that people see is the format of the address. Instead of the dotted-decimal notation we used in IPv4 with addresses like 192.168.1.1, IPv6 uses eight groupings of four hexadecimal digits in each group. Each group is then broken apart by a colon (:). An example of an IPv6 address is 2002:0000:0000:0000:0000:0000:4815:54ae.</p>
-<p lang=""><br/>儘管IPv6相對於IPv4進行了許多改進，但是人們看到的關於IPv6的最值得注意的事情是地址的格式。 IPv6不是在IPv4中使用像192.168.1.1這樣的地址使用的點分十進製表示法，而是在每個組中使用四個十六進制數字組成的八組。 然後，每個組用冒號（:)分隔。 IPv6地址的示例是2002：0000：0000：0000：0000：0000：0000：4815：54ae。</p>
-<p id="N106D6" lang="">A hexadecimal digit allows for counting from zero to 15 using the digits 0-9, then the letters A through F. Each hexadecimal digit replaces four binary digits (or four 1s and 0s), allowing us to write an IPv6 address using (at most) 32 hexadecimal digits.</p>
-<p lang="">十六進制數字允許使用數字0-9從0到15進行計數，然後使用字母A至F。每個十六進制數字都替換了四個二進制數字（或四個1和0），從而使我們可以使用（最多為 ）32個十六進制數字。</p>
-<p id="N106D9" lang="">Luckily, the creators of IPv6 allowed for a shorthand. First, anytime there are leading zeros, they can be dropped. This is equivalent to dropping the leading zeros in the number 0010 to 10. The numbers are equivalent, as long as the zeros are in front of the other digits. The second shorthand technique involves several groupings of four zeros. When multiple groupings of four zeros are present, they can be represented by a double colon (::). Note that you can only use the double colon once per address, because the only way to know how many sets of zeros you’ve replaced with the double colon is to compare the shorthand address with the total number of bits available.</p>
-<p lang="">幸運的是，IPv6的創建者允許使用簡寫形式。 首先，只要有前導零，就可以將其丟棄。 這等效於將數字0010中的前導零刪除為10。這些數字是等效的，只要零在其他數字的前面即可。 第二種速記技術涉及四個零的幾個分組。 當存在四個零的多個分組時，可以用雙冒號（：:)表示。 請注意，每個地址只能使用雙冒號一次，因為要知道用雙冒號替換了多少個零集的唯一方法是將速記地址與可用位數進行比較。</p>
+    <div id="tipue_search_content">MAX OF THREE 最多三人 << <a href='MAX OF THREE 最多三人.html'>Previous</a> <br /><h1>Tic Tac Toe Game 井字遊戲</h1>
+<div class="customActivityHolder" data-showinputs="false" height="477" layout="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/pch14_digt03_layout.xml" source="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/webcontent/DragDropWrapper.js" type="javascript" width="550"></div>
+<div class="customActivityHolder" data-showinputs="false" height="477" layout="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/pch14_digt03_layout.xml" source="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/webcontent/DragDropWrapper.js" type="javascript" width="550"></div>
+<div class="customActivityHolder" data-showinputs="false" height="477" layout="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/pch14_digt03_layout.xml" source="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/webcontent/DragDropWrapper.js" type="javascript" width="550"></div>
+<div class="customActivityHolder" data-showinputs="false" height="477" layout="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH14/webcontent/pch14_digt03_layout.xml" source="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/webcontent/DragDropWrapper.js" type="javascript" width="550"><br/>
+<p>In 3 previous exercises, we built up a few components needed to build a Tic Tac Toe game in Python:</p>
+<p><span>在之前的3個練習中，我們建立了一些用Python構建Tic Tac Toe遊戲所需的組件：</span></p>
+<p>1.<a href="https://www.practicepython.org/exercise/2014/12/27/24-draw-a-game-board.html">Draw the Tic Tac Toe game board</a>   畫井字遊戲板</p>
+<p>2.<a href="https://www.practicepython.org/exercise/2015/11/16/26-check-tic-tac-toe.html">Checking whether a game board has a winner</a>  <span lang="zh-TW">檢查遊戲板是否有贏家</span></p>
+<p>3.<a href="https://www.practicepython.org/exercise/2015/11/26/27-tic-tac-toe-draw.html">Handle a player move from user input</a>   <span lang="zh-TW">處理玩家從用戶輸入的移動</span></p>
+<p>The next step is to put all these three components together to make a two-player Tic Tac Toe game! Your challenge in this exercise is to use the functions from those previous exercises all together in the same program to make a two-player game that you can play with a friend. There are a lot of choices you will have to make when completing this exercise, so you can go as far or as little as you want with it.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">下一步是將所有這三個組成部分放在一起，組成一個兩人遊戲的Tic Tac Toe遊戲！在本練習中，您面臨<br/>的挑戰是在同一程序中一起使用以前的練習中的功能，以製作一個可以與朋友一起玩的兩人遊戲。完成本<br/>練習時，您將有很多選擇，因此您可以根據自己的需要進行選擇。</span></pre>
+<p>Here are a few things to keep in mind: </p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">請記住以下幾點：</span></pre>
+<ul>
+<li>You should keep track of who won - if there is a winner, show a congratulatory message on the screen.</li>
+<li>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">您應該跟踪誰贏了-如果有贏家，則在屏幕上顯示祝賀消息。</span></pre>
+</li>
+<li>If there are no more moves left, don’t ask for the next player’s move!</li>
+<li>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">如果再也沒有其他動作，請不要要求下一個玩家的動作！</span></pre>
+</li>
+</ul>
+<p>As a bonus, you can ask the players if they want to play again and keep a running tally of who won more - Player 1 or Player 2.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">作為獎勵，您可以詢問玩家是否想再次玩，並保持連續統計誰贏得了更多的獎金-玩家1或玩家2。</span></pre>
+<p><span></span></p>
+<div actguid="d87f2f790a0001dc53eb3ff50a12f0d6" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f790a0001dc53eb3ff50a12f0d6&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose didigetthis flash" id="dpch14_digt04">
+<div class="activityhead">
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch14_digt04">
+<div class="page 482721" id="opch14_digt04">
+<div class="question" id="482721">
+<div></div>
 </div>
 </div>
-<div class="examplewrap">
-<div class="exHead"><span class="scnReader">EXAMPLE 範例</span></div>
-<div class="example clearfix">
-<h5></h5>
-<div>
-<p id="N106E0" lang="">2002:0000:0000:0000:0000:0000:0000:4815:54ae can be rewritten. One way to rewrite this address is to eliminate the leading zeros.</p>
-<p lang="">2002：0000：0000：0000：0000：0000：0000：0000：4815：54ae可以重寫。 重寫此地址的一種方法是消除前導零。</p>
-<div class="image shouldbeleft"><img class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image8.png"/></div>
-<p id="N106E7" lang="">By eliminating the leading zeros, 2002:0000:0000:0000:0000:0000:0000:4815:54ae becomes 2002:0:0:0:0:0:0:4815:54ae.</p>
-<p lang="">通過消除前導零，2002：0000：0000：0000：0000：0000：0000：4815：54ae變為2002：0：0：0：0：0：0：0：4815：54ae。</p>
-<p id="N106EA" lang="">Alternatively, this address can be rewritten using a double colon (::) in place of a multiple grouping of four 0s.</p>
-<p lang="">或者，可以使用雙冒號（：:)代替四個0的多個分組來重寫此地址。</p>
-<div class="image shouldbeleft"><img class="popimg" id="_i_1" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image9.png"/></div>
-<p id="N106F1" lang="">By replacing multiple groupings of four 0s with a double colon, 2002:0000:0000:0000:0000:0000:0000:4815:54ae becomes 2002::4815:54ae.</p>
-<p lang="">通過用雙冒號替換四個0的多個分組，2002：0000：0000：0000：0000：0000：0000：0000：4815：54ae變為2002 :: 4815：54ae。</p>
 </div>
 </div>
 </div>
-<div class="examplewrap">
-<div class="exHead"><span class="scnReader">EXAMPLE 範例</span></div>
-<div class="example clearfix">
-<h5></h5>
-<div>
-<p id="N106F7" lang="">2009:0123:4040:0000:0000:0000:000A:100B can be written by both eliminating leading zeros and using double colons.</p>
-<p lang="">可以通過消除前導零和使用雙冒號來編寫2009：0123：4040：0000：0000：0000：000A：100B。</p>
-<div class="image shouldbeleft"><img class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH13/webcontent/PCH13/image10.png"/></div>
-<p id="N106FE" lang="">2009:0123:4040:0000:0000:0000:000A:100B becomes 2009:123:4040::A:100B.</p>
-<p lang="">2009：0123：4040：0000：0000：0000：000A：100B變為2009：123：4040 :: A：100B</p>
-<p id="N10701" lang="">As you can see, the IPv6 addresses are more complex than their IPv4 counterparts, but over time, you will get used to seeing how they are written, and what the different notation indicates.</p>
-<p lang="">如您所見，IPv6地址比其對應的IPv4地址要復雜得多，但是隨著時間的流逝，您將習慣於看到它們的寫法以及不同符號的含義。</p>
+</div>
+</div>
+<div class="activitywrap purpose checkpoint wbactivity">
+<div class="actContain">
+<div class="activity wbactivity" id="N1071D">
+<div actguid="d87f2f700a0001dc2bd46fe7c1605ec1" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f700a0001dc2bd46fe7c1605ec1&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap compositeNest flash" id="dpch14_checkpoint2">
+<div class="actContain"></div>
 </div>
 </div>
 </div>
-<div class="section" id="ipv6_data_flows">
-<div class="sectionContain">
-<br />Benefits of IPv6 IPv6的好處 << <a href='Benefits of IPv6 IPv6的好處.html'>Previous</a> <a href='IPv6 Data Flows IPv6數據流.html'>Next</a> >> IPv6 Data Flows IPv6數據流</div>
+</div>
+</div>
+<div actguid="d87f2f620a0001dc225192ccfc0a4150" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f620a0001dc225192ccfc0a4150&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap compositeNest flash" id="dpch14_checkpoint1">
+<div class="activityhead" style="text-align: center;">
+<div class="activityinfo"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><br />MAX OF THREE 最多三人 << <a href='MAX OF THREE 最多三人.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">

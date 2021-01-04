@@ -1289,16 +1289,47 @@
 <ul>
 <li>For the “standard” exercise, don’t worry about “ending” the game - no need to keep track of how many squares are full. In a bonus version, keep track of how many squares are full and automatically stop asking for moves when there are no more valid moves.</li>
 </ul>
-<h2 id="concepts">Concepts</h2>
+<h2>Concepts 概念</h2>
 <p>One review concept that is definitely needed (in addition to the<span> </span><a href="https://www.practicepython.org/exercise/2014/01/29/01-character-input.html">user input</a><span> </span>that is the core of the exercise) is the need to “split” strings.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">（除了作為練習核心的用戶輸入之外）肯定需要一個審核概念是“拆分”字符串。</span></pre>
 <p>The user will input coordinates in the form “row,col”, which<span> </span><code class="highlighter-rouge">input()</code><span> </span>will then read in as a string. But we really want the numbers that come out of that string, to know which row and column to place the piece at.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">用戶將以“ row，col”的形式輸入坐標，然後input（）將以字符串形式讀取。但是我們確實希望從該字符<br/>串中得出的數字知道將片段放置在哪一行和哪一列。</span></pre>
 <p>One approach is to use the idea of<span> </span><a href="https://www.practicepython.org/exercise/2014/03/12/06-string-lists.html">strings as lists</a><span> </span>to extract the row and column numbers. This works great if your row and column numbers are always single digits - the row will always be at index 0 and the column will always be at index 2. But this breaks when the numbers are larger than one digit (I know, not going to happen in tic tac toe, but it’s easy to image extending this to other games).</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">一種方法是使用字符串作為列表的概念來提取行號和列號。如果行號和列號始終是一位數字，則該方法非<br/>常有用-行將始終在索引0處，列始終在索引2。但是，當數字大於一位時，這種方法會中斷（我知道，會<br/>在井字遊戲中發生，但很容易將其擴展到其他遊戲。</span></pre>
 <p>Instead, there are two string manipulation functions that will help you:</p>
-<ol>
-<li><a href="https://docs.python.org/2/library/string.html#string.split"><code class="highlighter-rouge">.split()</code></a><span> </span>- Takes a string and returns a list, using the separator as the split criteria. So if you have a string<span> </span><code class="highlighter-rouge">name = "John Doe"</code><span> </span>and do<span> </span><code class="highlighter-rouge">name_list = name.split(" ")</code>,<span> </span><code class="highlighter-rouge">name_list</code><span> </span>will be<span> </span><code class="highlighter-rouge">["John", "Doe"]</code>. You can use any separator / split character you want. Just remember, that each of the elements returned back will be a string as well.</li>
-<li><a href="https://docs.python.org/2/library/string.html#string.strip"><code class="highlighter-rouge">.strip()</code></a><span> </span>- Takes a string and removes the whitespace on the left and right sides of it. So you have a string<span> </span><code class="highlighter-rouge">name = " Michele "</code>, and you do<span> </span><code class="highlighter-rouge">name = name.strip()</code>, and now<span> </span><code class="highlighter-rouge">name</code><span> </span>will just be<span> </span><code class="highlighter-rouge">"Michele"</code><span> </span>- nice and clean.</li>
-</ol>
-<p>I challenge you to figure out how to use them in the exercise!</p>
+<p><span lang="zh-TW"> 相反，有兩個字符串操作函數可以為您提供幫助：</span></p>
+<p><code class="highlighter-rouge">1<a href="https://docs.python.org/2/library/string.html#string.split">.split()</a></code><span> </span>- Takes a string and returns a list, using the separator as the split criteria. So if you have a string<span> </span><code class="highlighter-rouge">name = "John Doe"</code><span> </span>and do<span> </span><code class="highlighter-rouge">name_list = name.split(" ")</code>,<span> </span><code class="highlighter-rouge">name_list</code><span> </span>will be<span> </span><code class="highlighter-rouge">["John", "Doe"]</code>. You can use any separator / split character you want. Just remember, that each of the elements returned back will be a string as well.</p>
+<p>1.split（）-使用分隔符作為分割條件，獲取字符串並返回列表。因此，如果您有一個字符串名稱=“ John Doe”，並且執行name_list = name.split（“”），則name_list將為[“ John”，“ Doe”]。您可以使用所需的任何分隔符/拆分字符。請記住，返回的每個元素也將是一個字符串。</p>
+<p><code class="highlighter-rouge">2.<a href="https://docs.python.org/2/library/string.html#string.strip">.strip()</a></code><span> </span>- Takes a string and removes the whitespace on the left and right sides of it. So you have a string<span> </span><code class="highlighter-rouge">name = " Michele "</code>, and you do<span> </span><code class="highlighter-rouge">name = name.strip()</code>, and now<span> </span><code class="highlighter-rouge">name</code><span> </span>will just be<span> </span><code class="highlighter-rouge">"Michele"</code><span> </span>- nice and clean.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">
+2..strip（）-接收字符串並刪除其左側和右側的空格。因此，您有一個字符串名稱=“ Michele”，並且您<br/>執行了name = name.strip（），現在名稱將只是“ Michele”-乾淨整潔。我挑戰您找出如何在練習中使<br/>用它們！</span></pre>
+<br/>Max Of Three <span>最多三人</span>
+<p>Implement a function that takes as input three variables, and returns the largest of the three. Do this without using the Python<span> </span><code class="highlighter-rouge">max()</code><span> </span>function!</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">實現一個函數，將三個變量作為輸入，並返回三個變量中的最大值。無需使用Python max（）函數即可<br/>執行此操作！</span></pre>
+<p>The goal of this exercise is to think about some internals that Python normally takes care of for us. All you need is some variables and<span> </span><code class="highlighter-rouge">if</code><span> </span>statements!</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">本練習的目的是考慮Python通常為我們處理的一些內部組件。您只需要一些變量和if語句！</span></pre>
+<br/><span lang="zh-TW"><br/></span><br/><span>Tic Tac Toe Game 井字遊戲</span>
+<p>In 3 previous exercises, we built up a few components needed to build a Tic Tac Toe game in Python:</p>
+<p><span>在之前的3個練習中，我們建立了一些用Python構建Tic Tac Toe遊戲所需的組件：</span></p>
+<p>1.<a href="https://www.practicepython.org/exercise/2014/12/27/24-draw-a-game-board.html">Draw the Tic Tac Toe game board</a>   畫井字遊戲板</p>
+<p>2.<a href="https://www.practicepython.org/exercise/2015/11/16/26-check-tic-tac-toe.html">Checking whether a game board has a winner</a>  <span lang="zh-TW">檢查遊戲板是否有贏家</span></p>
+<p>3.<a href="https://www.practicepython.org/exercise/2015/11/26/27-tic-tac-toe-draw.html">Handle a player move from user input</a>   <span lang="zh-TW">處理玩家從用戶輸入的移動</span></p>
+<p>The next step is to put all these three components together to make a two-player Tic Tac Toe game! Your challenge in this exercise is to use the functions from those previous exercises all together in the same program to make a two-player game that you can play with a friend. There are a lot of choices you will have to make when completing this exercise, so you can go as far or as little as you want with it.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">下一步是將所有這三個組成部分放在一起，組成一個兩人遊戲的Tic Tac Toe遊戲！在本練習中，您面臨<br/>的挑戰是在同一程序中一起使用以前的練習中的功能，以製作一個可以與朋友一起玩的兩人遊戲。完成本<br/>練習時，您將有很多選擇，因此您可以根據自己的需要進行選擇。</span></pre>
+<p>Here are a few things to keep in mind: </p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">請記住以下幾點：</span></pre>
+<ul>
+<li>You should keep track of who won - if there is a winner, show a congratulatory message on the screen.</li>
+<li>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">您應該跟踪誰贏了-如果有贏家，則在屏幕上顯示祝賀消息。</span></pre>
+</li>
+<li>If there are no more moves left, don’t ask for the next player’s move!</li>
+<li>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">如果再也沒有其他動作，請不要要求下一個玩家的動作！</span></pre>
+</li>
+</ul>
+<p>As a bonus, you can ask the players if they want to play again and keep a running tally of who won more - Player 1 or Player 2.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">作為獎勵，您可以詢問玩家是否想再次玩，並保持連續統計誰贏得了更多的獎金-玩家1或玩家2。</span></pre>
 <p><span></span></p>
 <div actguid="d87f2f790a0001dc53eb3ff50a12f0d6" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2f790a0001dc53eb3ff50a12f0d6&amp;userGUID=d67eb5c00a0001dc1d81576b33aa660d&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
 <div class="activitywrap purpose didigetthis flash" id="dpch14_digt04">
@@ -1335,4 +1366,32 @@
 <div class="activityinfo"></div>
 </div>
 </div>
-</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
