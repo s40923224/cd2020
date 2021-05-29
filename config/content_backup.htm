@@ -2,7 +2,7 @@
 <p>內容</p>
 <p><span>PCH 13: IPv4 and IPv6 Addresses IPv4 與 IPv6 地址</span><br/><span>PCH 14: TCP and UDP Protocols  TCP 與 UDP 協議</span></p>
 <p><span></span>..</p>
-<h1>HW1 1</h1>
+<h1>HW1</h1>
 <p><span></span></p>
 <h2>IPv4 與 IPv6 地址</h2>
 <div class="section" id="N1068A">
@@ -1259,8 +1259,25 @@
 <h4 class="initiator" input_val="drag9">允許從網絡設備發送電子郵件。</h4>
 <span> </span></div>
 <h1>HW2</h1>
-<p><span> </span></p>
-<h1>HW3</h1>
+<p></p>
+<div class="line number1 index0 alt2"><code class="html plain">#先import urllib.request 然後抓取網址</code></div>
+<div class="line number1 index0 alt2"><code class="html plain">import urllib.request</code></div>
+<div class="line number2 index1 alt1"><code class="html plain">target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"</code></div>
+<div class="line number2 index1 alt1"><code class="html plain">#建立數列</code></div>
+<div class="line number3 index2 alt2"><code class="html plain">cp1b = []</code></div>
+<div class="line number3 index2 alt2"><span face="monospace" style="font-family: monospace;">#將資料用append語法cp1b放進中 decode("utf-8")可解讀中文 </span></div>
+<div class="line number4 index3 alt1"><code class="html plain">for line in urllib.request.urlopen(target_url):</code></div>
+<div class="line number5 index4 alt2"><code class="html spaces">    </code><code class="html plain">cp1b.append(int(line.decode('utf-8').rstrip()))</code></div>
+<div class="line number6 index5 alt1"><code class="html plain">在random模組 載入亂數分組模組shuffle</code></div>
+<div class="line number6 index5 alt1"><code class="html plain">from random import shuffle</code></div>
+<div class="line number7 index6 alt2"><code class="html plain">shuffle(cp1b)</code></div>
+<div class="line number8 index7 alt1"><code class="html plain">n = 5</code></div>
+<div class="line number9 index8 alt2"><code class="html plain">m = int(len(cp1b)/n)</code></div>
+<div class="line number10 index9 alt1"><code class="html plain">list2 = []</code></div>
+<div class="line number11 index10 alt2"><code class="html plain">for i in range(0,len(cp1b),m):</code></div>
+<div class="line number12 index11 alt1"><code class="html spaces">    </code><code class="html plain">list2.append(cp1b[i:i+m])</code></div>
+<div class="line number13 index12 alt2"><code class="html plain">print(list2)</code></div>
+<p><span> </span></p><h1>HW3</h1>
 <br/>Exercise 27 (and<span> </span><a href="https://www.practicepython.org/solution/2016/03/17/27-tic-tac-toe-draw-solutions.html">Solution</a>)
 <p>In a<span> </span><a href="https://www.practicepython.org/exercise/2015/11/16/26-check-tic-tac-toe.html">previous exercise</a><span> </span>we explored the idea of using a list of lists as a “data structure” to store information about a tic tac toe game. In a tic tac toe game, the “game server” needs to know where the<span> </span><code class="highlighter-rouge">X</code>s and<span> </span><code class="highlighter-rouge">O</code>s are in the board, to know whether player 1 or player 2 (or whoever is<span> </span><code class="highlighter-rouge">X</code><span> </span>and<span> </span><code class="highlighter-rouge">O</code><span> </span>won).</p>
 <p>There has also been an exercise about<span> </span><a href="https://www.practicepython.org/exercise/2014/12/27/24-draw-a-game-board.html">drawing the actual tic tac toe gameboard</a><span> </span>using text characters.</p>
